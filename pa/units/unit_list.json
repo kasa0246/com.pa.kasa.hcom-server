@@ -1,8 +1,5 @@
 {
     "units": [
-        "/pa/units/land/metal_extractor/metal_depo.json",
-        "/pa/units/land/metal_extractor/metal_extractor_off.json",
-        "/pa/units/land/metal_extractor/metal_extractor_off_base.json",
         "/pa/units/land/energy_plant/energy.json",
         "/pa/units/land/energy_plant_adv/energy_adv.json",
         "/pa/units/land/energy_plant_adv/energy_adv_2.json",
