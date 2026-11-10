@@ -1,9 +1,0 @@
-{
-    "base_spec": "/pa/ammo/base_beam/base_beam.json",
-    "damage": 2500,
-    "initial_velocity": 1000.0,
-    "max_velocity": 1000.0,
-    "collision_check": "enemies",
-    "fx_beam_spec": "/pa/units/arsenal/unlocked_units/orbital_railgun_up/orbital_railgun_up_beam.pfx",
-    "fx_collision_spec": "/pa/units/arsenal/unlocked_units/orbital_railgun_up/orbital_railgun_up_hit.pfx"
-}
