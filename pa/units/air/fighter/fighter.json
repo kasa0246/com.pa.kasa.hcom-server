@@ -1,0 +1,173 @@
+{
+	"base_spec": "/pa/units/air/base_flyer/base_flyer.json",
+	"display_name": "Hummingbird",
+	"description": "!LOC:Basic High Altitude Fighter - Fast. Armed with short and medium range AA homing missiles but also 50-cal minigun. Fitted with with basic onboard radar and flares. Only attacks air targets.",
+	"max_health": 500,
+	"build_metal_cost": 350,
+	"armor_type": "AT_Orbital",
+	"energy_efficiency_requirement": 0.9,
+	"unit_types": [
+		"UNITTYPE_Custom58",
+		"UNITTYPE_Custom12",
+		"UNITTYPE_Fighter",
+		"UNITTYPE_Air",
+		"UNITTYPE_Mobile",
+		"UNITTYPE_Offense",
+		"UNITTYPE_Basic",
+		"UNITTYPE_FactoryBuild"
+	],
+	"guard_layer": "WL_Air",
+	"navigation": {
+		"type": "air",
+		"acceleration": 60,
+		"brake": 15,
+		"move_speed": 90,
+		"turn_speed": 120,
+		"aggressive_distance": 50.0,
+		"bank_factor": 5,
+		"vertical_speed": 45,
+		"hover_time": -1.0
+	},
+	"physics": {
+		"radius": 3,
+		"gravity_scalar": 1
+	},
+	"recon": {
+		"observable": {
+			"layer": "mine"
+		},
+		"observer": {
+			"items": [
+				{
+					"channel": "radar",
+					"layer": "surface_and_air",
+					"radius": 100,
+					"shape": "capsule",
+					"uses_energy": true
+				},
+				{
+					"channel": "sight",
+					"layer": "surface_and_air",
+					"radius": 50,
+					"shape": "capsule"
+				},
+				{
+					"channel": "radar",
+					"layer": "mine",
+					"radius": 250,
+					"shape": "capsule",
+					"uses_energy": true
+				},
+				{
+					"channel": "sight",
+					"layer": "mine",
+					"radius": 150,
+					"shape": "capsule",
+					"uses_energy": true
+				},
+				{
+					"channel": "sight",
+					"layer": "mine",
+					"radius": 100,
+					"shape": "capsule"
+				}
+			]
+		}
+	},
+	"model": {
+		"filename": "/pa/units/air/fighter/fighter.papa",
+		"arrows": 5
+	},
+	"tools": [
+		{
+			"spec_id": "/pa/units/air/fighter/fighter_tool_weapon_medium.json",
+			"aim_bone": "bone_root",
+			"muzzle_bone": [
+				"bone_root",
+				"bone_missile_right",
+				"bone_missile_left"
+			],
+			"record_index": 0,
+			"fire_event": "fired0"
+		},
+		{
+			"spec_id": "/pa/units/air/fighter/fighter_tool_weapon_short.json",
+			"aim_bone": "bone_root",
+			"muzzle_bone": [
+				"bone_root",
+				"bone_missile_right",
+				"bone_missile_left"
+			],
+			"record_index": 1,
+			"fire_event": "fired0"
+		},
+		{
+			"spec_id": "/pa/units/air/fighter/fighter_mg_tool_weapon.json",
+			"aim_bone": "bone_mg",
+			"muzzle_bone": "bone_mg",
+			"record_index": 2,
+			"fire_event": "fired1"
+		},
+		{
+			"spec_id": "/pa/units/air/fighter/fighter_flare_tool_weapon.json",
+			"aim_bone": "bone_flare",
+			"muzzle_bone": "bone_flare",
+			"record_index": 3,
+			"fire_event": "fired2"
+		}
+	],
+	"events": {
+		"build_complete": {
+			"audio_cue": "/SE/Build_Complete/air"
+		},
+		"fired0": {
+			"audio_cue": "/SE/Weapons/air/fighter_fire"
+		},
+		"fired1": {
+			"audio_cue": "/SE/Weapons/bot/assault_fire",
+			"effect_spec": "/pa/effects/specs/default_small_muzzle_flash.pfx bone_mg"
+		},
+		"fired2": {
+			"audio_cue": "/SE/Weapons/air/fighter_fire",
+			"effect_spec": "/pa/units/air/fighter/hover_ship_muzzle_flash_side.pfx bone_flare"
+		},
+		"died": {
+			"audio_cue": "/SE/Death/Air",
+			"effect_spec": "/pa/units/air/base_flyer/base_flyer_death.pfx",
+			"effect_scale": 0.85
+		}
+	},
+	"audio": {
+		"loops": {
+			"move": {
+				"cue": "/SE/Movement/air/air_fighter_loop",
+				"flag": "vel_changed",
+				"should_start_func": "is_moving_laterally",
+				"should_stop_func": "is_not_moving"
+			}
+		},
+		"selection_response": {
+			"cue": "/SE/Selection/air/fighter"
+		}
+	},
+	"fx_offsets": [
+		{
+			"type": "moving_forward",
+			"filename": "/pa/units/air/fighter/fighter_jets.pfx",
+			"offset": [
+				0,
+				2.9,
+				0.836
+			]
+		}
+	],
+	"selection_icon": {
+		"diameter": 16.0
+	},
+	"TEMP_texelinfo": 6.1803,
+	"mesh_bounds": [
+		9,
+		6.5,
+		3.1
+	]
+}

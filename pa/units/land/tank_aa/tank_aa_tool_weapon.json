@@ -1,0 +1,28 @@
+{
+    "base_spec": "/pa/tools/base_missile_turret/base_missile_turret.json",
+    "ammo_id": "/pa/units/land/air_defense_adv/air_defense_adv_ammo.json",
+    "rate_of_fire": 4,
+    "idle_aim_delay": 3,
+    "ammo_source": "energy",
+    "ammo_capacity": 32,
+    "ammo_demand": 14,
+    "ammo_per_shot": 10,
+    "carpet_fire": true,
+    "carpet_wait_for_full_ammo": true,
+    "max_range": 155,
+    "yaw_rate": 180,
+    "pitch_rate": 180,
+    "yaw_range": 360,
+    "pitch_range": 89,
+    "spread_fire": true,
+    "auto_attack": true,
+    "target_layers": [
+        "WL_Air"
+    ],
+    "exclude_unit_types": "Custom1 | Custom2",
+    "target_priorities": [
+        "Air & ( EnergyProduction | Transport | Bomber | Gunship | Titan )",
+        "Mobile & Air",
+        "Air - Custom2"
+    ]
+}

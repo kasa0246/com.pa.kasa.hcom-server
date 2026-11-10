@@ -1,0 +1,34 @@
+{
+    "base_spec": "/pa/tools/base_bomb_bay/base_bomb_bay.json",
+    "ammo_id": "/pa/units/air/strafer/strafer_bomb_ammo.json",
+    "ammo_source":"infinite",
+    "rate_of_fire": 0.16,
+    "max_range": 80,
+    "yaw_rate": 360,
+    "pitch_rate": 180,
+    "yaw_range": 10,
+    "pitch_range": 90,
+    "auto_attack": true,
+    "spread_fire": false,
+    "firing_standard_deviation": 2,
+    "target_layers": [
+        "WL_LandHorizontal",
+        "WL_WaterSurface",
+        "WL_Seafloor",
+        "WL_Underwater"
+    ],
+    "exclude_unit_types": "Custom1 | Custom2",
+    "events": {
+        "died": {
+            "audio_cue": "/SE/Impacts/shell_artillery",
+            "effect_spec": "/pa/effects/specs/default_proj_area_explosion.pfx"
+        }
+    },
+    "target_priorities": [
+        "Commander",
+        "AirDefense & ( Land | Naval )",
+        "Titan & ( Land | Naval )",
+        "Artillery & Advanced & ( Land | Naval )",
+        "Nuke | NukeDefense"
+    ]
+}

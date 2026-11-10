@@ -1,0 +1,289 @@
+{
+    "base_spec": "/pa/units/air/base_flyer/base_flyer.json",
+    "display_name": "Bunker",
+    "description": "!LOC:Provides protection for your Commander. To use the Bunker, first select your Commander and then assign it to the Bunker. If the current planet has no enemies present, you’ll need to manually activate the Bunker by using the Attack button. To remove your Commander from the Bunker, simply unload it—similar to how you would with a Pelican.",
+    "max_health": 150000,
+    "build_metal_cost": 9000,
+    "usable": true,
+    "wreckage_health_frac": 0.9,
+    "death_weapon": {
+        "ground_ammo_spec": "/pa/units/thorosmen/bunker_build/bunker_orb/bunker_ammo_death.json"
+    },
+    "spawn_layers": "WL_LandHorizontal",
+    "armor_type": "AT_Custom3",
+    "attachable": {
+        "offsets": {
+            "root": [
+                0,
+                0,
+                0
+            ]
+        }
+    },
+    "unit_types": [
+        "UNITTYPE_Land",
+        "UNITTYPE_Bot",
+        "UNITTYPE_Transport",
+        "UNITTYPE_Mobile",
+        "UNITTYPE_Heavy",
+        "UNITTYPE_Custom8",
+        "UNITTYPE_Custom58",
+        "UNITTYPE_Advanced",
+        "UNITTYPE_NoBuild"
+    ],
+    "command_caps": [
+        "ORDER_Load",
+        "ORDER_Unload",
+        "ORDER_Use"
+    ],
+    "useable": {
+        "type": "transport",
+        "range": 50
+    },
+    "transporter": {
+        "capacity": 9,
+        "transportable_unit_types": "Commander",
+        "transporter_attach_bone": "bone_root",
+        "transportable_attach_offset": "head",
+        "load_range": 60,
+        "chase_range": 20
+    },
+    "navigation": {
+        "type": "air",
+        "acceleration": 1000,
+        "brake": -1,
+        "move_speed": 0.01,
+        "turn_speed": 180,
+        "vertical_speed": 0.01,
+        "hover_time": -1.0,
+        "bank_factor": 0,
+        "wobble_factor": 0.1,
+        "wobble_speed": 0.1
+    },
+    "physics": {
+        "radius": 12,
+        "gravity_scalar": 1,
+        "push_sideways": false,
+        "allow_pushing": false,
+        "air_friction": 1.0,
+        "add_to_spatial_db": true
+    },
+    "recon": {
+        "observable": {
+            "layer": "surface_and_air",
+            "ignore_radar": false,
+            "ignore_sight": false
+        },
+        "observer": {
+            "items": [
+                {
+                    "layer": "surface_and_air",
+                    "channel": "sight",
+                    "shape": "capsule",
+                    "radius": 100
+                },
+                {
+                    "layer": "mine",
+                    "channel": "radar",
+                    "shape": "capsule",
+                    "radius": 100
+                },
+                {
+                    "layer": "mine",
+                    "channel": "sight",
+                    "shape": "capsule",
+                    "radius": 50
+                }
+            ]
+        }
+    },
+    "model": {
+        "filename": "/pa/units/thorosmen/bunker_build/bunker/bunker.papa",
+        "skirt_decal": "/pa/effects/specs/skirt_energy_adv.json"
+    },
+    "events": {
+        "build_complete": {
+            "audio_cue": "/SE/Build_Complete/energy"
+        },
+        "died": {
+            "audio_cue": "/SE/Death/Factory",
+            "effect_scale": 0.8
+        },
+        "child_attached": {
+            "audio_cue": "/SE/Movement/air/transport_load"
+        },
+        "child_detached": {
+            "audio_cue": "/SE/Movement/air/transport_unload"
+        }
+    },
+    "audio": {
+        "selection_response": {
+            "cue": "/SE/Selection/structure/structure_small"
+        }
+    },
+    "headlights": [
+        {
+            "gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa",
+            "offset": [
+                6.2,
+                6.2,
+                8.6
+            ],
+            "orientation": [
+                26.33,
+                -23.93,
+                -50.68
+            ],
+            "near_width": 5.5,
+            "near_height": 5.5,
+            "near_distance": 2.5,
+            "far_distance": 25.0,
+            "color": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "intensity": 1.0
+        },
+        {
+            "gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa",
+            "offset": [
+                -6.2,
+                6.2,
+                8.6
+            ],
+            "orientation": [
+                -26.34,
+                -23.93,
+                50.67
+            ],
+            "near_width": 5.5,
+            "near_height": 5.5,
+            "near_distance": 2.5,
+            "far_distance": 25.0,
+            "color": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "intensity": 1.0
+        },
+        {
+            "gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa",
+            "offset": [
+                6.2,
+                -6.2,
+                8.6
+            ],
+            "orientation": [
+                26.33,
+                23.92,
+                -129.32
+            ],
+            "near_width": 5.5,
+            "near_height": 5.5,
+            "near_distance": 2.5,
+            "far_distance": 25.0,
+            "color": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "intensity": 1.0
+        },
+        {
+            "gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa",
+            "offset": [
+                -6.2,
+                -6.2,
+                8.6
+            ],
+            "orientation": [
+                -26.34,
+                23.92,
+                129.31
+            ],
+            "near_width": 5.5,
+            "near_height": 5.5,
+            "near_distance": 2.5,
+            "far_distance": 25.0,
+            "color": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "intensity": 1.0
+        }
+    ],
+    "lamps": [
+        {
+            "offset": [
+                6.2,
+                6.2,
+                8.6
+            ],
+            "radius": 3.0,
+            "color": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "intensity": 1.0
+        },
+        {
+            "offset": [
+                -6.2,
+                6.2,
+                8.6
+            ],
+            "radius": 3.0,
+            "color": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "intensity": 1.0
+        },
+        {
+            "offset": [
+                6.2,
+                -6.2,
+                8.6
+            ],
+            "radius": 3.0,
+            "color": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "intensity": 1.0
+        },
+        {
+            "offset": [
+                -6.2,
+                -6.2,
+                8.6
+            ],
+            "radius": 3.0,
+            "color": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "intensity": 1.0
+        }
+    ],
+    "selection_icon": {
+        "diameter": 34
+    },
+    "mesh_bounds": [
+        12,
+        14.5,
+        7
+    ],
+    "placement_size": [
+        50,
+        50
+    ],
+    "TEMP_texelinfo": 9.4567
+}

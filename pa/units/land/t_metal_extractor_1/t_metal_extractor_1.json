@@ -1,0 +1,111 @@
+{
+    "base_spec": "/pa/units/land/base_structure/base_structure.json",
+    "unit_name": "!Experimental Metal Extractor",
+    "si_name": "t_metal_extractor_1",
+    "display_name": "!LOC:Experimental Metal Extractor",
+    "description": "!LOC:Experimental Economy - Uses energy to extract metal, can only be placed on metal deposits.",
+    "max_health": 500,
+    "build_metal_cost": 500,
+    "atrophy_rate": 10,
+    "atrophy_cool_down": 15.0,
+    "strategic_icon_priority": 3,
+    "spawn_layers": "WL_AnyHorizontalGroundOrWaterSurface",
+    "feature_requirements": [
+        "metal_spot"
+    ],
+    "force_snap_to_feature_orientation": true,
+    "area_build_type": "Sphere",
+    "production": {
+        "metal": 8
+    },
+    "consumption": {
+        "energy": 750
+    },
+    "unit_types": [
+        "UNITTYPE_Custom7",
+        "UNITTYPE_Structure",
+        "UNITTYPE_Advanced",
+        "UNITTYPE_MetalProduction",
+        "UNITTYPE_Economy"
+    ],
+    "recon": {
+        "observer": {
+            "items": [
+                {
+                    "layer": "surface_and_air",
+                    "channel": "sight",
+                    "shape": "capsule",
+                    "radius": 75
+                },
+                {
+                    "layer": "mine",
+                    "channel": "radar",
+                    "shape": "capsule",
+                    "radius": 85
+                },
+                {
+                    "layer": "mine",
+                    "channel": "sight",
+                    "shape": "capsule",
+                    "radius": 35
+                }
+            ]
+        }
+    },
+    "model": [
+        {
+            "filename": "/pa/units/land/t_metal_extractor_1/a_metal_extractor.papa",
+            "animations": {
+                "idle": "/pa/units/land/t_metal_extractor_1/a_metal_extractor_anim_work.papa"
+            },
+            "animtree": "/pa/units/land/t_metal_extractor_1/a_metal_extractor_anim_tree.json"
+        }
+    ],
+    "replaceable_units": [
+        "/pa/units/land/metal_extractor/metal_extractor.json",
+        "/pa/units/land/metal_extractor_adv/metal_extractor_adv.json"
+    ],
+    "events": {
+        "build_complete": {
+            "audio_cue": "/SE/Build_Complete/metal"
+        },
+        "died": {
+            "audio_cue": "/SE/Death/Factory",
+            "effect_scale": 0.75
+        }
+    },
+    "audio": {
+        "selection_response": {
+            "cue": "/SE/Selection/structure/metal"
+        }
+    },
+    "lamps": [
+        {
+            "offset": [
+                -0.72,
+                -1.922,
+                6.515
+            ],
+            "radius": 2.0,
+            "color": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "intensity": 1.0
+        }
+    ],
+    "selection_icon": {
+        "diameter": 24.0
+    },
+    "mesh_bounds": [
+        9.2,
+        10.0407,
+        23.5
+    ],
+    "placement_size": [
+        16,
+        16
+    ],
+    "TEMP_texelinfo": 15.0973
+}

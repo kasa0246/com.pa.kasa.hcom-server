@@ -1,0 +1,112 @@
+{
+  "display_name": "!LOC:Phalanx",
+  "description": "!LOC:Advanced Counter-RAM turret. Destroys incoming rockets, artillery and mortar shells. Short range, devastating anti-air. Mediocre vs cruise missiles and bombs, struggles vs hypersonic missiles. Can't attack high altitude air units.",
+  "si_name": "cram_adv",
+  "TEMP_texelinfo": 15.2314,
+  "area_build_separation": 18,
+  "atrophy_cool_down": 15,
+  "atrophy_rate": 3.33,
+  "base_spec": "/pa/units/land/base_structure/base_structure.json",
+  "build_metal_cost": 2500,
+  "command_caps": [
+    "ORDER_Attack"
+  ],
+  "events": {
+    "build_complete": {
+      "audio_cue": "/SE/Build_Complete/structure_small"
+    },
+    "died": {
+      "audio_cue": "/SE/Death/structure_small",
+      "effect_scale": 0.55
+    },
+    "fired": {
+      "audio_cue": "/SE/Weapons/structure/air_defense_fire",
+      "effect_spec": "/pa/units/sea/hover_ship/hover_ship_muzzle_flash_side.pfx socket_muzzle",
+      "effect_scale": 0.5
+    }
+  },
+  "guard_layer": "WL_Air",
+  "max_health": 750,
+  "mesh_bounds": [
+    6,
+    6,
+    6.35
+  ],
+  "model": [
+    {
+      "animtree": "/pa/anim/anim_trees/defense_turret_single_anim_tree.json",
+      "filename": "/pa/units/land/cram_adv/cram_adv.papa",
+      "layer": "WL_LandHorizontal",
+      "skirt_decal": "/pa/effects/specs/skirt_defense.json"
+    },
+    {
+      "animtree": "/pa/anim/anim_trees/defense_turret_single_anim_tree.json",
+      "filename": "/pa/units/land/cram_adv/cram_adv.papa",
+      "layer": "WL_WaterSurface"
+    }
+  ],
+  "recon": {
+    "observer": {
+      "items": [
+        {
+          "channel": "sight",
+          "layer": "surface_and_air",
+          "radius": 125,
+          "shape": "capsule"
+        },
+        {
+          "layer": "mine",
+          "channel": "radar",
+          "shape": "capsule",
+          "radius": 185
+        },
+        {
+          "layer": "mine",
+          "channel": "sight",
+          "shape": "capsule",
+          "radius": 125
+        }
+      ]
+    }
+  },
+  "selection_icon": {
+    "diameter": 15
+  },
+  "spawn_layers": "WL_AnyHorizontalGroundOrWaterSurface",
+  "tools": [
+    {
+      "aim_bone": "bone_pitch",
+      "muzzle_bone": "socket_muzzle",
+      "spec_id": "/pa/units/land/cram_adv/cram_adv_aa_tool_weapon.json"
+    },
+    {
+      "aim_bone": "bone_pitch",
+      "muzzle_bone": "socket_muzzle",
+      "spec_id": "/pa/units/land/cram_adv/cram_adv_blank_beam_tool_weapon.json"
+    },
+    {
+      "aim_bone": "bone_pitch",
+      "muzzle_bone": "socket_muzzle",
+      "spec_id": "/pa/units/land/cram_adv/cram_adv_beam_tool_weapon_easy.json"
+    },
+    {
+      "aim_bone": "bone_pitch",
+      "muzzle_bone": "socket_muzzle",
+      "spec_id": "/pa/units/land/cram_adv/cram_adv_beam_tool_weapon_medium.json"
+    },
+    {
+      "aim_bone": "bone_pitch",
+      "muzzle_bone": "socket_muzzle",
+      "spec_id": "/pa/units/land/cram_adv/cram_adv_beam_tool_weapon_hard.json"
+    }
+  ],
+  "unit_types": [
+    "UNITTYPE_Structure",
+    "UNITTYPE_Land",
+    "UNITTYPE_AirDefense",
+    "UNITTYPE_Defense",
+    "UNITTYPE_Advanced",
+    "UNITTYPE_FabAdvBuild",
+    "UNITTYPE_Custom58"
+  ]
+}

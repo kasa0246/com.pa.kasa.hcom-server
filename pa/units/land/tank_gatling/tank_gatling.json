@@ -1,0 +1,186 @@
+{
+	"si_name": "tank_gatling",
+	"base_spec": "/pa/units/land/base_vehicle/base_vehicle.json",
+	"display_name": "Cougar",
+	"description": "Advanced C-RAM Tank: Intercepts incoming rockets, mortar and artillery shells. Short range devastating AA. Can't attack high altitude air units.",
+	"max_health": 750,
+	"build_metal_cost": 1200,
+	"wreckage_health_frac": 1.0,
+	"attachable": {
+		"offsets": {
+			"root": [
+				0,
+				0,
+				0
+			],
+			"head": [
+				0,
+				0,
+				2.7
+			]
+		}
+	},
+	"unit_types": [
+		"UNITTYPE_Custom58",
+		"UNITTYPE_Tank",
+		"UNITTYPE_Mobile",
+		"UNITTYPE_Land",
+		"UNITTYPE_Advanced",
+		"UNITTYPE_Offense",
+		"UNITTYPE_AirDefense",
+		"UNITTYPE_FactoryBuild",
+		"UNITTYPE_CannonBuildable"
+	],
+	"transportable": {
+		"size": 1
+	},
+	"guard_layer": "WL_AnySurface",
+	"navigation": {
+		"type": "land-small",
+		"acceleration": 100,
+		"brake": 100,
+		"move_speed": 10,
+		"turn_speed": 60,
+		"turn_in_place": true
+	},
+	"physics": {
+		"radius": 4,
+		"push_class": 60
+	},
+	"recon": {
+		"observer": {
+			"items": [
+				{
+					"layer": "surface_and_air",
+					"channel": "sight",
+					"shape": "capsule",
+					"radius": 115
+				},
+				{
+					"layer": "mine",
+					"channel": "radar",
+					"shape": "capsule",
+					"radius": 150
+				},
+				{
+					"layer": "mine",
+					"channel": "sight",
+					"shape": "capsule",
+					"radius": 115
+				}
+			]
+		}
+	},
+	"model": {
+		"filename": "/pa/units/land/tank_gatling/gatling.papa",
+		"animtree": "/pa/units/land/tank_gatling/tank_gatling_anim_tree.json",
+		"arrows": 5
+	},
+	"tools": [
+		{
+			"aim_bone": "bone_pitch",
+			"projectiles_per_fire": 2,
+			"muzzle_bone": [
+				"socket_leftMuzzle",
+				"socket_rightMuzzle"
+			],
+			"spec_id": "/pa/units/land/tank_gatling/cram_aa_tool_weapon.json"
+		},
+		{
+			"aim_bone": "bone_pitch",
+			"projectiles_per_fire": 2,
+			"muzzle_bone": [
+				"socket_leftMuzzle",
+				"socket_rightMuzzle"
+			],
+			"spec_id": "/pa/units/land/tank_gatling/cram_beam_tool_weapon_easy.json"
+		},
+		{
+			"aim_bone": "bone_pitch",
+			"projectiles_per_fire": 2,
+			"muzzle_bone": [
+				"socket_leftMuzzle",
+				"socket_rightMuzzle"
+			],
+			"spec_id": "/pa/units/land/tank_gatling/cram_beam_tool_weapon_medium.json"
+		},
+		{
+			"aim_bone": "bone_pitch",
+			"projectiles_per_fire": 2,
+			"muzzle_bone": [
+				"socket_leftMuzzle",
+				"socket_rightMuzzle"
+			],
+			"spec_id": "/pa/units/land/tank_gatling/cram_beam_tool_weapon_hard.json"
+		},
+		{
+			"aim_bone": "bone_pitch",
+			"projectiles_per_fire": 2,
+			"muzzle_bone": [
+				"socket_leftMuzzle",
+				"socket_rightMuzzle"
+			],
+			"spec_id": "/pa/units/land/tank_gatling/cram_blank_beam_tool_weapon.json",
+			"secondary_weapon": true
+		}
+	],
+	"events": {
+		"build_complete": {
+			"audio_cue": "/SE/Build_Complete/veh"
+		},
+		"fired": {
+			"audio_cue": "/SE/Weapons/veh/land_scout_fire",
+			"effect_spec": "/pa/effects/specs/default_small_muzzle_flash.pfx socket_rightMuzzle /pa/effects/specs/default_small_muzzle_flash.pfx socket_leftMuzzle"
+		},
+		"died": {
+			"audio_cue": "/SE/Death/Veh"
+		}
+	},
+	"audio": {
+		"loops": {
+			"move": {
+				"cue": "/SE/Movement/veh/tank_light_laser_loop",
+				"flag": "vel_changed",
+				"should_start_func": "is_moving",
+				"should_stop_func": "is_not_moving"
+			}
+		},
+		"selection_response": {
+			"cue": "/SE/Selection/veh/tank_light_laser"
+		}
+	},
+	"selection_icon": {
+		"diameter": 13.0
+	},
+	"headlights": [
+		{
+			"gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa",
+			"offset": [
+				0.0,
+				-1.0,
+				1.5
+			],
+			"orientation": [
+				0.0,
+				65.0,
+				0.0
+			],
+			"near_width": 2.0,
+			"near_height": 2.0,
+			"near_distance": 1.2,
+			"far_distance": 20.0,
+			"color": [
+				0.9,
+				0.92,
+				1.0
+			],
+			"intensity": 1.4
+		}
+	],
+	"mesh_bounds": [
+		5.7,
+		7.7,
+		3.3
+	],
+	"TEMP_texelinfo": 5.84968
+}

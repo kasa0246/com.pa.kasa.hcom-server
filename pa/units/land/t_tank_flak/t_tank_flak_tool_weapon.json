@@ -1,0 +1,29 @@
+{
+  "base_spec": "/pa/tools/base_missile_turret/base_missile_turret.json",
+  "ammo_id": "/pa/units/land/t_tank_flak/t_tank_flak_ammo.json",
+  "auto_attack": true,
+  "firing_standard_deviation": 0.5,
+  "ammo_source": "time",
+  "ammo_capacity": 1.2,
+  "ammo_demand": 1,
+  "ammo_per_shot": 0.3,
+  "carpet_fire": true,
+  "carpet_wait_for_full_ammo": true,
+  "idle_aim_delay": 3,
+  "max_range": 135,
+  "pitch_range": 89.9,
+  "pitch_rate": 3600,
+  "rate_of_fire": 10.0,
+  "target_layers": [
+    "WL_Air"
+  ],
+  "yaw_range": 360,
+  "yaw_rate": 720,
+  "tool_type": "TOOL_Weapon",
+  "exclude_unit_types": "Custom1 | Custom2 | Custom12",
+  "target_priorities": [
+    "Air & ( EnergyProduction | Transport | Bomber | Gunship | Titan )",
+    "Mobile & Air",
+    "Mobile & Land"
+  ]
+}

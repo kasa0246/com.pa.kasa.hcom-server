@@ -1,0 +1,189 @@
+{
+  "display_name": "!LOC:Erieye",
+  "si_name": "erieye",
+  "description": "!LOC:High Altitude AWACS Radar Airship - Provides long range radar and sight vision in air layer. Improved detection range for radar stealth targets. Jamms radar signal around itself. Needs energy. Slow.",
+  "TEMP_texelinfo": 17,
+  "armor_type": "AT_Orbital",
+  "audio": {
+    "loops": {
+      "move": {
+        "cue": "/SE/Movement/air/air_scout_loop",
+        "flag": "vel_changed",
+        "should_start_func": "is_moving",
+        "should_stop_func": "is_not_moving"
+      }
+    }
+  },
+  "base_spec": "/pa/units/air/base_flyer/base_flyer.json",
+  "build_metal_cost": 3500,
+  "command_caps": [
+    "ORDER_Move",
+    "ORDER_Patrol",
+    "ORDER_Assist"
+  ],
+  "consumption": {
+    "energy": 150
+  },
+  "energy_efficiency_requirement": 0.9,
+  "events": {
+    "died": {
+      "effect_scale": 1.25
+    },
+    "fired": {
+      "audio_cue": "/SE/Weapons/air/air_scout_fire"
+    }
+  },
+  "fx_offsets": [
+    {
+      "bone": "bone_jet_back",
+      "filename": "/pa/units/air/gunship/gunship_jets.pfx",
+      "orientation": [
+        0,
+        0,
+        0
+      ],
+      "type": "moving_forward"
+    },
+    {
+      "bone": "bone_jet_left",
+      "filename": "/pa/units/air/bomber/basic_jet.pfx",
+      "orientation": [
+        0,
+        0,
+        0
+      ],
+      "type": "moving_forward"
+    },
+    {
+      "bone": "bone_jet_right",
+      "filename": "/pa/units/air/bomber/basic_jet.pfx",
+      "orientation": [
+        0,
+        0,
+        0
+      ],
+      "type": "moving_forward"
+    }
+  ],
+  "max_health": 1000,
+  "mesh_bounds": [
+    28,
+    18,
+    6
+  ],
+  "model": {
+    "animations": {
+      "idle": "/pa/units/air/air_scout_adv/a50_idle.papa"
+    },
+    "animtree": "/pa/anim/anim_trees/constant_idle_anim_tree.json",
+    "arrows": 5,
+    "filename": "/pa/units/air/air_scout_adv/a50.papa"
+  },
+  "navigation": {
+    "acceleration": 40,
+    "bank_factor": 2,
+    "brake": 40,
+    "inter_planetary_type": "system",
+    "move_speed": 40,
+    "turn_speed": 60,
+    "vertical_speed": 20
+  },
+  "recon": {
+    "observable": {
+      "layer": "mine"
+    },
+    "observer": {
+      "items": [
+        {
+          "channel": "radar",
+          "layer": "surface_and_air",
+          "radius": 450,
+          "shape": "capsule",
+          "uses_energy": true
+        },
+        {
+          "channel": "sight",
+          "layer": "surface_and_air",
+          "radius": 300,
+          "shape": "capsule",
+          "uses_energy": true
+        },
+        {
+          "channel": "sight",
+          "layer": "surface_and_air",
+          "radius": 100,
+          "shape": "capsule"
+        },
+        {
+          "channel": "radar",
+          "layer": "mine",
+          "radius": 600,
+          "shape": "capsule",
+          "uses_energy": true
+        },
+        {
+          "channel": "sight",
+          "layer": "mine",
+          "radius": 400,
+          "shape": "capsule",
+          "uses_energy": true
+        },
+        {
+          "channel": "sight",
+          "layer": "mine",
+          "radius": 100,
+          "shape": "capsule"
+        },
+        {
+          "channel": "sight",
+          "layer": "orbital",
+          "radius": 150,
+          "shape": "capsule",
+          "uses_energy": true
+        },
+        {
+          "channel": "radar",
+          "layer": "orbital",
+          "radius": 300,
+          "shape": "capsule",
+          "uses_energy": true
+        },
+        {
+          "channel": "sight",
+          "layer": "underwater",
+          "radius": 100,
+          "shape": "capsule",
+          "uses_energy": true
+        },
+        {
+          "layer": "mine",
+          "channel": "radar_jammer",
+          "shape": "capsule",
+          "radius": 85,
+          "uses_energy": true
+        }
+      ]
+    }
+  },
+  "tools": [
+    {
+      "spec_id": "/pa/units/air/fighter_adv/fighter_adv_flare_tool_weapon.json",
+      "aim_bone": "bone_flare",
+      "muzzle_bone": "bone_flare",
+      "record_index": 1,
+      "fire_event": "fired"
+    }
+  ],
+  "selection_icon": {
+    "diameter": 33
+  },
+  "unit_types": [
+    "UNITTYPE_Scout",
+    "UNITTYPE_Mobile",
+    "UNITTYPE_Air",
+    "UNITTYPE_Advanced",
+    "UNITTYPE_FactoryBuild",
+    "UNITTYPE_Custom58",
+    "UNITTYPE_Custom12"
+  ]
+}

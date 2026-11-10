@@ -1,0 +1,26 @@
+{
+  "base_spec": "/pa/tools/base_shell_turret/base_shell_turret.json",
+  "ammo_id": "/pa/units/land/cram/cram_beam_ammo.json",
+  "rate_of_fire": 2,
+  "idle_aim_delay": 10,
+  "max_range": 100,
+  "yaw_rate": 720,
+  "firing_arc_pitch": 100,
+  "firing_arc_yaw": 360,
+  "pitch_rate": 720,
+  "yaw_range": 180,
+  "pitch_range": 360,
+  "fire_delay": 0.25,
+  "spread_fire": true,
+  "auto_attack": true,
+  "manual_fire": true,
+  "auto_task_type": "anti_entity",
+  "anti_entity_targets_units": false,
+  "tool_type": "TOOL_Weapon",
+  "anti_entity_targets": [
+    "/pa/units/land/katrina/katrina_ammo.json"
+  ],
+  "target_layers": [
+    "WL_Air"
+  ]
+}

@@ -1,0 +1,119 @@
+{
+  "display_name": "!LOC:Vulcan",
+  "description": "!LOC:Basic Counter-RAM turret. Destroys incoming rockets, artillery and mortar shells. Very short range anti-air. Kills drones, weak vs cruise missiles, bombs and heavy artillery. Helpless vs hypersonic missiles. Easy to oversaturate. Can't attack high altitude air units.",
+  "si_name": "cram",
+  "TEMP_texelinfo": 21.7004,
+  "area_build_separation": 18,
+  "atrophy_cool_down": 15,
+  "atrophy_rate": 5,
+  "base_spec": "/pa/units/land/base_structure/base_structure.json",
+  "build_metal_cost": 750,
+  "command_caps": [
+    "ORDER_Attack"
+  ],
+  "events": {
+    "build_complete": {
+      "audio_cue": "/SE/Build_Complete/structure_small"
+    },
+    "died": {
+      "audio_cue": "/SE/Death/structure_small",
+      "effect_scale": 0.5
+    },
+    "fired": {
+      "audio_cue": "/SE/Weapons/structure/air_defense_fire",
+      "effect_spec": "/pa/effects/specs/default_muzzle_flash.pfx socket_muzzle"
+    }
+  },
+  "guard_layer": "WL_Air",
+  "max_health": 350,
+  "mesh_bounds": [
+    5,
+    5,
+    4.8
+  ],
+  "model": [
+    {
+      "animtree": "/pa/anim/anim_trees/air_defense_adv_anim_tree.json",
+      "filename": "/pa/units/land/cram/cram.papa",
+      "layer": "WL_LandHorizontal",
+      "skirt_decal": "/pa/effects/specs/skirt_defense.json",
+      "animations": {
+        "idle": "/pa/units/land/cram/cram_idle.papa"
+      }
+    },
+    {
+      "animtree": "/pa/anim/anim_trees/air_defense_adv_anim_tree.json",
+      "filename": "/pa/units/land/cram/cram.papa",
+      "layer": "WL_WaterSurface",
+      "animations": {
+        "idle": "/pa/units/land/cram/cram_idle.papa"
+      }
+    }
+  ],
+  "nearby_target_tick_update_interval": 2,
+  "recon": {
+    "observer": {
+      "items": [
+        {
+          "channel": "sight",
+          "layer": "surface_and_air",
+          "radius": 115,
+          "shape": "capsule"
+        },
+				{
+					"layer": "mine",
+					"channel": "radar",
+					"shape": "capsule",
+					"radius": 150
+				},
+				{
+					"layer": "mine",
+					"channel": "sight",
+					"shape": "capsule",
+					"radius": 115
+				}
+      ]
+    }
+  },
+  "selection_icon": {
+    "diameter": 10
+  },
+  "spawn_layers": "WL_AnyHorizontalGroundOrWaterSurface",
+  "tools": [
+    {
+      "aim_bone": "bone_turret",
+      "muzzle_bone": "socket_muzzle",
+      "spec_id": "/pa/units/land/cram/cram_aa_tool_weapon.json"
+    },
+    {
+      "aim_bone": "bone_turret",
+      "muzzle_bone": "socket_muzzle",
+      "spec_id": "/pa/units/land/cram/cram_blank_beam_tool_weapon.json"
+    },
+    {
+      "aim_bone": "bone_turret",
+      "muzzle_bone": "socket_muzzle",
+      "spec_id": "/pa/units/land/cram/cram_beam_tool_weapon_easy.json"
+    },
+    {
+      "aim_bone": "bone_turret",
+      "muzzle_bone": "socket_muzzle",
+      "spec_id": "/pa/units/land/cram/cram_beam_tool_weapon_medium.json"
+    },
+    {
+      "aim_bone": "bone_turret",
+      "muzzle_bone": "socket_muzzle",
+      "spec_id": "/pa/units/land/cram/cram_beam_tool_weapon_hard.json"
+    }
+  ],
+  "unit_types": [
+    "UNITTYPE_Structure",
+    "UNITTYPE_Land",
+    "UNITTYPE_AirDefense",
+    "UNITTYPE_Defense",
+    "UNITTYPE_FabBuild",
+    "UNITTYPE_FabAdvBuild",
+    "UNITTYPE_CombatFabAdvBuild",
+    "UNITTYPE_Custom58"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "ammo_id": "/pa/units/land/cram_adv/cram_adv_aa_ammo.json",
+  "auto_attack": true,
+  "base_spec": "/pa/tools/base_missile_turret/base_missile_turret.json",
+  "max_range": 120,
+  "pitch_range": 90,
+  "pitch_rate": 720,
+  "rate_of_fire": 10,
+  "spread_fire": false,
+  "target_layers": [
+    "WL_Air"
+  ],
+  "target_priorities": [
+    "Air & (EnergyProduction | Transport | Bomber | Gunship | Titan )",
+    "Air & Mobile"
+  ],
+  "exclude_unit_types": "Custom1 | Custom2 | Custom12",
+  "tool_type": "TOOL_Weapon",
+  "yaw_range": 180,
+  "yaw_rate": 720
+}

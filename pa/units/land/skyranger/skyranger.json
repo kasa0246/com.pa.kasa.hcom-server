@@ -1,0 +1,108 @@
+{
+    "base_spec": "/pa/units/land/base_structure/base_structure.json",
+    "display_name": "!LOC:Aegis",
+    "si_name": "skyranger",
+    "description": "!LOC:Advanced Anti-Orbital Defence - Medium range missiles. Attacks only orbital targets. Intercepts ballistic missiles and gunpods with ease. Uses energy.",
+    "max_health": 5000,
+    "build_metal_cost": 2500,
+    "atrophy_rate": 30.0,
+    "atrophy_cool_down": 15.0,
+    "armor_type": "AT_Commander",
+    "spawn_layers": "WL_AnyHorizontalGroundOrWaterSurface",
+    "area_build_type": "Sphere",
+    "area_build_separation": 35,
+    "unit_types": [
+        "UNITTYPE_Land",
+        "UNITTYPE_Structure",
+        "UNITTYPE_Defense",
+        "UNITTYPE_OrbitalDefense",
+        "UNITTYPE_Heavy",
+        "UNITTYPE_Advanced",
+        "UNITTYPE_FabAdvBuild",
+        "UNITTYPE_Custom58"
+    ],
+    "command_caps": [
+        "ORDER_Attack"
+    ],
+    "guard_layer": "WL_AnySurface",
+    "recon": {
+        "observer": {
+            "items": [
+                {
+                    "layer": "surface_and_air",
+                    "channel": "sight",
+                    "shape": "capsule",
+                    "radius": 85
+                },
+                {
+                    "layer": "mine",
+                    "channel": "radar",
+                    "shape": "capsule",
+                    "radius": 100
+                },
+                {
+                    "layer": "mine",
+                    "channel": "sight",
+                    "shape": "capsule",
+                    "radius": 50
+                }
+            ]
+        }
+    },
+    "model": {
+        "filename": "/pa/units/land/skyranger/basic_missile_defence.papa",
+        "animations": {
+            "attack": "/pa/units/land/skyranger/basic_missile_defence_anim_attack.papa"
+        },
+        "animtree": "/pa/anim/anim_trees/titan_bot_anim_tree.json",
+        "skirt_decal": "/pa/units/land/basic_missile_defence/skirt_basic_missile_defence.json"
+    },
+    "nearby_target_tick_update_interval": 1,
+    "tools": [
+        {
+            "spec_id": "/pa/units/land/skyranger/skyranger_weapon.json",
+            "aim_bone": "socket_muzzle",
+            "muzzle_bone": "socket_muzzle"
+        },
+        {
+            "spec_id": "/pa/units/land/skyranger/skyranger_antiball.json",
+            "aim_bone": "socket_muzzle",
+            "muzzle_bone": "socket_muzzle"
+        },
+        {
+            "spec_id": "/pa/units/land/skyranger/skyranger_antidrop.json",
+            "aim_bone": "socket_muzzle",
+            "muzzle_bone": "socket_muzzle"
+        }
+    ],
+    "events": {
+        "build_complete": {
+            "audio_cue": "/SE/Build_Complete/factory"
+        },
+        "fired": {
+            "audio_cue": "/SE/Weapons/structure/tact_mis_launcher_catapult_fire"
+        },
+        "died": {
+            "audio_cue": "/SE/Death/Factory",
+            "effect_scale": 0.5
+        }
+    },
+    "audio": {
+        "selection_response": {
+            "cue": "/SE/Selection/structure/artillery"
+        }
+    },
+    "selection_icon": {
+        "diameter": 14.0
+    },
+    "TEMP_texelinfo": 15.8261,
+    "mesh_bounds": [
+        6,
+        6,
+        7
+    ],
+    "placement_size": [
+        10,
+        10
+    ]
+}

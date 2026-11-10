@@ -1,0 +1,19 @@
+{
+    "ammo_id": "/pa/units/sea/nuclear_sub/drone_torpedo/drone_torpedo_ammo.json",
+    "exclude_unit_types": "Hover | WaterHover",
+    "auto_attack": true,
+    "firing_arc_pitch": 30,
+    "firing_arc_yaw": 30,
+    "idle_aim_delay": 0,
+    "max_range": 25,
+    "pitch_range": 2,
+    "yaw_range": 5,
+    "rate_of_fire": 5,
+    "yaw_rate": 3600,
+    "pitch_rate": 3600,
+    "self_destruct": true,
+    "target_layers": [
+        "WL_WaterSurface"
+    ],
+    "tool_type": "TOOL_Weapon"
+}

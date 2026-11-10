@@ -1,0 +1,69 @@
+{
+    "base_spec": "/pa/ammo/base_missiles/base_missile_tactical.json",
+    "damage": 500,
+    "splash_damage": 0,
+    "splash_radius": 0,
+    "full_damage_splash_radius": 0,
+    "cruise_height": 40,
+    "initial_velocity": 50.0,
+    "max_velocity": 50.0,
+    "turn_rate": 15,
+    "lifetime": 2.5,
+    "influence_radius": 400,
+    "model": {
+        "filename": "/pa/units/land/basic_missile_defence/cruise_missile/cruise_missile_2.papa"
+    },
+    "events": {
+        "died": {
+            "audio_cue": "/SE/Death/Air",
+            "effect_spec": "/pa/units/air/base_flyer/base_flyer_death.pfx",
+            "effect_scale": 0.5
+        }
+    },
+    "spawn_unit_on_death": "/pa/units/land/basic_missile_defence/cruise_missile/cruise_missile.json",
+    "spawn_unit_on_death_with_velocity": true,
+    "fx_trail": {
+        "filename": "/pa/units/land/basic_missile_defence/missile_trail.json",
+        "offset": [
+            0.0,
+            1.5,
+            0.0
+        ]
+    },
+    "audio_loop": "/SE/Movement/missile/catapult_missile_fly_loop",
+    "physics": {
+        "radius": 1,
+        "gravity_scalar": 10,
+        "ignore_gravity": true,
+        "add_to_spatial_db": true
+    },
+    "flight_type": "Staged",
+    "stages": [
+        {
+            "ignores_gravity": true,
+            "ignores_LOS": true,
+            "stage_duration": 300,
+            "stage_turn_rate": 0,
+            "rotates_to_velocity": true
+        },
+        {
+            "ignores_gravity": true,
+            "ignores_LOS": true,
+            "stage_duration": 300,
+            "stage_turn_rate": 360,
+            "stage_change_range": 20,
+            "rotates_to_velocity": true
+        },
+        {
+            "ignores_gravity": true,
+            "apply_thrust": true,
+            "ignores_LOS": true,
+            "stage_duration": 150,
+            "stage_turn_rate": 0,
+            "rotates_to_velocity": true
+        },
+        {
+            "die_here": true
+        }
+    ]
+}

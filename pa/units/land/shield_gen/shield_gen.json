@@ -1,0 +1,164 @@
+{
+    "base_spec": "/pa/units/land/base_structure/base_structure.json",
+    "unit_name": "Shimmer",
+    "si_name": "shield_gen",
+    "display_name": "!LOC:Shimmer",
+    "description": "!LOC:Experimental Shield Generator - Provides protective shielding for nearby units.",
+    "max_health": 5000,
+    "build_metal_cost": 8000,
+    "consumption": {
+        "energy": 0
+    },
+    "energy_efficiency_requirement": 0.9,
+    "atrophy_rate": 40,
+    "atrophy_cool_down": 15.0,
+    "spawn_layers": "WL_AnySurface",
+    "mesh_bounds": [
+        22,
+        22,
+        18
+    ],
+    "unit_types": [
+        "UNITTYPE_Custom7",
+        "UNITTYPE_Land",
+        "UNITTYPE_Structure",
+        "UNITTYPE_Defense",
+        "UNITTYPE_Shield",
+        "UNITTYPE_Advanced",
+        "UNITTYPE_FabAdvBuild",
+        "UNITTYPE_Important"
+    ],
+    "physics": {
+        "collision_layers": "WL_AnySurface"
+    },
+    "shield": {
+        "radius": 120,
+        "max_health": 25000,
+        "recharge_rate": 1000,
+        "energy_demand": 10000,
+        "cooldown_time": 15,
+        "recharge_requires_efficiency": true
+    },
+    "model": [
+        {
+            "layer": "WL_LandHorizontal",
+            "filename": "/pa/units/land/shield_gen/aegis.papa",
+            "animations": {
+                "start": "/pa/units/land/shield_gen/aegis_anim_start.papa",
+                "loop": "/pa/units/land/shield_gen/aegis_anim_loop.papa",
+                "end": "/pa/units/land/shield_gen/aegis_anim_end.papa"
+            },
+            "animtree": "/pa/anim/anim_trees/powered_loop_anim_tree.json",
+            "skirt_decal": "/pa/units/land/shield_gen/skirt/skirt_shield_gen.json"
+        },
+        {
+            "layer": "WL_WaterSurface",
+            "filename": "/pa/units/land/shield_gen/aegis.papa",
+            "animations": {
+                "start": "/pa/units/land/shield_gen/aegis_anim_start.papa",
+                "loop": "/pa/units/land/shield_gen/aegis_anim_loop.papa",
+                "end": "/pa/units/land/shield_gen/aegis_anim_end.papa"
+            },
+            "animtree": "/pa/anim/anim_trees/powered_loop_anim_tree.json"
+        }
+    ],
+    "events": {
+        "build_complete": {
+            "audio_cue": "/SE/Build_Complete/radar"
+        },
+        "died": {
+            "audio_cue": "/SE/Death/radar",
+            "effect_scale": 1.25,
+            "effect_spec": "/pa/effects/specs/default_explosion.pfx"
+        }
+    },
+    "recon": {
+        "observer": {
+            "items": [
+                {
+                    "layer": "surface_and_air",
+                    "channel": "sight",
+                    "shape": "capsule",
+                    "radius": 120
+                },
+                {
+                    "layer": "underwater",
+                    "channel": "sight",
+                    "shape": "capsule",
+                    "radius": 120
+                }
+            ]
+        }
+    },
+    "fx_offsets": [
+        {
+            "bone": "bone_root",
+            "filename": "/pa/units/land/shield_gen/shield.pfx",
+            "offset": [
+                0,
+                0,
+                0
+            ],
+            "orientation": [
+                0,
+                0,
+                0
+            ],
+            "type": "shield"
+        },
+        {
+            "bone": "bone_root",
+            "filename": "/pa/units/land/shield_gen/shield_beam.pfx",
+            "offset": [
+                0,
+                0,
+                0
+            ],
+            "orientation": [
+                0,
+                0,
+                0
+            ],
+            "type": "energy"
+        },
+        {
+            "bone": "socket_disk01",
+            "filename": "/pa/units/land/shield_gen/shield_arms.pfx",
+            "orientation": [
+                0,
+                -90,
+                0
+            ],
+            "type": "energy"
+        },
+        {
+            "bone": "socket_disk02",
+            "filename": "/pa/units/land/shield_gen/shield_arms.pfx",
+            "orientation": [
+                0,
+                -90,
+                0
+            ],
+            "type": "energy"
+        },
+        {
+            "bone": "socket_disk03",
+            "filename": "/pa/units/land/shield_gen/shield_arms.pfx",
+            "orientation": [
+                0,
+                -90,
+                0
+            ],
+            "type": "energy"
+        }
+    ],
+    "audio": {
+        "selection_response": {
+            "cue": "/SE/Selection/structure/radar"
+        }
+    },
+    "selection_icon": {
+        "diameter": 45.0
+    },
+    "TEMP_texelinfo": 46.4947
+}

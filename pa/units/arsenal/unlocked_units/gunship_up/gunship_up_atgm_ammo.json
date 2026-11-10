@@ -1,0 +1,28 @@
+{
+  "base_spec": "/pa/units/land/adv_heavy_bot/adv_heavy_bot_ammo.json",
+  "flight_type": "Staged",
+  "stages": [
+    {
+      "ignores_gravity": true,
+      "ignores_LOS": true,
+      "stage_duration": 10,
+      "stage_turn_rate": 3600,
+      "rotates_to_velocity": true
+    },
+    {
+      "ignores_gravity": true,
+      "ignores_LOS": true,
+      "stage_duration": 0,
+      "stage_turn_rate": 60,
+      "stage_change_range": 25,
+      "rotates_to_velocity": true
+    },
+    {
+      "ignores_gravity": false,
+      "ignores_LOS": false,
+      "stage_duration": 5000,
+      "stage_turn_rate": 405,
+      "rotates_to_velocity": true
+    }
+  ]
+}

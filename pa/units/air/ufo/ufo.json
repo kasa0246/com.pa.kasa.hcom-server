@@ -1,0 +1,192 @@
+{
+    "base_spec": "/pa/units/air/base_flyer/base_flyer.json",
+    "display_name": "Shiny",
+    "si_name": "shiny",
+    "description": "!LOC:UFO - Experimental High Altitude Scout Drone. Small, extremely fast and maneuverable. Radar stealth. Poor vision. Jamms radar signal in a small radius around itself. Does not attack.",
+    "max_health": 50,
+    "build_metal_cost": 500,
+    "guard_radius": 100,
+    "nearby_target_tick_update_interval": 3,
+    "armor_type": "AT_Orbital",
+    "unit_types": [
+        "UNITTYPE_Custom7",
+        "UNITTYPE_Custom12",
+        "UNITTYPE_Custom10",
+        "UNITTYPE_Scout",
+        "UNITTYPE_Mobile",
+        "UNITTYPE_Air",
+        "UNITTYPE_Advanced",
+        "UNITTYPE_FactoryBuild"
+    ],
+    "guard_layer": "WL_AnyLayer",
+    "navigation": {
+        "type": "air",
+        "acceleration": 300,
+        "brake": 300,
+        "move_speed": 300,
+        "turn_speed": 240,
+        "aggressive_behavior": "circle",
+        "aggressive_distance": 100.0,
+        "aggressive_height": 100.0,
+        "bank_factor": 10,
+        "vertical_speed": 300
+    },
+    "physics": {
+        "radius": 20,
+        "gravity_scalar": 1
+    },
+    "recon": {
+        "observable": {
+            "layer": "mine",
+            "ignore_radar": true
+        },
+        "observer": {
+            "items": [
+                {
+                    "layer": "surface_and_air",
+                    "channel": "sight",
+                    "shape": "capsule",
+                    "radius": 75
+                },
+                {
+                    "layer": "mine",
+                    "channel": "sight",
+                    "shape": "capsule",
+                    "radius": 75
+                },
+                {
+                    "layer": "orbital",
+                    "channel": "sight",
+                    "shape": "capsule",
+                    "radius": 75
+                },
+                {
+                    "layer": "surface_and_air",
+                    "channel": "radar",
+                    "shape": "capsule",
+                    "radius": 150
+                },
+                {
+                    "layer": "mine",
+                    "channel": "radar",
+                    "shape": "capsule",
+                    "radius": 150
+                },
+                {
+                    "layer": "orbital",
+                    "channel": "radar",
+                    "shape": "capsule",
+                    "radius": 150
+                },
+                {
+                    "layer": "mine",
+                    "channel": "radar_jammer",
+                    "shape": "capsule",
+                    "radius": 75
+                }
+            ]
+        }
+    },
+    "model": {
+        "filename": "/pa/units/air/ufo/ufo.papa",
+        "animations": {
+            "idle": "/pa/units/air/ufo/ufo_idle.papa"
+        },
+        "animtree": "/pa/anim/anim_trees/constant_idle_anim_tree.json"
+    },
+    "tools": [],
+    "events": {
+        "build_complete": {
+            "audio_cue": "/SE/Build_Complete/air"
+        },
+        "died": {
+            "audio_cue": "/SE/Death/Air",
+            "effect_spec": "/pa/units/air/fighter_adv/chaff/flare_adv_hit.pfx",
+            "effect_scale": 1
+        }
+    },
+    "audio": {
+        "loops": {
+            "move": {
+                "cue": "/SE/Movement/air/carrier_drone_loop",
+                "flag": "vel_changed",
+                "should_start_func": "is_moving",
+                "should_stop_func": "is_not_moving"
+            }
+        },
+        "selection_response": {
+            "cue": "/SE/Selection/air/air"
+        }
+    },
+    "fx_offsets": [
+        {
+            "type": "idle",
+            "filename": "/pa/units/air/ufo/radar_on.pfx",
+            "bone": "bone_rotor_main",
+            "offset": [
+                0,
+                0,
+                0
+            ],
+            "orientation": [
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "type": "idle",
+            "filename": "/pa/units/land/control_tower/pfx_lights.json",
+            "bone": "bone_aux_left",
+            "offset": [
+                0,
+                0,
+                0
+            ],
+            "orientation": [
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "type": "idle",
+            "filename": "/pa/units/land/control_tower/pfx_lights.json",
+            "bone": "bone_aux_right",
+            "offset": [
+                0,
+                0,
+                0
+            ],
+            "orientation": [
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "type": "idle",
+            "filename": "/pa/units/land/control_tower/pfx_lights.json",
+            "bone": "bone_aux_tail",
+            "offset": [
+                0,
+                0,
+                0
+            ],
+            "orientation": [
+                0,
+                0,
+                0
+            ]
+        }
+    ],
+    "selection_icon": {
+        "diameter": 12.0
+    },
+    "TEMP_texelinfo": 5.39039,
+    "mesh_bounds": [
+        4,
+        4,
+        2
+    ]
+}

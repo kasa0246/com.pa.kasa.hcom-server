@@ -1,0 +1,155 @@
+{
+    "unit_name": "Experimental Mine",
+    "display_name": "!LOC:Experimental Mine",
+    "description": "!LOC:Anti-matter mine with contact fuse. Can't be triggered by light or hover units. Spawns a small black hole on death. Massive damage, ignores armor. Invisible.",
+    "si_name": "land_mine_exp",
+    "strategic_icon_priority": 3,
+    "max_health": 10000,
+    "build_metal_cost": 1000,
+    "energy_efficiency_requirement": 0.9,
+    "armor_type": "AT_Custom4",
+    "wreckage_health_frac": 0.0,
+    "spawn_layers": "WL_AnyHorizontalGroundOrWaterSurface",
+    "area_build_type": "Sphere",
+    "area_build_pattern": [
+        [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ]
+    ],
+    "area_build_separation": 15.0,
+    "area_max_radius": 150.0,
+    "unit_types": [
+        "UNITTYPE_Custom7",
+        "UNITTYPE_Custom1",
+        "UNITTYPE_Structure",
+        "UNITTYPE_Land",
+        "UNITTYPE_Naval",
+        "UNITTYPE_Defense",
+        "UNITTYPE_CombatFabBuild",
+        "UNITTYPE_CombatFabAdvBuild"
+    ],
+    "physics": {
+        "type": "Structure",
+        "collision_layers": "WL_AnyHorizontalGroundOrWaterSurface",
+        "shape": "Box",
+        "radius": 1,
+        "allow_pushing": false,
+        "push_sideways": false,
+        "allow_underground": false,
+        "collide_with_types": [
+            "Projectile"
+        ]
+    },
+    "recon": {
+        "observable": {
+            "layer": "surface_and_air",
+            "ignore_radar": true,
+            "ignore_sight": true
+        },
+        "observer": {
+            "items": [
+                {
+                    "layer": "surface_and_air",
+                    "channel": "sight",
+                    "shape": "sphere",
+                    "radius": 2
+                },
+                {
+                    "layer": "underwater",
+                    "channel": "sight",
+                    "shape": "sphere",
+                    "radius": 2
+                }
+            ]
+        }
+    },
+    "death_weapon": {
+        "ground_ammo_spec": "/pa/units/land/land_mine_exp/death_weapon.json"
+    },
+    "tools": [
+        {
+            "spec_id": "/pa/units/land/land_mine_exp/self_destruct_weapon.json",
+            "aim_bone": "bone_root",
+            "muzzle_bone": "bone_root"
+        }
+    ],
+    "model": [
+        {
+            "filename": "/pa/units/land/land_mine_exp/land_mine_exp.papa"
+        }
+    ],
+    "events": {
+        "build_complete": {
+            "audio_cue": "/SE/Build_Complete/barrier"
+        },
+        "died": {
+            "audio_cue": "/SE/Impacts/landmine",
+            "effect_spec": "/pa/units/land/land_mine/land_mine_ammo_explosion.pfx",
+            "effect_scale": 2
+        }
+    },
+    "selection_icon": {
+        "diameter": 7.0
+    },
+    "mesh_bounds": [
+        0.1,
+        0.1,
+        0.1
+    ],
+    "TEMP_texelinfo": 2.37699
+}

@@ -1,0 +1,25 @@
+{
+  "base_spec": "/pa/ammo/base_shell/base_shell.json",
+  "damage": 1250,
+  "splash_damage": 150,
+  "splash_radius": 5,
+  "full_damage_splash_radius": 1,
+  "armor_damage_map": {"AT_Custom1":0.8, "AT_Custom2":0.6, "AT_Custom3":0.4, "AT_Custom0":0.0,  "AT_Commander":0.4},
+  "initial_velocity": 250.0,
+  "max_velocity": 250.0,
+  "lifetime": 5,
+  "fx_trail": {
+    "filename": "/pa/units/sea/hover_ship/hover_ship_ammo_trail.pfx"
+  },
+  "events": {
+    "died": {
+      "effect_spec": "/pa/units/sea/hover_ship/hover_ship_ammo_hit.pfx"
+    }
+  },
+  "physics": {
+    "radius": 1,
+    "gravity_scalar": 10,
+    "add_to_spatial_db": false,
+    "allow_underground": true
+  }
+}

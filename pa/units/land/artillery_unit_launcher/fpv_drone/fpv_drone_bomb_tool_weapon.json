@@ -1,0 +1,24 @@
+{
+    "base_spec": "/pa/tools/base_bomb_bay/base_bomb_bay.json",
+    "ammo_id": "/pa/units/land/artillery_unit_launcher/fpv_drone/fpv_drone_bomb_ammo.json",
+    "rate_of_fire": 1,
+    "max_range": 40,
+    "yaw_rate": 720,
+    "pitch_rate": 720,
+    "yaw_range": 30,
+    "pitch_range": 45,
+    "auto_attack": true,
+    "spread_fire": false,
+    "self_destruct": true,
+    "target_layers": [
+        "WL_LandHorizontal",
+        "WL_WaterSurface"
+    ],
+    "exclude_unit_types": "Custom1 | Custom2",
+    "events": {
+        "died": {
+            "audio_cue": "/SE/Impacts/shell_artillery",
+            "effect_spec": "/pa/effects/specs/default_proj_area_explosion.pfx"
+        }
+    }
+}

@@ -1,0 +1,15 @@
+{"base_spec":"/pa/tools/base_torpedo_turret/base_torpedo_turret.json", 
+"ammo_id":"/pa/units/sea/frigate/frigate_mine_deploy_ammo.json", 
+"rate_of_fire":0.05,  
+"max_range":600, 
+"yaw_rate":0, 
+"pitch_rate":0, 
+"yaw_range":0, 
+"pitch_range":0, 
+"firing_arc_yaw":360,
+"firing_arc_pitch":360,
+"firing_standard_deviation":10,
+"auto_attack":true, 
+"exclude_unit_types":"Custom1",
+"target_layers":[ 
+"WL_WaterSurface"]}

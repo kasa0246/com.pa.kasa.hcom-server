@@ -1,0 +1,386 @@
+{
+    "TEMP_texelinfo": 10.4258,
+    "base_spec": "/pa/units/air/base_flyer/base_flyer.json",
+    "build_metal_cost": 500,
+    "description": "!LOC:Basic High Altitude Carpet Bomber - Durable. Painfully slow. Heavy damage. Massive payload. Slow reload. Bombs drop very slowly. Ineffective against mobile. Attacks land and sea targets.",
+    "display_name": "!LOC:Horntail",
+    "si_name": "bomber",
+    "unit_types": [
+        "UNITTYPE_Bomber",
+        "UNITTYPE_Mobile",
+        "UNITTYPE_Offense",
+        "UNITTYPE_Air",
+        "UNITTYPE_Basic",
+        "UNITTYPE_FactoryBuild",
+        "UNITTYPE_Custom12",
+        "UNITTYPE_Custom58"
+    ],
+    "guard_layer": "WL_AnySurface",
+    "guard_radius": 120,
+    "max_health": 1000,
+    "mesh_bounds": [
+        5.5,
+        3,
+        1
+    ],
+    "model": {
+        "filename": "/pa/units/air/horntail/model.papa"
+    },
+    "navigation": {
+        "acceleration": 30,
+        "aggressive_distance": 50.0,
+        "aggressive_height": 100.0,
+        "brake": 15,
+        "dodge_multiplier": 0.0,
+        "dodge_radius": 0,
+        "hover_time": -1.0,
+        "move_speed": 30,
+        "turn_speed": 30,
+        "type": "air",
+        "vertical_speed": 30,
+        "wobble_factor": 0.05,
+        "wobble_speed": 0.1
+    },
+    "physics": {
+        "air_friction": 1.0,
+        "allow_pushing": false,
+        "gravity_scalar": 1,
+        "push_sideways": false,
+        "radius": 3.5
+    },
+    "recon": {
+        "observable": {
+            "layer": "mine"
+        },
+        "observer": {
+            "items": [
+                {
+                    "channel": "sight",
+                    "layer": "surface_and_air",
+                    "radius": 100,
+                    "shape": "capsule"
+                },
+                {
+                    "channel": "sight",
+                    "layer": "mine",
+                    "radius": 50,
+                    "shape": "capsule"
+                },
+                {
+                    "channel": "radar",
+                    "layer": "mine",
+                    "radius": 100,
+                    "shape": "capsule"
+                }
+            ]
+        }
+    },
+    "selection_icon": {
+        "diameter": 19
+    },
+    "spawn_layers": "WL_AnyHorizontalGroundOrWaterSurface",
+    "tools": [
+        {
+            "aim_bone": "bone_root",
+            "muzzle_bone": "bone_root",
+            "spec_id": "/pa/units/air/horntail/horntail_tool_weapon.json"
+        }
+    ],
+    "events": {
+        "build_complete": {
+            "audio_cue": "/SE/Build_Complete/air"
+        },
+        "died": {
+            "audio_cue": "/SE/Death/Air",
+            "effect_scale": 0.75,
+            "effect_spec": "/pa/units/air/base_flyer/base_flyer_death_t2.pfx"
+        },
+        "fired": {
+            "audio_cue": "/SE/Weapons/air/bomber_siege_fire"
+        }
+    },
+    "audio": {
+        "loops": {
+            "move": {
+                "cue": "/SE/Movement/air/air_bomber_siege_loop",
+                "flag": "vel_changed",
+                "should_start_func": "is_moving_laterally",
+                "should_stop_func": "is_not_moving"
+            }
+        },
+        "selection_response": {
+            "cue": "/SE/Selection/air/bomber_T2"
+        }
+    },
+    "headlights": [
+        {
+            "bone": "bone_root",
+            "color": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "far_distance": 65.0,
+            "gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa",
+            "intensity": 4.0,
+            "near_distance": 8.0,
+            "near_height": 6.5,
+            "near_width": 6.5,
+            "offset": [
+                0,
+                0,
+                -0.75
+            ],
+            "orientation": [
+                -90.0,
+                -20.0,
+                0.0
+            ],
+            "shadow_resolution": 128
+        }
+    ],
+    "lamps": [
+        {
+            "bone": "bone_root",
+            "color": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "intensity": 3.0,
+            "offset": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "radius": 2.5
+        }
+    ],
+    "fx_offsets": [
+        {
+            "bone": "bone_tail1",
+            "filename": "/pa/units/air/bomber/basic_jet.pfx",
+            "offset": [
+                0,
+                0,
+                0
+            ],
+            "orientation": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "type": "moving_forward"
+        },
+        {
+            "bone": "bone_tail2",
+            "filename": "/pa/units/air/bomber/basic_jet.pfx",
+            "offset": [
+                0,
+                0,
+                0
+            ],
+            "orientation": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "type": "moving_forward"
+        },
+        {
+            "bone": "bone_tail3",
+            "filename": "/pa/units/air/bomber/basic_jet.pfx",
+            "offset": [
+                0,
+                0,
+                0
+            ],
+            "orientation": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "type": "moving_forward"
+        },
+        {
+            "bone": "bone_tail4",
+            "filename": "/pa/units/air/bomber/basic_jet.pfx",
+            "offset": [
+                0,
+                0,
+                0
+            ],
+            "orientation": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "type": "moving_forward"
+        },
+        {
+            "bone": "bone_tail",
+            "filename": "/pa/units/air/strafer/strafer_jets_small.pfx",
+            "offset": [
+                0,
+                0,
+                0
+            ],
+            "orientation": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "type": "moving_forward"
+        },
+        {
+            "bone": "bone_tail_right",
+            "filename": "/pa/units/air/bomber/basic_jet.pfx",
+            "offset": [
+                0,
+                0,
+                0
+            ],
+            "orientation": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "type": "moving_forward"
+        },
+        {
+            "bone": "bone_tail_left",
+            "filename": "/pa/units/air/bomber/basic_jet.pfx",
+            "offset": [
+                0,
+                0,
+                0
+            ],
+            "orientation": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "type": "moving_forward"
+        },
+        {
+            "bone": "bone_left_wing1",
+            "filename": "/pa/units/air/strafer/strafer_jets_small.pfx",
+            "offset": [
+                0,
+                0,
+                0
+            ],
+            "orientation": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "type": "moving_forward"
+        },
+        {
+            "bone": "bone_left_wing2",
+            "filename": "/pa/units/air/strafer/strafer_jets_small.pfx",
+            "offset": [
+                0,
+                0,
+                0
+            ],
+            "orientation": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "type": "moving_forward"
+        },
+        {
+            "bone": "bone_right_wing1",
+            "filename": "/pa/units/air/strafer/strafer_jets_small.pfx",
+            "offset": [
+                0,
+                0,
+                0
+            ],
+            "orientation": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "type": "moving_forward"
+        },
+        {
+            "bone": "bone_right_wing2",
+            "filename": "/pa/units/air/strafer/strafer_jets_small.pfx",
+            "offset": [
+                0,
+                0,
+                0
+            ],
+            "orientation": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "type": "moving_forward"
+        },
+        {
+            "bone": "bone_left_wing1b",
+            "filename": "/pa/units/air/bomber/basic_jet.pfx",
+            "offset": [
+                0,
+                0,
+                0
+            ],
+            "orientation": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "type": "moving_forward"
+        },
+        {
+            "bone": "bone_left_wing2b",
+            "filename": "/pa/units/air/bomber/basic_jet.pfx",
+            "offset": [
+                0,
+                0,
+                0
+            ],
+            "orientation": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "type": "moving_forward"
+        },
+        {
+            "bone": "bone_right_wing1b",
+            "filename": "/pa/units/air/bomber/basic_jet.pfx",
+            "offset": [
+                0,
+                0,
+                0
+            ],
+            "orientation": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "type": "moving_forward"
+        },
+        {
+            "bone": "bone_right_wing2b",
+            "filename": "/pa/units/air/bomber/basic_jet.pfx",
+            "offset": [
+                0,
+                0,
+                0
+            ],
+            "orientation": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "type": "moving_forward"
+        }
+    ]
+}

@@ -1,0 +1,140 @@
+{
+  "base_spec": "/pa/units/air/base_flyer/base_flyer.json",
+  "display_name": "Chaff",
+  "si_name": "empty",
+  "description": "!LOC:Chaff decoy, appears as a valid target on enemy radars.",
+  "max_health": 5,
+  "build_metal_cost": 1,
+  "usable": false,
+  "attachable": {
+    "offsets": {
+      "root": [
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  "unit_types": [
+    "UNITTYPE_Custom58",
+    "UNITTYPE_Custom9",
+    "UNITTYPE_Air",
+    "UNITTYPE_Advanced"
+  ],
+  "command_caps": [],
+  "navigation": {
+    "type": "air",
+    "acceleration": 0,
+    "brake": -1,
+    "move_speed": 0,
+    "turn_speed": 360,
+    "vertical_speed": 0,
+    "aggressive_distance": 0.0,
+    "aggressive_behavior": "circle",
+    "circle_min_time": 0.0,
+    "circle_max_time": 0.0,
+    "hover_time": -1.0
+  },
+  "physics": {
+    "radius": 1,
+    "gravity_scalar": 1.2
+  },
+  "recon": {
+    "observable": {
+      "ignore_radar": false,
+      "ignore_sight": false,
+      "layer": "mine"
+    },
+    "observer": {
+      "items": [
+        {
+          "layer": "surface_and_air",
+          "channel": "sight",
+          "shape": "capsule",
+          "radius": 0
+        },
+        {
+          "layer": "underwater",
+          "channel": "sight",
+          "shape": "capsule",
+          "radius": 0
+        }
+      ]
+    }
+  },
+  "model": [
+    {
+      "layer": "WL_Air",
+      "filename": "/pa/effects/models/empty_model.papa"
+    }
+  ],
+  "tools": [
+    {
+      "spec_id": "/pa/units/air/fighter_adv/chaff/chaff_death_tool_weapon.json",
+      "aim_bone": "bone_root",
+      "muzzle_bone": "bone_root",
+      "record_index": 0,
+      "fire_event": "fired0"
+    }
+  ],
+  "events": {
+    "build_complete": {
+      "audio_cue": ""
+    },
+    "fired0": {
+      "audio_cue": ""
+    },
+    "fired1": {
+      "audio_cue": "/SE/Death/Air",
+      "effect_spec": "/pa/units/air/fighter_adv/chaff/chaff_hit.pfx bone_root"
+    },
+    "died": {
+      "audio_cue": "",
+      "effect_spec": "/pa/units/air/fighter_adv/chaff/chaff_hit.pfx bone_root",
+      "effect_scale": 1.0
+    },
+    "teleported": {
+      "audio_cue": "",
+      "effect_spec": "/pa/effects/specs/none.pfx"
+    }
+  },
+  "audio": {
+    "loops": {
+      "move": {
+        "cue": "",
+        "flag": "vel_changed",
+        "should_start_func": "is_moving",
+        "should_stop_func": "is_not_moving"
+      }
+    },
+    "selection_response": {
+      "cue": ""
+    }
+  },
+  "selection_icon": {
+    "diameter": 1.0
+  },
+  "mesh_bounds": [
+    10,
+    10,
+    10
+  ],
+  "TEMP_texelinfo": 10.4837,
+  "fx_offsets": [
+    {
+      "bone": "bone_root",
+      "filename": "/pa/units/air/fighter_adv/chaff/chaff.pfx",
+      "offset": [
+        0,
+        0,
+        0
+      ],
+      "orientation": [
+        0,
+        0,
+        0
+      ],
+      "type": "idle"
+    }
+  ]
+}

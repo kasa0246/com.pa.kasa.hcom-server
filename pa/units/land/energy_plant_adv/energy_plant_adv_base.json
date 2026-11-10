@@ -1,0 +1,112 @@
+{
+    "base_spec": "/pa/units/land/base_structure/base_structure.json",
+    "unit_name": "Advanced Energy Plant",
+    "si_name": "empty",
+    "display_name": "!LOC:Advanced Energy Plant Lvl.2 - Land",
+    "description": "!LOC:Increseses average metal consumption by 1 M/s to provide additional 500 E/s (+25% metal conversion efficiency).",
+    "max_health": 5000,
+    "build_metal_cost": 2400,
+    "armor_type": "AT_Structure",
+    "atrophy_rate": 45.0,
+    "atrophy_cool_down": 15.0,
+    "wreckage_health_frac": 0.0,
+    "navigation": {
+        "type": "land-small",
+        "acceleration": 0,
+        "brake": 0,
+        "move_speed": 0,
+        "turn_speed": 0,
+        "dodge_radius": 0,
+        "dodge_multiplier": 0.0,
+        "wobble_factor": 0.0,
+        "wobble_speed": 0.0
+    },
+    "physics": {
+        "type": "Structure",
+        "shape": "Box",
+        "collision_layers": "WL_AnyHorizontalGroundOrWaterSurface",
+        "radius": 1,
+        "air_friction": 1.0,
+        "allow_pushing": false,
+        "push_sideways": false,
+        "allow_underground": false
+    },
+    "spawn_layers": "WL_AnyHorizontalGroundOrWaterSurface",
+    "energy_efficiency_requirement": 0.0,
+    "unit_types": [
+        "UNITTYPE_Custom35"
+    ],
+    "command_caps": [
+        "ORDER_FireSecondaryWeapon"
+    ],
+    "recon": {
+        "observer": {
+            "items": [
+                {
+                    "layer": "surface_and_air",
+                    "channel": "sight",
+                    "shape": "capsule",
+                    "radius": 100
+                },
+                {
+                    "layer": "mine",
+                    "channel": "radar",
+                    "shape": "capsule",
+                    "radius": 100
+                },
+                {
+                    "layer": "mine",
+                    "channel": "sight",
+                    "shape": "capsule",
+                    "radius": 50
+                }
+            ]
+        }
+    },
+    "model": [
+        {
+            "filename": "/pa/units/upgrades/energy_plant_adv_2/energy_plant_adv_2.papa",
+            "animations": {
+                "idle": "/pa/units/land/energy_plant_adv/energy_plant_adv_anim_work.papa"
+            },
+            "animtree": "/pa/anim/anim_trees/constant_idle_anim_tree.json",
+            "skirt_decal": "/pa/effects/specs/skirt_energy_adv.json"
+        }
+    ],
+    "death_weapon": {
+        "ground_ammo_spec": "/pa/units/land/energy_plant_adv/energy_plant_adv_base_death_weapon.json"
+    },
+    "tools": [
+        {
+            "spec_id": "/pa/units/land/energy_plant_adv/energy_plant_adv_upgrade_tool.json",
+            "aim_bone": "bone_root",
+            "secondary_weapon": true
+        }
+    ],
+    "events": {
+        "build_complete": {
+            "audio_cue": "/SE/Build_Complete/energy"
+        },
+        "died": {
+            "audio_cue": "/SE/Death/Factory",
+            "effect_spec": "/pa/effects/specs/default_building_explosion_large.pfx",
+            "effect_scale": 1.0
+        }
+    },
+    "audio": {
+        "selection_response": {
+            "cue": "/SE/Selection/structure/energy"
+        }
+    },
+    "fx_offsets": [],
+    "lamps": [],
+    "selection_icon": {
+        "diameter": 34.0
+    },
+    "mesh_bounds": [
+        0.1,
+        0.1,
+        0.1
+    ],
+    "TEMP_texelinfo": 32.6108
+}

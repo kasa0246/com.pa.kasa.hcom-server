@@ -1,0 +1,183 @@
+{
+    "base_spec": "/pa/units/air/base_flyer/base_flyer.json",
+    "display_name": "Hornet",
+    "description": "!LOC:High Altitude Missile Bomber - Long range, low RoF. Armed with medium range air-to-ground and air-to-air guided missiles including interceptor missiles. Outranges medium range SAM systems. Attacks surface and air targets.",
+    "max_health": 1000,
+    "build_metal_cost": 3500,
+    "armor_type": "AT_Orbital",
+    "unit_types": [
+        "UNITTYPE_Bomber",
+        "UNITTYPE_Tactical",
+        "UNITTYPE_Mobile",
+        "UNITTYPE_Offense",
+        "UNITTYPE_Air",
+        "UNITTYPE_Advanced",
+        "UNITTYPE_FactoryBuild",
+        "UNITTYPE_Custom58",
+        "UNITTYPE_Custom12"
+    ],
+    "guard_layer": "WL_AnySurface",
+    "attack_range_frac": 1.05,
+    "navigation": {
+        "type": "air",
+        "acceleration": 40,
+        "brake": 40,
+        "move_speed": 40,
+        "turn_speed": 135,
+        "dodge_radius": 0,
+        "dodge_multiplier": 0.0,
+        "aggressive_distance": 600.0,
+        "aggressive_height": 100.0,
+        "aggressive_behavior": "circle",
+        "circle_min_time": 2.0,
+        "circle_max_time": 4.0,
+        "hover_time": -1.0,
+        "bank_factor": 1,
+        "wobble_factor": 0.05,
+        "wobble_speed": 0.1
+    },
+    "physics": {
+        "radius": 5,
+        "gravity_scalar": 1,
+        "push_sideways": false,
+        "allow_pushing": false,
+        "air_friction": 1.0
+    },
+    "recon": {
+        "observable": {
+            "layer": "mine"
+        },
+        "observer": {
+            "items": [
+                {
+                    "channel": "radar",
+                    "layer": "surface_and_air",
+                    "radius": 100,
+                    "shape": "capsule",
+                    "uses_energy": true
+                },
+                {
+                    "channel": "sight",
+                    "layer": "surface_and_air",
+                    "radius": 50,
+                    "shape": "capsule"
+                },
+                {
+                    "channel": "radar",
+                    "layer": "mine",
+                    "radius": 250,
+                    "shape": "capsule",
+                    "uses_energy": true
+                },
+                {
+                    "channel": "sight",
+                    "layer": "mine",
+                    "radius": 150,
+                    "shape": "capsule",
+                    "uses_energy": true
+                },
+                {
+                    "channel": "sight",
+                    "layer": "mine",
+                    "radius": 50,
+                    "shape": "capsule"
+                }
+            ]
+        }
+    },
+    "model": {
+        "filename": "/pa/units/air/bomber_adv/bomber_adv.papa",
+        "arrows": 5
+    },
+    "tools": [
+        {
+            "spec_id": "/pa/units/air/bomber_adv/bomber_adv_tool_weapon.json",
+            "aim_bone": "bone_root",
+            "muzzle_bone": "bone_root",
+            "primary weapon": true,
+            "fire_event": "fired0",
+            "record_index": 0
+        },
+                {
+            "spec_id": "/pa/units/air/bomber_adv/bomber_adv_ash_long_tool_weapon.json",
+            "aim_bone": "bone_root",
+            "muzzle_bone": "bone_root",
+            "fire_event": "fired0",
+            "record_index": -1
+        },
+        {
+            "spec_id": "/pa/units/air/fighter/fighter_tool_weapon_medium.json",
+            "aim_bone": "bone_root",
+            "muzzle_bone": [
+                "bone_root"
+            ],
+            "record_index": 1,
+            "fire_event": "fired1"
+        },
+        {
+            "spec_id": "/pa/units/air/fighter/fighter_tool_weapon_short.json",
+            "aim_bone": "bone_root",
+            "muzzle_bone": [
+                "bone_root"
+            ],
+            "record_index": 2,
+            "fire_event": "fired1"
+        },
+        {
+            "spec_id": "/pa/units/air/bomber_adv/bomber_adv_am_tool_weapon.json",
+            "aim_bone": "bone_root",
+            "muzzle_bone": "bone_root",
+            "fire_event": "fired1",
+            "record_index": 3
+        }
+    ],
+    "events": {
+        "build_complete": {
+            "audio_cue": "/SE/Build_Complete/air"
+        },
+        "fired0": {
+            "audio_cue": "/SE/Weapons/air/bomber_T2_fire"
+        },
+        "fired1": {
+            "audio_cue": "/SE/Weapons/air/fighter_fire"
+        },
+        "died": {
+            "audio_cue": "/SE/Death/Air",
+            "effect_spec": "/pa/units/air/base_flyer/base_flyer_death_t2.pfx",
+            "effect_scale": 1.0
+        }
+    },
+    "fx_offsets": [
+        {
+            "type": "moving_forward",
+            "filename": "/pa/units/air/bomber_adv/bomber_adv_jets.pfx",
+            "offset": [
+                0,
+                0,
+                0
+            ]
+        }
+    ],
+    "audio": {
+        "loops": {
+            "move": {
+                "cue": "/SE/Movement/air/air_bomber_T2_loop",
+                "flag": "vel_changed",
+                "should_start_func": "is_moving_laterally",
+                "should_stop_func": "is_not_moving"
+            }
+        },
+        "selection_response": {
+            "cue": "/SE/Selection/air/bomber_T2"
+        }
+    },
+    "selection_icon": {
+        "diameter": 32.0
+    },
+    "TEMP_texelinfo": 11.3221,
+    "mesh_bounds": [
+        23,
+        9.5,
+        4.8
+    ]
+}

@@ -1,0 +1,147 @@
+{
+  "base_spec": "/pa/units/land/base_vehicle/base_vehicle.json",
+  "display_name": "Leveler",
+  "description": "!LOC:Heavily Armored Assault Tank. Its twin 140mm guns laugh at enemy armor. Attacks land and sea targets. Equipped with basic APS system that 'protects' it from incoming mortar fire and drones. Uses 20mm coaxial autocannon to repell infantry.",
+  "max_health": 1000,
+  "build_metal_cost": 800,
+  "armor_type": "AT_Custom3",
+  "attachable": {
+    "offsets": {
+      "root": [
+        0,
+        0,
+        0
+      ],
+      "head": [
+        0,
+        0,
+        3.4
+      ]
+    }
+  },
+  "unit_types": [
+    "UNITTYPE_Custom58",
+    "UNITTYPE_Tank",
+    "UNITTYPE_Mobile",
+    "UNITTYPE_Offense",
+    "UNITTYPE_Land",
+    "UNITTYPE_Heavy",
+    "UNITTYPE_Advanced",
+    "UNITTYPE_FactoryBuild"
+  ],
+  "transportable": {
+    "size": 3
+  },
+  "guard_layer": "WL_AnySurface",
+  "navigation": {
+    "type": "land-small",
+    "turn_in_place": true,
+    "acceleration": 100,
+    "brake": 100,
+    "move_speed": 10,
+    "turn_speed": 45
+  },
+  "physics": {
+    "radius": 5
+  },
+  "recon": {
+    "observer": {
+      "items": [
+        {
+          "layer": "surface_and_air",
+          "channel": "sight",
+          "shape": "capsule",
+          "radius": 85
+        },
+        {
+          "layer": "mine",
+          "channel": "radar",
+          "shape": "capsule",
+          "radius": 100
+        },
+        {
+          "layer": "mine",
+          "channel": "sight",
+          "shape": "capsule",
+          "radius": 50
+        }
+      ]
+    }
+  },
+  "model": {
+    "filename": "/pa/units/land/tank_laser_adv/tank_laser_adv.papa",
+    "animtree": "/pa/anim/anim_trees/tank_laser_adv_anim_tree.json",
+    "arrows": 5
+  },
+  "tools": [
+    {
+      "spec_id": "/pa/units/land/tank_laser_adv/tank_laser_adv_tool_weapon.json",
+      "aim_bone": "socket_aim",
+      "projectiles_per_fire": 2,
+      "muzzle_bone": [
+        "socket_leftMuzzle",
+        "socket_rightMuzzle"
+      ],
+      "fire_event": "fired0",
+      "primary_weapon": true,
+      "record_index": 0
+    },
+    {
+      "spec_id": "/pa/units/land/tank_laser_adv/tank_laser_adv_mg_tool_weapon.json",
+      "aim_bone": "bone_turret",
+      "muzzle_bone": "bone_mg_muzzle",
+      "record_index": 0,
+      "fire_event": "fired1"
+    },
+    {
+      "spec_id": "/pa/units/land/tank_laser_adv/tank_laser_adv_beam_tool_weapon.json",
+      "aim_bone": "bone_root",
+      "muzzle_bone": "bone_root",
+      "fire_event": "fired2",
+      "record_index": -1
+    }
+  ],
+  "events": {
+    "build_complete": {
+      "audio_cue": "/SE/Build_Complete/veh"
+    },
+    "fired0": {
+      "audio_cue": "/SE/Weapons/veh/tank_T2_leveler",
+      "effect_spec": "/pa/units/land/tank_laser_adv/tank_laser_adv_muzzle_flash.pfx socket_leftMuzzle /pa/units/land/tank_laser_adv/tank_laser_adv_muzzle_flash.pfx socket_rightMuzzle"
+    },
+    "fired1": {
+      "audio_cue": "/SE/Weapons/veh/attack_vehicle_fire",
+      "effect_spec": "/pa/effects/specs/default_small_muzzle_flash.pfx bone_mg_muzzle"
+    },
+    "fired2": {
+      "audio_cue": "/SE/Weapons/structure/air_defense_flak_fire"
+    },
+    "died": {
+      "audio_cue": "/SE/Death/Veh",
+      "effect_spec": "/pa/effects/specs/default_explosion_bot_t2.pfx",
+      "effect_scale": 1.0
+    }
+  },
+  "audio": {
+    "loops": {
+      "move": {
+        "cue": "/SE/Movement/veh/tank_leveler_loop_T2",
+        "flag": "vel_changed",
+        "should_start_func": "is_moving",
+        "should_stop_func": "is_not_moving"
+      }
+    },
+    "selection_response": {
+      "cue": "/SE/Selection/veh/tank_leveler_T2"
+    }
+  },
+  "selection_icon": {
+    "diameter": 14.0
+  },
+  "TEMP_texelinfo": 10.3794,
+  "mesh_bounds": [
+    6.8,
+    7.5,
+    3.6
+  ]
+}

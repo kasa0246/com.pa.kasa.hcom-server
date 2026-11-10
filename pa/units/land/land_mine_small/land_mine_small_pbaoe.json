@@ -1,0 +1,29 @@
+{
+    "ammo_type": "PBAOE",
+    "damage": 250,
+    "splash_damage": 100,
+    "splash_radius": 8,
+    "full_damage_splash_radius": 1,
+    "armor_damage_map": {
+        "AT_Custom1": 0.8,
+        "AT_Custom2": 0.3,
+        "AT_Custom3": 0.1,
+        "AT_Commander": 0.05,
+        "AT_Air": 0,
+        "AT_Custom5": 0,
+        "AT_Custom6": 0,
+        "AT_Custom7": 0,
+        "AT_Orbital": 0,
+        "AT_Custom8": 0,
+        "AT_Custom9": 0,
+        "AT_Custom0": 0
+    },
+    "splash_damages_allies": false,
+    "damage_volume": {
+        "initial_radius": 8.0
+    },
+    "sim_fire_effect": "/pa/units/land/land_mine_small/land_mine_small_ammo_explosion_ent.json",
+    "impact_decals": [
+        "/pa/effects/specs/scorch_b_01.json"
+    ]
+}

@@ -1,0 +1,123 @@
+{
+    "base_spec": "/pa/units/land/base_vehicle/base_vehicle.json",
+    "display_name": "Mars",
+    "si_name": "himars",
+    "description": "!LOC:Mobile Ballistic Missile Launcher - Lightly armored truck armed with medium range ballistic missiles. High damage and heavy splash. Pinpoint accuracy vs stationary targets. High RoF, but slow reload. Stores up to 3 missiles. Attacks only surface targets.",
+    "max_health": 350,
+    "armor_type": "AT_Custom1",
+    "build_metal_cost": 1800,
+    "attachable": {
+        "offsets": {
+            "root": [
+                0,
+                0,
+                0
+            ],
+            "head": [
+                0,
+                1,
+                4.1
+            ]
+        }
+    },
+    "unit_types": [
+        "UNITTYPE_Custom58",
+        "UNITTYPE_Vehicle",
+        "UNITTYPE_Mobile",
+        "UNITTYPE_Land",
+        "UNITTYPE_Artillery",
+        "UNITTYPE_Advanced",
+        "UNITTYPE_FactoryBuild",
+        "UNITTYPE_Offense"
+    ],
+    "transportable": {
+        "size": 2
+    },
+    "guard_layer": "WL_Air",
+    "navigation": {
+        "type": "land-small",
+        "acceleration": 50,
+        "brake": 50,
+        "move_speed": 10,
+        "turn_speed": 60,
+        "turn_acceleration": 45
+    },
+    "physics": {
+        "radius": 3.5
+    },
+    "recon": {
+        "observer": {
+            "items": [
+                {
+                    "layer": "surface_and_air",
+                    "channel": "sight",
+                    "shape": "capsule",
+                    "radius": 85
+                },
+                {
+                    "layer": "mine",
+                    "channel": "radar",
+                    "shape": "capsule",
+                    "radius": 100
+                },
+                {
+                    "layer": "mine",
+                    "channel": "sight",
+                    "shape": "capsule",
+                    "radius": 50
+                }
+            ]
+        }
+    },
+    "model": {
+        "filename": "/pa/units/land/himars/himars.papa",
+        "animations": {
+            "run": "/pa/units/land/himars/himars_anim_run.papa"
+        },
+        "walk_speed": 7,
+        "animtree": "/pa/anim/anim_trees/aa_missile_vehicle_anim_tree.json"
+    },
+    "nearby_target_tick_update_interval": 3,
+    "tools": [
+        {
+            "spec_id": "/pa/units/land/himars/himars_tool_weapon.json",
+            "aim_bone": "bone_pivot",
+            "muzzle_bone": "bone_pivot"
+        }
+    ],
+    "events": {
+        "build_complete": {
+            "audio_cue": "/SE/Build_Complete/veh"
+        },
+        "fired": {
+            "audio_cue": "/SE/Weapons/veh/aa_missile_vehicle_fire",
+            "effect_spec": "/pa/effects/specs/default_muzzle_flash.pfx socket_muzzle"
+        },
+        "died": {
+            "audio_cue": "/SE/Death/Veh",
+            "effect_scale": 1.5
+        }
+    },
+    "audio": {
+        "loops": {
+            "move": {
+                "cue": "/SE/Movement/veh/aa_missile_vehicle_loop",
+                "flag": "vel_changed",
+                "should_start_func": "is_moving",
+                "should_stop_func": "is_not_moving"
+            }
+        },
+        "selection_response": {
+            "cue": "/SE/Selection/veh/aa_missile_vehicle"
+        }
+    },
+    "selection_icon": {
+        "diameter": 10.0
+    },
+    "TEMP_texelinfo": 6.12932,
+    "mesh_bounds": [
+        3.8,
+        5,
+        5
+    ]
+}

@@ -1,0 +1,136 @@
+{
+  "base_spec": "/pa/units/land/base_structure/base_structure.json",
+  "unit_name": "!Metal Extractor Off",
+  "display_name": "!LOC:Switch OFF",
+  "si_name":"empty",
+  "strategic_icon_priority": 4,
+  "description": "!LOC:Immediately halts metal production to save power. Resuming production costs additional metal.",
+  "max_health": 750,
+  "build_metal_cost": 170,
+  "armor_type": "AT_Custom1",
+  "atrophy_rate": 2.5,
+  "atrophy_cool_down": 15.0,
+  "buildable_types": "Economy & MetalProduction & Basic & SelfDestruct & Structure",
+  "spawn_layers": "WL_AnyHorizontalGroundOrWaterSurface",
+  "feature_requirements": [
+    "metal_spot"
+  ],
+  "force_snap_to_feature_orientation": true,
+  "area_build_type": "Sphere",
+  "command_caps": [],
+  "unit_types": [
+    "UNITTYPE_Custom58",
+    "UNITTYPE_Structure",
+    "UNITTYPE_Basic",
+    "UNITTYPE_MetalProduction",
+    "UNITTYPE_Economy",
+    "UNITTYPE_SelfDestruct"
+  ],
+  "wreckage_health_frac": 0.0,
+  "death_weapon": {
+    "ground_ammo_spec": "/pa/units/land/laser_defense_legged_build/laser_defense_legged_build_death_weapon_4.json"
+  },
+  "spawn_unit_on_death": "/pa/units/land/metal_extractor/metal_extractor_off.json",
+  "recon": {
+    "observer": {
+      "items": [
+        {
+          "layer": "surface_and_air",
+          "channel": "sight",
+          "shape": "capsule",
+          "radius": 75
+        },
+        {
+          "layer": "mine",
+          "channel": "radar",
+          "shape": "capsule",
+          "radius": 85
+        },
+        {
+          "layer": "mine",
+          "channel": "sight",
+          "shape": "capsule",
+          "radius": 35
+        }
+      ]
+    }
+  },
+  "energy_efficiency_requirement": 0.9,
+  "consumption": {
+    "energy": 0
+  },
+  "model": [
+    {
+      "layer": "WL_LandHorizontal",
+      "filename": "/pa/units/land/metal_extractor/metal_extractor.papa"
+    },
+    {
+      "layer": "WL_WaterSurface",
+      "filename": "/pa/units/sea/sea_metal_extractor/sea_metal_extractor.papa"
+    }
+  ],
+  "replaceable_units": [
+    "/pa/units/land/metal_extractor_adv/metal_extractor_adv.json",
+    "/pa/units/land/t_metal_extractor_1/t_metal_extractor_1.json"
+  ],
+  "tools": [
+  ],
+  "events": {
+    "build_complete": {
+      "audio_cue": "/SE/Build_Complete/metal"
+    },
+    "fired": {
+      "audio_cue": "",
+      "effect_spec": ""
+    },
+    "died": {
+      "audio_cue": "/SE/Death/Factory",
+      "effect_scale": 0.75
+    }
+  },
+  "audio": {
+    "selection_response": {
+      "cue": "/SE/Selection/structure/metal"
+    }
+  },
+  "fx_offsets": [
+    {
+      "type": "energy",
+      "filename": "/pa/effects/specs/none.pfx",
+      "offset": [
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "lamps": [
+    {
+      "offset": [
+        -0.72,
+        -1.922,
+        6.515
+      ],
+      "radius": 2.0,
+      "color": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "intensity": 1.0
+    }
+  ],
+  "selection_icon": {
+    "diameter": 24.0
+  },
+  "mesh_bounds": [
+    9.2,
+    10.0407,
+    23.5
+  ],
+  "placement_size": [
+    16,
+    16
+  ],
+  "TEMP_texelinfo": 15.0973
+}

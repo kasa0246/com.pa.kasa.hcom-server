@@ -1,0 +1,26 @@
+{
+  "ammo_id": "/pa/units/land/bot_grenadier/bot_grenadier_ammo.json",
+  "auto_attack": true,
+  "base_spec": "/pa/tools/base_bot_weapon/base_bot_weapon.json",
+  "max_firing_velocity": 115,
+  "min_firing_velocity": 75,
+  "max_range": 180,
+  "pitch_range": 89,
+  "pitch_rate": 720,
+  "yaw_range": 360,
+  "yaw_rate": 180,
+  "rate_of_fire": 10,
+  "ammo_source": "time",
+  "ammo_capacity": 1.6,
+  "ammo_demand": 0.2,
+  "ammo_per_shot": 1.6,
+  "arc_type": "ARC_High",
+  "target_layers": [
+    "WL_LandHorizontal",
+    "WL_WaterSurface"
+  ],
+  "exclude_unit_types": "Custom1 | Custom2",
+  "firing_arc_pitch": 1,
+  "firing_arc_yaw": 1,
+  "firing_standard_deviation": 1.5
+}

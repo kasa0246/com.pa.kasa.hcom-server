@@ -1,0 +1,143 @@
+{
+  "base_spec": "/pa/units/land/base_structure/base_structure.json",
+  "display_name": "Flakturm",
+  "si_name:": "air_defense_adv_2",
+  "description": "!LOC:Anti-Air Tower - Massive, heavily armored structure armed with quad 90mm AA gun and 3 secondary 23mm AA batteries. Hard-counters low altitude air units, heavily reduced damage vs high altitude aircraft.",
+  "max_health": 10000,
+  "build_metal_cost": 2000,
+  "armor_type": "AT_Custom3",
+  "atrophy_rate": 26.66667,
+  "atrophy_cool_down": 15,
+  "area_build_separation": 72,
+  "alt_area_build_type": "Sphere",
+  "alt_area_build_separation": 58.0,
+  "spawn_layers": "WL_AnyLand",
+  "unit_types": [
+    "UNITTYPE_Custom58",
+    "UNITTYPE_Custom37",
+    "UNITTYPE_Structure",
+    "UNITTYPE_Advanced",
+    "UNITTYPE_Land",
+    "UNITTYPE_Heavy",
+    "UNITTYPE_AirDefense",
+    "UNITTYPE_Defense"
+  ],
+  "command_caps": [
+    "ORDER_Attack"
+  ],
+  "guard_layer": "WL_Air",
+  "recon": {
+    "observer": {
+      "items": [
+        {
+          "layer": "surface_and_air",
+          "channel": "sight",
+          "shape": "capsule",
+          "radius": 150
+        },
+        {
+          "layer": "mine",
+          "channel": "sight",
+          "shape": "capsule",
+          "radius": 150
+        },
+        {
+          "layer": "mine",
+          "channel": "radar",
+          "shape": "capsule",
+          "radius": 200
+        }
+      ]
+    }
+  },
+  "model": [
+    {
+      "filename": "/pa/units/upgrades/air_defense_adv_2/flakturm.papa",
+      "animtree": "/pa/anim/anim_trees/air_defense_adv_anim_tree.json",
+      "skirt_decal": "/pa/effects/specs/skirt_air_defense_adv.json"
+    }
+  ],
+  "nearby_target_tick_update_interval": 3,
+  "tools": [
+    {
+      "spec_id": "/pa/units/land/air_defense_adv/air_defense_adv_2_tool_weapon.json",
+      "aim_bone": "bone_pitch",
+      "projectiles_per_fire": 1,
+      "muzzle_bone": [
+        "socket_rightMuzzle01",
+        "socket_leftMuzzle01",
+        "socket_rightMuzzle02",
+        "socket_leftMuzzle02"
+      ],
+      "record_index": 0,
+      "fire_event": "fired0"
+    },
+    {
+      "spec_id": "/pa/units/land/air_defense_adv/air_defense_adv_mg_tool_weapon.json",
+      "aim_bone": "pitch_1",
+      "projectiles_per_fire": 2,
+      "muzzle_bone": [
+        "muzzle_1a",
+        "muzzle_1b"
+      ],
+      "record_index": 1,
+      "fire_event": "fired1"
+    },
+    {
+      "spec_id": "/pa/units/land/air_defense_adv/air_defense_adv_mg_tool_weapon.json",
+      "aim_bone": "pitch_2",
+      "projectiles_per_fire": 2,
+      "muzzle_bone": [
+        "muzzle_2a",
+        "muzzle_2b"
+      ],
+      "record_index": 2,
+      "fire_event": "fired2"
+    },
+    {
+      "spec_id": "/pa/units/land/air_defense_adv/air_defense_adv_mg_tool_weapon.json",
+      "aim_bone": "pitch_3",
+      "projectiles_per_fire": 2,
+      "muzzle_bone": [
+        "muzzle_3a",
+        "muzzle_3b"
+      ],
+      "record_index": 3,
+      "fire_event": "fired3"
+    }
+  ],
+  "events": {
+    "build_complete": {
+      "audio_cue": "/SE/Build_Complete/structure_small"
+    },
+    "fired0": {
+      "audio_cue": "/SE/Weapons/structure/air_defense_flak_fire",
+      "effect_spec": "/pa/effects/specs/default_muzzle_flash.pfx socket_rightMuzzle01 /pa/effects/specs/default_muzzle_flash.pfx socket_leftMuzzle01 /pa/effects/specs/default_muzzle_flash.pfx socket_rightMuzzle02 /pa/effects/specs/default_muzzle_flash.pfx socket_leftMuzzle02"
+    },
+    "fired1": {
+      "audio_cue": "/SE/Weapons/veh/attack_vehicle_fire",
+      "effect_spec": "/pa/effects/specs/default_small_muzzle_flash.pfx muzzle_1a /pa/effects/specs/default_small_muzzle_flash.pfx muzzle_1b"
+    },
+    "fired2": {
+      "audio_cue": "/SE/Weapons/veh/attack_vehicle_fire",
+      "effect_spec": "/pa/effects/specs/default_small_muzzle_flash.pfx muzzle_2a /pa/effects/specs/default_small_muzzle_flash.pfx muzzle_2b"
+    },
+    "fired3": {
+      "audio_cue": "/SE/Weapons/veh/attack_vehicle_fire",
+      "effect_spec": "/pa/effects/specs/default_small_muzzle_flash.pfx muzzle_3a /pa/effects/specs/default_small_muzzle_flash.pfx muzzle_3b"
+    },
+    "died": {
+      "audio_cue": "/SE/Death/structure_small",
+      "effect_scale": 1.5
+    }
+  },
+  "selection_icon": {
+    "diameter": 33.0
+  },
+  "mesh_bounds": [
+    15,
+    15,
+    25
+  ],
+  "TEMP_texelinfo": 9.09853
+}

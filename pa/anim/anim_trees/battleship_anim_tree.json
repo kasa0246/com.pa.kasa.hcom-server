@@ -1,0 +1,121 @@
+{
+    "blend_root": {
+        "type": "unit_state",
+        "nodes": {
+            "being_built": {
+                "type": "bind_pose"
+            },
+            "living": {
+                "type": "playback",
+                "anim_name": "idle"
+            },
+            "dead": {
+                "type": "bind_pose"
+            },
+            "ghost": {
+                "type": "bind_pose"
+            }
+        }
+    },
+    "skeleton_controls": [
+        {
+            "type": "procedural_aim",
+            "rotation_bone": "bone_turret01",
+            "rotation_axis": "z",
+            "weapon_index": 0
+        },
+        {
+            "type": "procedural_aim",
+            "rotation_bone": "bone_pitch01",
+            "rotation_axis": "x",
+            "weapon_index": 0
+        },
+        {
+            "type": "procedural_aim",
+            "rotation_bone": "bone_turret02",
+            "rotation_axis": "z",
+            "weapon_index": 1
+        },
+        {
+            "type": "procedural_aim",
+            "rotation_bone": "bone_pitch02",
+            "rotation_axis": "x",
+            "weapon_index": 1
+        },
+        {
+            "type": "procedural_aim",
+            "rotation_bone": "bone_turret04",
+            "rotation_axis": "z",
+            "weapon_index": 2
+        },
+        {
+            "type": "procedural_aim",
+            "rotation_bone": "bone_pitch04",
+            "rotation_axis": "x",
+            "weapon_index": 2
+        },
+        {
+            "type": "recoil",
+            "bone": "bone_recoil01",
+            "recoil_dist": 2.0,
+            "restore_time": 2.0,
+            "unit_event": "fired0"
+        },
+        {
+            "type": "recoil",
+            "bone": "bone_recoil02",
+            "recoil_dist": 2.0,
+            "restore_time": 2.0,
+            "unit_event": "fired0"
+        },
+        {
+            "type": "recoil",
+            "bone": "bone_recoil03",
+            "recoil_dist": 2.0,
+            "restore_time": 2.0,
+            "unit_event": "fired0"
+        },
+        {
+            "type": "recoil",
+            "bone": "bone_recoil04",
+            "recoil_dist": 2.0,
+            "restore_time": 2.0,
+            "unit_event": "fired1"
+        },
+        {
+            "type": "recoil",
+            "bone": "bone_recoil05",
+            "recoil_dist": 2.0,
+            "restore_time": 2.0,
+            "unit_event": "fired1"
+        },
+        {
+            "type": "recoil",
+            "bone": "bone_recoil06",
+            "recoil_dist": 2.0,
+            "restore_time": 2.0,
+            "unit_event": "fired1"
+        },
+        {
+            "type": "recoil",
+            "bone": "bone_recoil10",
+            "recoil_dist": 2.0,
+            "restore_time": 2.0,
+            "unit_event": "fired2"
+        },
+        {
+            "type": "recoil",
+            "bone": "bone_recoil11",
+            "recoil_dist": 2.0,
+            "restore_time": 2.0,
+            "unit_event": "fired2"
+        },
+        {
+            "type": "recoil",
+            "bone": "bone_recoil12",
+            "recoil_dist": 2.0,
+            "restore_time": 2.0,
+            "unit_event": "fired2"
+        }
+    ]
+}

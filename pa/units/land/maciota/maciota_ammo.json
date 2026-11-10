@@ -1,0 +1,80 @@
+{
+  "base_spec": "/pa/units/land/maciota/base_missile_maciota.json",
+  "damage": 5000,
+  "splash_damage": 5000,
+  "splash_radius": 100,
+  "full_damage_splash_radius": 30,
+  "cruise_height": 20,
+  "initial_velocity": 600.0,
+  "max_velocity": 600.0,
+  "lifetime": 5,
+  "turn_rate": 45,
+  "armor_damage_map": {
+    "AT_Custom1": 1,
+    "AT_Custom2": 1,
+    "AT_Custom3": 1,
+    "AT_Custom4": 1,
+    "AT_Air": 1,
+    "AT_Custom5": 1,
+    "AT_Custom6": 1,
+    "AT_Custom7": 1,
+    "AT_Orbital": 1,
+    "AT_Custom8": 1,
+    "AT_Custom9": 1,
+    "AT_Custom0": 1,
+    "AT_Bot": 1,
+    "AT_Hover": 1,
+    "AT_Naval": 1,
+    "AT_Commander": 1,
+    "AT_None": 1,
+    "AT_Structure": 1,
+    "AT_Vehicle": 1
+  },
+  "events": {
+    "died": {
+      "audio_cue": "/SE/Death/structure_small",
+      "effect_spec": "/pa/units/land/maciota/orbital_laser_ammo_beam_hit.pfx",
+      "effect_scale": 3.0
+    }
+  },
+  "damage_volume": {
+    "initial_radius": 30.0,
+    "radius_velocity": 300.0,
+    "radius_accel": -50.0,
+    "delay": 0.5,
+    "burnable_remove_radius": 100.0
+  },
+  "spawn_unit_on_death": "/pa/units/base/stun_huge/stun_huge.json",
+  "fx_collision_spec": "/pa/units/land/maciota/orbital_laser_ammo_beam_hit.pfx",
+  "fx_trail": {
+    "filename": "/pa/units/land/maciota/ion_defense_proj_trail.pfx"
+  },
+  "flight_type": "Staged",
+  "stages": [
+    {
+      "ignores_gravity": true,
+      "ignores_LOS": true,
+      "stage_duration": 1,
+      "stage_turn_rate": 7200,
+      "rotates_to_velocity": true
+    },
+    {
+      "ignores_gravity": true,
+      "ignores_LOS": true,
+      "stage_duration": 1,
+      "stage_turn_rate": 7200,
+      "stage_change_range": 5000,
+      "rotates_to_velocity": true
+    },
+    {
+      "ignores_gravity": false,
+      "ignores_LOS": false,
+      "stage_duration": 500,
+      "stage_turn_rate": 7200,
+      "rotates_to_velocity": true
+    },
+    {
+      "die_here": true
+    }
+  ]
+}

@@ -1,0 +1,190 @@
+{
+    "TEMP_texelinfo": 15.8224,
+    "alt_area_build_pattern": [
+        [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ]
+    ],
+    "alt_area_build_separation": 0.6,
+    "alt_area_build_type": "Sphere",
+    "alt_area_max_radius": 150.0,
+    "area_build_type": "Line",
+    "atrophy_cool_down": 5.0,
+    "atrophy_rate": 80,
+    "audio": {
+        "selection_response": {
+            "cue": "/SE/Selection/structure/energy"
+        }
+    },
+    "base_spec": "/pa/units/land/base_structure/base_structure.json",
+    "build_metal_cost": 120,
+    "description": "!LOC:Basic Economy - Produces periodic bursts of 150 energy/s lasting 30 seconds. All solar panels activate simultaneously every 60 seconds.",
+    "display_name": "!LOC:Solar Cell",
+    "si_name": "solar_cell",
+    "death_weapon": {
+        "ground_ammo_spec": "/pa/units/land/energy_plant/energy_plant_death_weapon.json"
+    },
+    "events": {
+        "build_complete": {
+            "audio_cue": "/SE/Build_Complete/energy"
+        },
+        "died": {
+            "audio_cue": "/SE/Death/Factory",
+            "effect_scale": 0.5
+        },
+        "fired": {
+            "audio_cue": ""
+        }
+    },
+    "command_caps": [
+        "ORDER_FireSecondaryWeapon"
+    ],
+    "fx_offsets": [],
+    "headlights": [],
+    "lamps": [
+        {
+            "color": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "intensity": 2.0,
+            "offset": [
+                1.711,
+                1.602,
+                2.521
+            ],
+            "radius": 2.0
+        }
+    ],
+    "max_health": 250,
+    "mesh_bounds": [
+        6,
+        10,
+        8
+    ],
+    "model": [
+        {
+            "animations": {
+                "idle": "/pa/units/land/solar_cell/solar_cell_anim_idle.papa"
+            },
+            "animtree": "/pa/anim/anim_trees/constant_idle_anim_tree.json",
+            "filename": "/pa/units/land/solar_cell/solar_cell.papa",
+            "layer": "WL_LandHorizontal",
+            "skirt_decal": "/pa/effects/specs/skirt_energy.json"
+        },
+        {
+            "animations": {
+                "idle": "/pa/units/land/solar_cell/naval/naval_solar_cell_anim_idle.papa"
+            },
+            "animtree": "/pa/anim/anim_trees/constant_idle_anim_tree.json",
+            "filename": "/pa/units/land/solar_cell/naval/naval_solar_cell.papa",
+            "layer": "WL_WaterSurface"
+        }
+    ],
+    "placement_size": [
+        6,
+        10
+    ],
+    "tools": [
+        {
+            "spec_id": "/pa/units/land/solar_cell/solar_cell_tool_weapon.json",
+            "aim_bone": "bone_root",
+            "secondary_weapon": true,
+            "show_range": false
+        }
+    ],
+    "recon": {
+        "observer": {
+            "items": [
+                {
+                    "layer": "surface_and_air",
+                    "channel": "sight",
+                    "shape": "capsule",
+                    "radius": 85
+                },
+                {
+                    "layer": "mine",
+                    "channel": "radar",
+                    "shape": "capsule",
+                    "radius": 100
+                },
+                {
+                    "layer": "mine",
+                    "channel": "sight",
+                    "shape": "capsule",
+                    "radius": 50
+                }
+            ]
+        }
+    },
+    "selection_icon": {
+        "diameter": 16
+    },
+    "spawn_layers": "WL_AnyHorizontalGroundOrWaterSurface",
+    "unit_name": "Solar Cell",
+    "unit_types": [
+        "UNITTYPE_Structure",
+        "UNITTYPE_EnergyProduction",
+        "UNITTYPE_Basic",
+        "UNITTYPE_CmdBuild",
+        "UNITTYPE_FabBuild",
+        "UNITTYPE_Economy",
+        "UNITTYPE_Custom58"
+    ]
+}

@@ -1,0 +1,10 @@
+- Ferretmaster for unit unlock mechanics.
+- Loló, ARESLORD for assets from Osmech (Bunker, Metal Assimilator, Halabib, Kamecha, Drill, Freezer, Skybreaker, Sauron, Spell Tower).
+- ARESLORD for Arsenal model from Ugrades.
+- NikolaMX, BOIYOUSAYWHAT for unit models from Exiles (Anti-ballistics, Heron, Shah, Cougar, Ocelot, Pylon, Seizmic, Ambush Tower, Improved Metal Extractor and NI missiles).
+- Team DAEDALUS, Quildtide, Taiga, Anonemous2 of Section 17 for Pineapple, Floater, Spider, Energy Coil and Experimental Gantry models.
+- Second Wave Team for Rex, Centaur, Andreas, Stalker, Juno, Swordfish, Pegasus, Metal Generator, Pounder, Jammer Titan and Spear models.
+- Bot, Taiga for upgradable turret mechanic.
+- domdom for projectile effects.
+- wondible for Titan Gantry.
+- Legion Team for inspiration and maybe a few placeholder files I forgot to delete.

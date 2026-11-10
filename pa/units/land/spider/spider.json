@@ -1,0 +1,151 @@
+{
+    "TEMP_texelinfo": 6.39639,
+    "attachable": {
+        "offsets": {
+            "head": [
+                0,
+                0,
+                5.3
+            ],
+            "root": [
+                0,
+                0,
+                0
+            ]
+        }
+    },
+    "audio": {
+        "loops": {
+            "move": {
+                "cue": "/SE/Movement/bot/T2_assault_loop",
+                "flag": "vel_changed",
+                "should_start_func": "is_moving",
+                "should_stop_func": "is_not_moving"
+            }
+        },
+        "selection_response": {
+            "cue": "/SE/Selection/bot/T2_assault"
+        }
+    },
+    "base_spec": "/pa/units/land/base_bot/base_bot.json",
+    "build_metal_cost": 800,
+    "description": "!LOC:Advanced AA Bot - Equipped with advanced short range AA missiles. Improved missile range and velocity. High RoF. Unlimited ammo. Will attempt to intercept incoming artillery shells, rockets and missiles. Attacks only air targets.",
+    "display_name": "!LOC:Stunner",
+    "si_name": "spider",
+    "events": {
+        "build_complete": {
+            "audio_cue": "/SE/Build_Complete/bot"
+        },
+        "died": {
+            "audio_cue": "/SE/Death/Bot",
+            "effect_scale": 1.0,
+            "effect_spec": "/pa/effects/specs/default_explosion_bot_t2.pfx"
+        },
+        "fired": {
+            "audio_cue": "/SE/Weapons/bot/assault_adv_fire",
+            "effect_spec": "/pa/effects/specs/default_small_muzzle_flash.pfx socket_right_muzzle /pa/effects/specs/default_small_muzzle_flash.pfx socket_left_muzzle"
+        }
+    },
+    "guard_layer": "WL_AnySurface",
+    "max_health": 500,
+    "mesh_bounds": [
+        10,
+        4.5,
+        10
+    ],
+    "model": {
+        "animations": {
+            "idle": "/pa/units/land/spider/anim_idle.papa",
+            "walk": "/pa/units/land/spider/anim_run.papa"
+        },
+        "animtree": "/pa/units/land/spider/anim_tree.json",
+        "filename": "/pa/units/land/spider/model.papa",
+        "walk_speed": 5
+    },
+    "navigation": {
+        "acceleration": 120,
+        "brake": -1,
+        "move_speed": 12,
+        "turn_speed": 720,
+        "type": "land-small",
+        "group_preference": "back"
+    },
+    "physics": {
+        "radius": 3.5
+    },
+    "recon": {
+        "observer": {
+            "items": [
+                {
+                    "channel": "sight",
+                    "layer": "surface_and_air",
+                    "radius": 85,
+                    "shape": "capsule"
+                },
+                {
+                    "layer": "mine",
+                    "channel": "radar",
+                    "shape": "capsule",
+                    "radius": 200
+                },
+                {
+                    "layer": "mine",
+                    "channel": "sight",
+                    "shape": "capsule",
+                    "radius": 150
+                }
+            ]
+        }
+    },
+    "selection_icon": {
+        "diameter": 12.0
+    },
+    "tools": [
+        {
+            "aim_bone": "bone_turret",
+            "muzzle_bone": [
+                "socket_right_muzzle",
+                "socket_left_muzzle"
+            ],
+            "spec_id": "/pa/units/land/spider/spider_aa_tool_weapon.json"
+        },
+        {
+            "aim_bone": "bone_turret",
+            "muzzle_bone": [
+                "socket_right_muzzle",
+                "socket_left_muzzle"
+            ],
+            "spec_id": "/pa/units/land/spider/spider_cram_hard.json"
+        },
+        {
+            "aim_bone": "bone_turret",
+            "muzzle_bone": [
+                "socket_right_muzzle",
+                "socket_left_muzzle"
+            ],
+            "spec_id": "/pa/units/land/spider/spider_cram_medium.json"
+        },
+        {
+            "aim_bone": "bone_turret",
+            "muzzle_bone": [
+                "socket_right_muzzle",
+                "socket_left_muzzle"
+            ],
+            "spec_id": "/pa/units/land/spider/spider_cram_easy.json"
+        }
+    ],
+    "transportable": {
+        "size": 3
+    },
+    "unit_types": [
+        "UNITTYPE_Bot",
+        "UNITTYPE_Mobile",
+        "UNITTYPE_Offense",
+        "UNITTYPE_AirDefense",
+        "UNITTYPE_Land",
+        "UNITTYPE_Advanced",
+        "UNITTYPE_FactoryBuild",
+        "UNITTYPE_CannonBuildable",
+        "UNITTYPE_Custom58"
+    ]
+}

@@ -1,0 +1,21 @@
+{
+    "base_spec": "/pa/tools/base_shell_turret/base_shell_turret.json",
+    "ammo_id": "/pa/units/air/strafer/strafer_ammo.json",
+    "rate_of_fire": 5.0,
+    "idle_aim_delay": 2,
+    "max_range": 95,
+    "yaw_rate": 120,
+    "pitch_rate": 90,
+    "yaw_range": 180,
+    "pitch_range": 70,
+    "auto_attack": true,
+    "target_layers": [
+        "WL_LandHorizontal",
+        "WL_WaterSurface",
+        "WL_Air"
+    ],
+    "exclude_unit_types": "(Air - (Gunship | Custom10)) | Custom1 | Custom2",
+    "target_priorities": [
+        "(Bot | Vehicle) - Commander"
+    ]
+}

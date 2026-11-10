@@ -1,0 +1,144 @@
+{
+    "TEMP_texelinfo": 5.32966,
+    "attachable": {
+        "offsets": {
+            "head": [
+                0,
+                0,
+                7.4
+            ],
+            "root": [
+                0,
+                0,
+                0
+            ]
+        }
+    },
+    "audio": {
+        "loops": {
+            "move": {
+                "cue": "/SE/Movement/bot/sniper_loop",
+                "flag": "vel_changed",
+                "should_start_func": "is_moving",
+                "should_stop_func": "is_not_moving"
+            }
+        },
+        "selection_response": {
+            "cue": "/SE/Selection/bot/sniper"
+        }
+    },
+    "base_spec": "/pa/units/land/base_bot/base_bot.json",
+    "build_metal_cost": 3500,
+    "description": "!LOC:Experimental Lightning Bot - Armed with powerful electromagnetic discharge blast weapon. Heavy splash. Ignores armor. Slow reload. Limited range. Attacks everything. Uses energy.",
+    "display_name": "!LOC:Pineapple",
+    "events": {
+        "build_complete": {
+            "audio_cue": "/SE/Build_Complete/bot"
+        },
+        "died": {
+            "audio_cue": "/SE/Death/Bot",
+            "effect_scale": 2,
+            "effect_spec": "/pa/effects/specs/default_explosion_bot_t2.pfx"
+        },
+        "fired0": {
+            "effect_spec": "/pa/units/land/edison/edison_lightning_fired.pfx bone_top",
+            "audio_cue": "/SE/Weapons/air/titan_air_fire"
+        },
+        "fired1": {
+            "audio_cue": ""
+        }
+    },
+    "guard_layer": "WL_AnySurface",
+    "max_health": 5000,
+    "mesh_bounds": [
+        10,
+        10,
+        15
+    ],
+    "model": {
+        "animations": {
+            "idle": "/pa/units/land/pineapple/anim_idle.papa",
+            "walk": "/pa/units/land/pineapple/anim_run.papa"
+        },
+        "animtree": "/pa/anim/anim_trees/bot_sniper_anim_tree.json",
+        "filename": "/pa/units/land/pineapple/model.papa",
+        "walk_speed": 3
+    },
+    "navigation": {
+        "acceleration": 120,
+        "brake": 120,
+        "group_preference": "back",
+        "move_speed": 10,
+        "turn_speed": 90,
+        "type": "land-small"
+    },
+    "nearby_target_tick_update_interval": 15,
+    "physics": {
+        "radius": 3.5,
+        "allow_pushing": false,
+        "push_sideways": false
+    },
+    "recon": {
+        "observer": {
+            "items": [
+                {
+                    "layer": "surface_and_air",
+                    "channel": "sight",
+                    "shape": "capsule",
+                    "radius": 150
+                },
+                {
+                    "layer": "mine",
+                    "channel": "sight",
+                    "shape": "capsule",
+                    "radius": 150
+                },
+                {
+                    "layer": "underwater",
+                    "channel": "sight",
+                    "shape": "capsule",
+                    "radius": 150
+                }
+            ]
+        }
+    },
+    "selection_icon": {
+        "diameter": 20.0
+    },
+    "tools": [
+        {
+            "aim_bone": "bone_top",
+            "muzzle_bone": "bone_top",
+            "fire_event": "fired0",
+            "spec_id": "/pa/units/land/pineapple/pineapple_tool_weapon.json"
+        },
+        {
+            "spec_id": "/pa/units/land/tank_heavy_armor/adv_plow_tool.json",
+            "aim_bone": "bone_root",
+            "muzzle_bone": "bone_root",
+            "fire_event": "fired1",
+            "record_index": -1,
+            "primary_weapon": false,
+            "show_range": false
+        }
+    ],
+    "transportable": {
+        "size": 12
+    },
+    "unit_types": [
+        "UNITTYPE_Bot",
+        "UNITTYPE_Mobile",
+        "UNITTYPE_Defense",
+        "UNITTYPE_Land",
+        "UNITTYPE_Advanced",
+        "UNITTYPE_FactoryBuild",
+        "UNITTYPE_Custom7"
+    ],
+    "fx_offsets": [
+        {
+            "filename": "/pa/units/land/edison/edison_center_bulb.pfx",
+            "bone": "bone_top",
+            "type": "idle"
+        }
+    ]
+}

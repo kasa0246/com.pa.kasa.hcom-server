@@ -1,0 +1,191 @@
+{
+    "base_spec": "/pa/units/land/base_vehicle/base_vehicle.json",
+    "display_name": "Skipper",
+    "description": "!LOC:Hover Fabricator - Fast. Builds basic structures.",
+    "si_name": "hover_fab",
+    "armor_type": "AT_Vehicle",
+    "max_health": 100,
+    "build_metal_cost": 250,
+    "mesh_bounds": [
+        4,
+        7.5,
+        2.5
+    ],
+    "attachable": {
+        "offsets": {
+            "root": [
+                0,
+                0,
+                0
+            ],
+            "head": [
+                0,
+                0,
+                1
+            ]
+        }
+    },
+    "buildable_types": "(Land & Structure & Basic | Factory & Basic | Factory & Advanced & Vehicle & Land | FabBuild) & Custom58",
+    "unit_types": [
+        "UNITTYPE_Custom58",
+        "UNITTYPE_Custom3",
+        "UNITTYPE_Fabber",
+        "UNITTYPE_Construction",
+        "UNITTYPE_Land",
+        "UNITTYPE_Mobile",
+        "UNITTYPE_Basic",
+        "UNITTYPE_Vehicle",
+        "UNITTYPE_FactoryBuild",
+        "UNITTYPE_CannonBuildable",
+        "UNITTYPE_Hover"
+    ],
+    "command_caps": [
+        "ORDER_Move",
+        "ORDER_Patrol",
+        "ORDER_Build",
+        "ORDER_Reclaim",
+        "ORDER_Repair",
+        "ORDER_Assist"
+    ],
+    "navigation": {
+        "type": "hover",
+        "acceleration": 140,
+        "brake": 140,
+        "move_speed": 24,
+        "turn_speed": 120
+    },
+    "physics": {
+        "shape": "sphere",
+        "radius": 2,
+        "air_friction": 0.5,
+        "allow_pushing": true
+    },
+    "transportable": {
+        "size": 1
+    },
+    "recon": {
+        "observer": {
+            "items": [
+                {
+                    "layer": "surface_and_air",
+                    "channel": "sight",
+                    "shape": "capsule",
+                    "radius": 85
+                },
+                {
+                    "layer": "mine",
+                    "channel": "radar",
+                    "shape": "capsule",
+                    "radius": 100
+                },
+                {
+                    "layer": "mine",
+                    "channel": "sight",
+                    "shape": "capsule",
+                    "radius": 50
+                }
+            ]
+        }
+    },
+    "model": {
+        "filename": "/pa/units/land/hover_fab/fabrication_bargeX.papa",
+        "animations": {
+            "hover": "/pa/units/land/tank_hover/tank_hover_anim_hover.papa"
+        },
+        "animtree": "/pa/anim/anim_trees/tank_hover_anim_tree.json"
+    },
+    "tools": [
+        {
+            "spec_id": "/pa/units/land/hover_fab/hover_fab_build_arm.json",
+            "aim_bone": "bone_turret"
+        }
+    ],
+    "events": {
+        "build_complete": {
+            "audio_cue": "/SE/Build_Complete/sea_fab",
+            "effect_scale": 0.5
+        },
+        "died": {
+            "audio_cue": "/SE/Death/Sea_small",
+            "effect_spec": "/pa/effects/specs/default_explosion_naval.pfx",
+            "effect_scale": 0.4
+        }
+    },
+    "audio": {
+        "loops": {
+            "build": {
+                "cue": "/SE/Construction/Fab_contruction_beam_loop",
+                "flag": "build_target_changed",
+                "should_start_func": "has_build_target",
+                "should_stop_func": "no_build_target"
+            },
+            "move": {
+                "cue": "/SE/Movement/sea/Fab_ship_loop",
+                "flag": "vel_changed",
+                "should_start_func": "is_moving",
+                "should_stop_func": "is_not_moving"
+            }
+        }
+    },
+    "fx_offsets": [
+        {
+            "type": "build",
+            "filename": "/pa/effects/specs/fab_spray.pfx",
+            "bone": "socket_muzzle",
+            "offset": [
+                0,
+                0,
+                0
+            ],
+            "orientation": [
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "type": "moving_forward",
+            "bone": "bone_jet",
+            "offset": [
+                0,
+                0,
+                0
+            ],
+            "filename": "/pa/units/sea/fabrication_barge/fabrication_barge_thrust.pfx"
+        },
+        {
+            "type": "idle",
+            "filename": "/pa/effects/specs/hover_idle_01.pfx",
+            "bone": "bone_root",
+            "offset": [
+                0.3,
+                0.2,
+                1.2
+            ],
+            "orientation": [
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "type": "idle",
+            "filename": "/pa/effects/specs/hover_idle_01.pfx",
+            "bone": "bone_root",
+            "offset": [
+                -0.3,
+                0.2,
+                1.2
+            ],
+            "orientation": [
+                0,
+                0,
+                -180
+            ]
+        }
+    ],
+    "selection_icon": {
+        "diameter": 11.0
+    },
+    "TEMP_texelinfo": 7.50603
+}

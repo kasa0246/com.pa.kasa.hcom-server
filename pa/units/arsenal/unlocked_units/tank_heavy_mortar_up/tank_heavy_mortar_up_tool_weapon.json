@@ -1,0 +1,33 @@
+{
+    "base_spec": "/pa/tools/base_artillery_turret_unit/base_artillery_turret_unit.json",
+    "ammo_id": "/pa/units/land/tank_heavy_mortar/tank_heavy_mortar_ammo.json",
+    "max_firing_velocity": 225,
+    "min_firing_velocity": 150,
+    "rate_of_fire": 0.2,
+    "ammo_source": "time",
+    "ammo_capacity": 20,
+    "ammo_demand": 1,
+    "ammo_per_shot": 10,
+    "idle_aim_delay": 10,
+    "max_range": 300,
+    "yaw_rate": 45,
+    "pitch_rate": 45,
+    "yaw_range": 180,
+    "pitch_range": 89,
+    "firing_standard_deviation": 0.25,
+    "spread_fire": true,
+    "auto_attack": true,
+    "target_layers": [
+        "WL_LandHorizontal",
+        "WL_WaterSurface"
+    ],
+    "exclude_unit_types": "Custom1 | Custom2",
+    "target_priorities": [
+        "Commander",
+        "Mobile - Air",
+        "Structure & SurfaceDefense",
+        "Structure & Defense",
+        "Structure - Wall",
+        "Wall"
+    ]
+}

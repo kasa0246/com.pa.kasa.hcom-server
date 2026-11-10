@@ -1,0 +1,264 @@
+{
+    "base_spec": "/pa/units/land/base_structure/base_structure.json",
+    "display_name": "!LOC:Arc-Binder",
+    "si_name": "seizmic",
+    "description": "!LOC:Experimental Control Tower Module - Uses large amounts of energy to realign metal in a small area around itself. Slowly heals nearby units.",
+    "max_health": 1000,
+    "build_metal_cost": 1500,
+    "strategic_icon_priority": 3,
+    "atrophy_rate": 7.5,
+    "atrophy_cool_down": 15.0,
+    "spawn_layers": "WL_AnyHorizontalGroundOrWaterSurface",
+    "area_build_separation": 300,
+    "area_build_type": "Sphere",
+    "unit_types": [
+        "UNITTYPE_Structure",
+        "UNITTYPE_Advanced",
+        "UNITTYPE_FabAdvBuild",
+        "UNITTYPE_Custom7"
+    ],
+    "feature_requirements": [
+        "metal_spot"
+    ],
+    "force_snap_to_feature_orientation": true,
+    "replaceable_units": [
+        "/pa/units/land/energy_coil/energy_coil.json",
+        "/pa/units/land/energy_coil/energy_coil_am.json",
+        "/pa/units/land/edison/edison.json",
+        "/pa/units/land/pylon/pylon.json",
+        "/pa/units/land/pylon/pylon_am.json",
+        "/pa/units/land/spell_heal/spell_heal.json",
+        "/pa/units/land/spell_heal/spell_heal_bal.json",
+        "/pa/units/land/control_tower/control_tower.json"
+    ],
+    "command_caps": [
+        "ORDER_Attack"
+    ],
+    "recon": {
+        "observer": {
+            "items": [
+                {
+                    "layer": "surface_and_air",
+                    "channel": "sight",
+                    "shape": "capsule",
+                    "radius": 100
+                },
+                {
+                    "layer": "mine",
+                    "channel": "radar",
+                    "shape": "capsule",
+                    "radius": 100
+                },
+                {
+                    "layer": "mine",
+                    "channel": "sight",
+                    "shape": "capsule",
+                    "radius": 50
+                }
+            ]
+        }
+    },
+    "model": [
+        {
+            "filename": "/pa/units/land/seizmic/a_energy_storage.papa",
+            "skirt_decal": "/pa/effects/specs/skirt_energy_adv.json"
+        }
+    ],
+    "tools": [
+        {
+            "spec_id": "/pa/units/base/regen_1/regen_1_tool.json",
+            "aim_bone": "bone_root",
+            "muzzle_bone": "bone_root"
+        }
+    ],
+    "events": {
+        "build_complete": {
+            "audio_cue": "/SE/Build_Complete/energy"
+        },
+        "fired": {
+            "audio_cue": "",
+            "effect_spec": ""
+        },
+        "died": {
+            "audio_cue": "/SE/Death/Factory",
+            "effect_scale": 0.8
+        }
+    },
+    "audio": {
+        "selection_response": {
+            "cue": "/SE/Selection/structure/energy"
+        }
+    },
+    "fx_offsets": [
+        {
+            "type": "idle",
+            "filename": "/pa/units/land/seizmic/healing_aura.pfx",
+            "bone": "bone_root"
+        }
+    ],
+    "headlights": [
+        {
+            "gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa",
+            "offset": [
+                6.2,
+                6.2,
+                8.6
+            ],
+            "orientation": [
+                26.33,
+                -23.93,
+                -50.68
+            ],
+            "near_width": 5.5,
+            "near_height": 5.5,
+            "near_distance": 2.5,
+            "far_distance": 25.0,
+            "color": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "intensity": 1.0
+        },
+        {
+            "gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa",
+            "offset": [
+                -6.2,
+                6.2,
+                8.6
+            ],
+            "orientation": [
+                -26.34,
+                -23.93,
+                50.67
+            ],
+            "near_width": 5.5,
+            "near_height": 5.5,
+            "near_distance": 2.5,
+            "far_distance": 25.0,
+            "color": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "intensity": 1.0
+        },
+        {
+            "gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa",
+            "offset": [
+                6.2,
+                -6.2,
+                8.6
+            ],
+            "orientation": [
+                26.33,
+                23.92,
+                -129.32
+            ],
+            "near_width": 5.5,
+            "near_height": 5.5,
+            "near_distance": 2.5,
+            "far_distance": 25.0,
+            "color": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "intensity": 1.0
+        },
+        {
+            "gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa",
+            "offset": [
+                -6.2,
+                -6.2,
+                8.6
+            ],
+            "orientation": [
+                -26.34,
+                23.92,
+                129.31
+            ],
+            "near_width": 5.5,
+            "near_height": 5.5,
+            "near_distance": 2.5,
+            "far_distance": 25.0,
+            "color": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "intensity": 1.0
+        }
+    ],
+    "lamps": [
+        {
+            "offset": [
+                6.2,
+                6.2,
+                8.6
+            ],
+            "radius": 3.0,
+            "color": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "intensity": 1.0
+        },
+        {
+            "offset": [
+                -6.2,
+                6.2,
+                8.6
+            ],
+            "radius": 3.0,
+            "color": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "intensity": 1.0
+        },
+        {
+            "offset": [
+                6.2,
+                -6.2,
+                8.6
+            ],
+            "radius": 3.0,
+            "color": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "intensity": 1.0
+        },
+        {
+            "offset": [
+                -6.2,
+                -6.2,
+                8.6
+            ],
+            "radius": 3.0,
+            "color": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "intensity": 1.0
+        }
+    ],
+    "selection_icon": {
+        "diameter": 31
+    },
+    "mesh_bounds": [
+        20,
+        20,
+        14.2
+    ],
+    "placement_size": [
+        27,
+        27
+    ],
+    "TEMP_texelinfo": 26.4567
+}

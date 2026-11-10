@@ -1,0 +1,164 @@
+{
+    "base_spec": "/pa/units/land/base_bot/base_bot.json",
+    "display_name": "Drill",
+    "si_name": "drill",
+    "description": "!LOC:Experimental Underground Bot - Invisible. Moving effect globally visible. Spawns a mound of dirt every 20 seconds that can be targeted by all enemies. Durable. Very slow. Close range, low DPS. Attacks only land structures. Explodes on death. Can be damaged by explosions (manually guided arty etc.) or squished by heavy objects (eg. heavy tanks).",
+    "max_health": 15000,
+    "spawn_layers": "WL_LandHorizontal",
+    "armor_type": "AT_Custom4",
+    "build_metal_cost": 4500,
+    "attachable": {
+        "offsets": {
+            "root": [
+                0,
+                0,
+                0
+            ],
+            "head": [
+                0,
+                0.25,
+                4.5
+            ]
+        }
+    },
+    "buildable_types": "",
+    "unit_types": [
+        "UNITTYPE_Custom7",
+        "UNITTYPE_Bot",
+        "UNITTYPE_Mobile",
+        "UNITTYPE_Land",
+        "UNITTYPE_Offense",
+        "UNITTYPE_Advanced",
+        "UNITTYPE_FactoryBuild"
+    ],
+    "command_caps": [
+        "ORDER_Move",
+        "ORDER_Patrol",
+        "ORDER_Attack"
+    ],
+    "guard_layer": "WL_AnySurface",
+    "navigation": {
+        "type": "land-small",
+        "acceleration": 6,
+        "brake": -1,
+        "move_speed": 6,
+        "turn_speed": 90,
+        "turn_in_place": false,
+        "turn_accel": 45
+    },
+    "physics": {
+        "radius": 4,
+        "allow_pushing": false
+    },
+    "wreckage_health_frac": 0.6,
+    "recon": {
+        "observable": {
+            "layer": "mine",
+            "ignore_radar": true
+        },
+        "observer": {
+            "items": [
+                {
+                    "layer": "surface_and_air",
+                    "channel": "sight",
+                    "shape": "capsule",
+                    "radius": 85
+                },
+                {
+                    "layer": "surface_and_air",
+                    "channel": "radar",
+                    "shape": "capsule",
+                    "radius": 135
+                }
+            ]
+        }
+    },
+    "model": {
+        "filename": "/pa/units/thorosmen/drill/drill.papa",
+        "animtree": "/pa/units/thorosmen/drill/drill_anim_tree.json",
+        "walk_speed": 10
+    },
+    "death_weapon": {
+        "ground_ammo_spec": "/pa/units/land/land_mine/land_mine_pbaoe.json"
+    },
+    "tools": [
+        {
+            "spec_id": "/pa/units/thorosmen/drill/drill_tool_weapon.json",
+            "aim_bone": "bone_root",
+            "muzzle_bone": "socket_muzzle",
+            "record_index": 0
+        },
+        {
+            "spec_id": "/pa/units/thorosmen/drill/drill_effect_tool_weapon.json",
+            "record_index": 1,
+            "fire_event": "fired1",
+            "aim_bone": "bone_root",
+            "muzzle_bone": "bone_root"
+        },
+        {
+            "spec_id": "/pa/units/thorosmen/drill/drill_spawn_weapon.json",
+            "record_index": -1,
+            "projectiles_per_fire": 1,
+            "fire_event": "fired1",
+            "aim_bone": "bone_root",
+            "muzzle_bone": "bone_root",
+            "show_range": false
+        }
+    ],
+    "events": {
+        "fired": {
+            "audio_cue": "/SE/Weapons/bot/swarm",
+            "effect_spec": "/pa/units/thorosmen/drill/drill_muzzle_flash.pfx socket_muzzle"
+        },
+        "died": {
+            "audio_cue": "/SE/Death/Bot",
+            "effect_spec": "/pa/effects/specs/default_explosion_bot_t2.pfx",
+            "effect_scale": 2.0
+        }
+    },
+    "fx_offsets": [
+        {
+            "bone": "socket_muzzle",
+            "filename": "/pa/units/thorosmen/drill/dust_offset.pfx",
+            "offset": [
+                0,
+                -10,
+                0
+            ],
+            "orientation": [
+                0,
+                0,
+                0
+            ],
+            "type": "moving_forward"
+        }
+    ],
+    "audio": {
+        "loops": {
+            "build": {
+                "cue": "/SE/Construction/Fab_contruction_beam_loop",
+                "flag": "build_target_changed",
+                "should_start_func": "has_build_target",
+                "should_stop_func": "no_build_target"
+            },
+            "move": {
+                "cue": "/SE/Movement/bot/swarm_loop",
+                "flag": "vel_changed",
+                "should_start_func": "is_moving",
+                "should_stop_func": "is_not_moving"
+            }
+        },
+        "selection_response": {
+            "cue": "/SE/Selection/bot/swarm"
+        }
+    },
+    "selection_icon": {
+        "diameter": 22.0
+    },
+    "TEMP_texelinfo": 6.38702,
+    "mesh_bounds": [
+        0.1,
+        0.1,
+        0.1
+    ]
+}

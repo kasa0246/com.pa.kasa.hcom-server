@@ -1,0 +1,168 @@
+{
+    "base_spec": "/pa/units/land/base_structure/base_structure.json",
+    "unit_name": "Wind Turbine",
+    "display_name": "!LOC:Wind Turbine",
+    "si_name": "wind_turbine",
+    "description": "!LOC:Basic Economy - Provides small amounts of energy. Production can be significantly boosted by storng winds appearing at random.",
+    "max_health": 500,
+    "build_metal_cost": 250,
+    "atrophy_rate": 45.0,
+    "atrophy_cool_down": 15.0,
+    "spawn_layers": "WL_AnyHorizontalGroundOrWaterSurface",
+    "area_build_type": "Line",
+    "alt_area_build_type": "Sphere",
+    "alt_area_build_pattern": [
+        [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ]
+    ],
+    "unit_types": [
+        "UNITTYPE_Construction",
+        "UNITTYPE_Custom58",
+        "UNITTYPE_Structure",
+        "UNITTYPE_EnergyProduction",
+        "UNITTYPE_Basic",
+        "UNITTYPE_FabBuild",
+        "UNITTYPE_CmdBuild",
+        "UNITTYPE_Economy"
+    ],
+    "production": {
+        "energy": 100
+    },
+    "command_caps": [
+        "ORDER_FireSecondaryWeapon"
+    ],
+    "death_weapon": {
+        "ground_ammo_spec": "/pa/units/land/energy_plant/energy_plant_death_weapon.json"
+    },
+    "recon": {
+        "observer": {
+            "items": [
+                {
+                    "layer": "surface_and_air",
+                    "channel": "sight",
+                    "shape": "capsule",
+                    "radius": 85
+                },
+                {
+                    "layer": "mine",
+                    "channel": "radar",
+                    "shape": "capsule",
+                    "radius": 100
+                },
+                {
+                    "layer": "mine",
+                    "channel": "sight",
+                    "shape": "capsule",
+                    "radius": 50
+                }
+            ]
+        }
+    },
+    "model": [
+        {
+            "layer": "WL_LandHorizontal",
+            "filename": "/pa/units/land/wind_turbine/wind_turbine.papa",
+            "animations": {
+                "idle": "/pa/units/land/wind_turbine/wind_turbine_anim_work.papa"
+            },
+            "animtree": "/pa/anim/anim_trees/constant_idle_anim_tree.json",
+            "skirt_decal": "/pa/effects/specs/skirt_energy.json"
+        }
+    ],
+    "events": {
+        "build_complete": {
+            "audio_cue": "/SE/Build_Complete/energy"
+        },
+        "died": {
+            "audio_cue": "/SE/Death/Factory",
+            "effect_scale": 0.5
+        },
+        "fired": {
+            "audio_cue": "",
+            "effect_spec": ""
+        }
+    },
+    "tools": [
+        {
+            "spec_id": "/pa/units/land/wind_turbine/wind_turbine_tool_weapon.json",
+            "aim_bone": "bone_root",
+            "secondary_weapon": true,
+            "show_range": false
+        }
+    ],
+    "audio": {
+        "selection_response": {
+            "cue": "/SE/Selection/structure/energy"
+        }
+    },
+    "fx_offsets": [],
+    "selection_icon": {
+        "diameter": 17
+    },
+    "mesh_bounds": [
+        10,
+        10,
+        23.5
+    ],
+    "placement_size": [
+        15,
+        15
+    ],
+    "TEMP_texelinfo": 32.6108
+}

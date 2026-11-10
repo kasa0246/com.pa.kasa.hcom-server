@@ -1,0 +1,50 @@
+{
+    "base_spec": "/pa/units/land/base_vehicle/base_vehicle.json",
+    "display_name": "!LOC:Sheller Upgrade",
+    "description": "!LOC:New autoloader: Mag stores up to 3 shells, that can be reloaded in just 5s. Modern munitions: +accuracy, reduced ammorack nerf: HP +250. Longer barrel: range +30. Improved turret traverse rate.",
+    "si_name": "upgrade",
+    "build_metal_cost": 12000,
+    "add_to_spatial_db": false,
+    "model": {
+        "filename": "/pa/units/misc/empty_unit.papa"
+    },
+    "navigation": {
+        "type": "land-small",
+        "move_speed": 0
+    },
+    "physics": {
+        "add_to_spatial_db": false,
+        "radius": 0.05
+    },
+    "unit_types": [
+        "UNITTYPE_Bot",
+        "UNITTYPE_Advanced",
+        "UNITTYPE_Heavy",
+        "UNITTYPE_FactoryBuild",
+        "UNITTYPE_Custom23"
+    ],
+    "recon": {
+        "observer": {
+            "items": [
+                {
+                    "layer": "surface_and_air",
+                    "channel": "radar",
+                    "shape": "capsule",
+                    "radius": 0
+                },
+                {
+                    "layer": "orbital",
+                    "channel": "sight",
+                    "shape": "capsule",
+                    "radius": 0
+                },
+                {
+                    "layer": "underwater",
+                    "channel": "sight",
+                    "shape": "capsule",
+                    "radius": 0
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,43 @@
+{
+  "base_spec": "/pa/ammo/torpedo/torpedo.json",
+  "cruise_height": 2,
+  "damage": 1500,
+  "initial_velocity": 25,
+  "lifetime": 3,
+  "max_velocity": 30,
+  "model": {
+    "filename": "/pa/units/sea/torpedo/torpedo.papa"
+  },
+  "turn_rate": 120,
+  "splash_damage": 500,
+  "splash_damages_allies": false,
+  "full_damage_splash_radius": 1,
+  "splash_radius": 12,
+  "armor_damage_map": {
+    "AT_Custom1": 1,
+    "AT_Custom2": 1,
+    "AT_Custom3": 0.667,
+    "AT_Commander": 0.334
+  },
+  "physics": {
+    "radius": 1,
+    "gravity_scalar": 5,
+    "add_to_spatial_db": true,
+    "allow_underground": true
+  },
+  "events": {
+    "died": {
+      "audio_cue": "/SE/Death/Sea_sub",
+      "effect_scale": 0.35,
+      "effect_spec": "/pa/effects/specs/default_explosion_naval_sub.pfx"
+    }
+  },
+  "fx_trail": {
+    "filename": "/pa/effects/specs/torpedo_proj_trail.pfx",
+    "offset": [
+      0.0,
+      0.8,
+      0.0
+    ]
+  }
+}

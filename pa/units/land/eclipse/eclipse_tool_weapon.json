@@ -1,0 +1,27 @@
+{
+  "ammo_id": "/pa/units/land/katrina/katrina_ammo.json",
+  "auto_attack": true,
+  "base_spec": "/pa/tools/base_shell_turret/base_shell_turret.json",
+  "max_range": 300,
+  "pitch_range": 180,
+  "pitch_rate": 360,
+  "rate_of_fire": 2,
+  "ammo_source": "time",
+  "ammo_capacity": 7.25,
+  "ammo_demand": 0.5,
+  "ammo_per_shot": 2,
+  "carpet_fire": true,
+  "carpet_wait_for_full_ammo": true,
+  "target_layers": [
+    "WL_LandHorizontal",
+    "WL_WaterSurface"
+  ],
+  "exclude_unit_types": "Custom1 | Custom2",
+  "yaw_range": 180,
+  "yaw_rate": 180,
+  "min_firing_velocity": 5,
+  "max_firing_velocity": 80,
+  "firing_arc_pitch": 1,
+  "firing_arc_yaw": 1,
+  "firing_standard_deviation": 5
+}

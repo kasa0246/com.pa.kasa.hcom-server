@@ -1,0 +1,102 @@
+{
+    "blend_root": {
+        "type": "unit_state",
+        "nodes": {
+            "being_built": {
+                "type": "playback",
+                "anim_name": "build"
+            },
+            "living": {
+                "type": "sequence",
+                "entries": [
+                    {
+                        "type": "item",
+                        "name": "deploy",
+                        "node": {
+                            "type": "playback",
+                            "anim_name": "deploy",
+                            "looping": false,
+                            "events": []
+                        },
+                        "transitions": [
+                            {
+                                "transition_forward": {
+                                    "func": "anim_complete",
+                                    "target": "idle",
+                                    "duration": 0.2
+                                },
+                                "transition_reverse": {
+                                    "func": "anim_complete",
+                                    "target": "idle",
+                                    "duration": 0.2
+                                }
+                            }
+                        ],
+                        "reset": "playback_reset"
+                    },
+                    {
+                        "type": "item",
+                        "name": "idle",
+                        "node": {
+                            "type": "playback",
+                            "anim_name": "idle",
+                            "looping": true,
+                            "events": []
+                        },
+                        "transitions": [
+                            {
+                                "transition_forward": {
+                                    "func": "is_moving_forward",
+                                    "target": "fly",
+                                    "duration": 0.2
+                                },
+                                "transition_reverse": {
+                                    "func": "is_moving_forward",
+                                    "target": "fly",
+                                    "duration": 0.2
+                                }
+                            }
+                        ],
+                        "reset": "playback_reset"
+                    },
+                    {
+                        "type": "item",
+                        "name": "fly",
+                        "node": {
+                            "type": "playback",
+                            "anim_name": "fly",
+                            "looping": true,
+                            "events": []
+                        },
+                        "transitions": [
+                            {
+                                "transition_forward": {
+                                    "func": "is_hovering",
+                                    "target": "idle",
+                                    "duration": 0.2
+                                },
+                                "transition_reverse": {
+                                    "func": "is_hovering",
+                                    "target": "idle",
+                                    "duration": 0.2
+                                }
+                            }
+                        ],
+                        "reset": "playback_reset"
+                    }
+                ]
+            }
+        }
+    },
+    "skeleton_controls": [
+        {
+            "type": "fader",
+            "lerp_func": "is_active",
+            "child": {
+                "type": "procedural_aim",
+                "rotation_bone": "bone_missile",
+                "rotation_axis": "z"
+            }
+        }
+    ]
+}

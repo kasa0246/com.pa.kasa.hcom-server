@@ -1,0 +1,167 @@
+{
+  "base_spec": "/pa/units/land/base_vehicle/base_vehicle.json",
+  "display_name": "Ocelot",
+  "si_name": "t_tank_flak",
+  "description": "Basic AA Tank: Armed with twin 35mm rapid fire AA guns and short range SAM (very slow reload). Attacks only air units. Guns can't attack high altitude air units. Lightly armored.",
+  "max_health": 350,
+  "build_metal_cost": 350,
+  "armor_type": "AT_Custom1",
+  "TEMP_texelinfo": 5.84968,
+  "attachable": {
+    "offsets": {
+      "head": [
+        0,
+        0,
+        2.7
+      ],
+      "root": [
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  "unit_types": [
+    "UNITTYPE_Custom58",
+    "UNITTYPE_Tank",
+    "UNITTYPE_Mobile",
+    "UNITTYPE_Land",
+    "UNITTYPE_Offense",
+    "UNITTYPE_Basic",
+    "UNITTYPE_FactoryBuild",
+    "UNITTYPE_AirDefense"
+  ],
+  "transportable": {
+    "size": 1
+  },
+  "guard_layer": "WL_Air",
+  "navigation": {
+    "acceleration": 100,
+    "brake": 100,
+    "move_speed": 10,
+    "turn_speed": 60,
+    "type": "land-small"
+  },
+  "physics": {
+    "push_class": 60,
+    "radius": 4
+  },
+  "recon": {
+    "observer": {
+      "items": [
+        {
+          "channel": "sight",
+          "layer": "surface_and_air",
+          "radius": 135,
+          "shape": "capsule"
+        },
+        {
+          "layer": "mine",
+          "channel": "radar",
+          "shape": "capsule",
+          "radius": 185
+        },
+        {
+          "layer": "mine",
+          "channel": "sight",
+          "shape": "capsule",
+          "radius": 135
+        }
+      ]
+    }
+  },
+  "model": {
+    "animtree": "/pa/units/land/t_tank_flak/t_tank_flak_anim_tree.json",
+    "animations": {
+      "idle": "/pa/units/land/t_tank_flak/ocelot_anim_idle.papa"
+    },
+    "arrows": 5,
+    "filename": "/pa/units/land/t_tank_flak/ocelot.papa"
+  },
+  "tools": [
+    {
+      "aim_bone": "bone_pitch",
+      "projectiles_per_fire": 1,
+      "muzzle_bone": [
+        "socket_rightMuzzle",
+        "socket_leftMuzzle"
+      ],
+      "record_index": 0,
+      "fire_event": "fired0",
+      "spec_id": "/pa/units/land/t_tank_flak/t_tank_flak_tool_weapon.json"
+    },
+    {
+      "aim_bone": "bone_missile",
+      "projectiles_per_fire": 1,
+      "muzzle_bone": [
+        "bone_missile"
+      ],
+      "record_index": 1,
+      "fire_event": "fired1",
+      "spec_id": "/pa/units/land/t_tank_flak/t_tank_flak_missile_tool_weapon.json"
+    }
+  ],
+  "events": {
+    "build_complete": {
+      "audio_cue": "/SE/Build_Complete/veh"
+    },
+    "died": {
+      "audio_cue": "/SE/Death/Veh"
+    },
+    "fired0": {
+      "audio_cue": "/SE/Weapons/sea/hover_small_fire",
+      "effect_spec": "/pa/units/sea/hover_ship/hover_ship_muzzle_flash_side.pfx socket_rightMuzzle /pa/units/sea/hover_ship/hover_ship_muzzle_flash_side.pfx socket_leftMuzzle"
+    },
+    "fired1": {
+      "audio_cue": "/SE/Weapons/bot/bot_aa_fire",
+      "effect_spec": "/pa/units/sea/hover_ship/hover_ship_muzzle_flash_side.pfx bone_launcher_1 /pa/units/sea/hover_ship/hover_ship_muzzle_flash_side.pfx bone_launcher_2"
+    }
+  },
+  "audio": {
+    "loops": {
+      "move": {
+        "cue": "/SE/Movement/veh/tank_light_laser_loop",
+        "flag": "vel_changed",
+        "should_start_func": "is_moving",
+        "should_stop_func": "is_not_moving"
+      }
+    },
+    "selection_response": {
+      "cue": "/SE/Selection/veh/aa_missile_vehicle"
+    }
+  },
+  "selection_icon": {
+    "diameter": 12.0
+  },
+  "headlights": [
+    {
+      "color": [
+        0.9,
+        0.92,
+        1.0
+      ],
+      "far_distance": 20.0,
+      "gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa",
+      "intensity": 1.4,
+      "near_distance": 1.2,
+      "near_height": 2.0,
+      "near_width": 2.0,
+      "offset": [
+        0.0,
+        -1.0,
+        1.5
+      ],
+      "orientation": [
+        0.0,
+        65.0,
+        0.0
+      ]
+    }
+  ],
+  "mesh_bounds": [
+    5.3,
+    9,
+    4.2
+  ],
+  "wreckage_health_frac": 1.0
+}

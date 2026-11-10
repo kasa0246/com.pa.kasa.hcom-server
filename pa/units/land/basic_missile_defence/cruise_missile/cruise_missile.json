@@ -1,0 +1,126 @@
+{
+    "base_spec": "/pa/units/air/base_flyer/base_flyer.json",
+    "display_name": "Taurus",
+    "si_name": "cruise_missile",
+    "description": "!LOC:Cruise Missile - Extremely long range. Radar stealth. Armed with shrapnel bomb. Light damage over a wide area. Attacks land and see targets. Can be intercepted by all AA systems. Deploys flares.",
+    "max_health": 350,
+    "build_metal_cost": 125,
+    "wreckage_health_frac": 0.0,
+    "usable": false,
+    "unit_types": [
+        "UNITTYPE_Custom58",
+        "UNITTYPE_Mobile",
+        "UNITTYPE_Bomber",
+        "UNITTYPE_Air",
+        "UNITTYPE_Advanced",
+        "UNITTYPE_SelfDestruct"
+    ],
+    "command_caps": [],
+    "guard_layer": "WL_AnySurface",
+    "guard_radius": 600,
+    "navigation": {
+        "type": "air",
+        "acceleration": 180,
+        "brake": 30,
+        "move_speed": 55,
+        "turn_speed": 90,
+        "aggressive_distance": 50.0,
+        "bank_factor": 10,
+        "vertical_speed": 45,
+        "hover_time": -1.0
+    },
+    "physics": {
+        "radius": 3,
+        "gravity_scalar": 1
+    },
+    "recon": {
+        "observable": {
+            "layer": "mine",
+            "ignore_radar": true
+        },
+        "observer": {
+            "items": [
+                {
+                    "layer": "surface_and_air",
+                    "channel": "radar",
+                    "shape": "capsule",
+                    "radius": 125
+                }
+            ]
+        }
+    },
+    "model": {
+        "filename": "/pa/units/land/basic_missile_defence/cruise_missile/cruise_missile.papa",
+        "arrows": 5,
+        "animations": {
+			"deploy": "/pa/units/land/basic_missile_defence/cruise_missile/cruise_missile_deploy.papa"
+		},
+		"animtree": "/pa/anim/anim_trees/bomber_heavy_anim_tree.json"
+    },
+    "tools": [
+        {
+            "spec_id": "/pa/units/land/basic_missile_defence/cruise_missile/cruise_missile_tool_weapon.json",
+            "aim_bone": "bone_root",
+            "muzzle_bone": "bone_root"
+        },
+        {
+            "spec_id": "/pa/units/land/basic_missile_defence/cruise_missile/cruise_missile_death_tool_weapon.json",
+            "aim_bone": "bone_root",
+            "muzzle_bone": "bone_root"
+        },
+        		{
+			"spec_id": "/pa/units/air/fighter/fighter_flare_tool_weapon.json",
+			"aim_bone": "bone_flare",
+			"muzzle_bone": "bone_flare"
+		}
+    ],
+    "events": {
+        "build_complete": {
+            "audio_cue": "/SE/Build_Complete/air",
+            "effect_scale": 0.5
+        },
+        "fired": {
+            "audio_cue": "/SE/Weapons/air/fighter_fire",
+            "effect_scale": 0.5
+        },
+        "died": {
+            "audio_cue": "/SE/Death/Air",
+            "effect_spec": "/pa/units/air/base_flyer/base_flyer_death.pfx",
+            "effect_scale": 0.425
+        }
+    },
+    "audio": {
+        "loops": {
+            "move": {
+                "cue": "/SE/Movement/air/air_fighter_loop",
+                "flag": "vel_changed",
+                "should_start_func": "is_moving_laterally",
+                "should_stop_func": "is_not_moving"
+            }
+        },
+        "selection_response": {
+            "cue": "/SE/Selection/air/fighter"
+        }
+    },
+    "fx_offsets": [
+        {
+            "bone": "bone_jet",
+            "filename": "/pa/units/air/bomber/basic_jet.pfx",
+            "orientation": [
+                0,
+                0,
+                0
+            ],
+            "type": "moving_forward"
+        }
+    ],
+    "selection_icon": {
+        "diameter": 8.0
+    },
+    "TEMP_texelinfo": 6.1803,
+    "mesh_bounds": [
+        4.5,
+        3.25,
+        1.55
+    ]
+}

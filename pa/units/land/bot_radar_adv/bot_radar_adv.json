@@ -1,0 +1,140 @@
+{
+  "display_name": "!LOC:Globemaster",
+  "description": "!LOC:Advanced Electronic Warfare Bot - Equipped with radar and jammer. Does not attack.",
+  "TEMP_texelinfo": 5.47132,
+  "si_name": "bot_radar_adv",
+  "energy_efficiency_requirement": 0.9,
+  "consumption": {
+    "energy": 700
+  },
+  "attachable": {
+    "offsets": {
+      "head": [
+        0,
+        0.0,
+        7.5
+      ],
+      "root": [
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  "audio": {
+    "loops": {
+      "move": {
+        "cue": "/SE/Movement/bot/aa_loop",
+        "flag": "vel_changed",
+        "should_start_func": "is_moving",
+        "should_stop_func": "is_not_moving"
+      }
+    }
+  },
+  "base_spec": "/pa/units/land/base_vehicle/base_vehicle.json",
+  "build_metal_cost": 750,
+  "events": {},
+  "guard_layer": "WL_Air",
+  "max_health": 500,
+  "mesh_bounds": [
+    7,
+    7,
+    9
+  ],
+  "model": {
+    "animations": {
+      "idle": "/pa/units/land/bot_radar_adv/globemaster_idle.papa",
+      "walk": "/pa/units/land/bot_radar_adv/globemaster_walk.papa"
+    },
+    "animtree": "/pa/anim/anim_trees/grot_anim_tree.json",
+    "filename": "/pa/units/land/bot_radar_adv/globemaster.papa",
+    "walk_speed": 6
+  },
+  "navigation": {
+    "acceleration": 120,
+    "brake": 120,
+    "move_speed": 12,
+    "turn_speed": 180
+  },
+  "physics": {
+    "radius": 2.25
+  },
+  "recon": {
+    "observer": {
+      "items": [
+        {
+          "channel": "sight",
+          "layer": "surface_and_air",
+          "radius": 100,
+          "shape": "capsule"
+        },
+        {
+          "channel": "sight",
+          "layer": "mine",
+          "radius": 100,
+          "shape": "capsule"
+        },
+        {
+          "channel": "sight",
+          "layer": "orbital",
+          "radius": 100,
+          "shape": "radar"
+        },
+        {
+          "layer": "surface_and_air",
+          "channel": "radar",
+          "shape": "capsule",
+          "radius": 300,
+          "uses_energy": true
+        },
+        {
+          "layer": "mine",
+          "channel": "radar",
+          "shape": "capsule",
+          "radius": 400,
+          "uses_energy": true
+        },
+        {
+          "layer": "mine",
+          "channel": "sight",
+          "shape": "capsule",
+          "radius": 250,
+          "uses_energy": true
+        },
+        {
+          "layer": "orbital",
+          "channel": "radar",
+          "shape": "capsule",
+          "radius": 200,
+          "uses_energy": true
+        },
+        {
+          "layer": "orbital",
+          "channel": "sight",
+          "shape": "capsule",
+          "radius": 100,
+          "uses_energy": true
+        }
+      ]
+    }
+  },
+  "selection_icon": {
+    "diameter": 16
+  },
+  "tools": [],
+  "transportable": {
+    "size": 3
+  },
+  "unit_types": [
+    "UNITTYPE_Bot",
+    "UNITTYPE_Mobile",
+    "UNITTYPE_Offense",
+    "UNITTYPE_Land",
+    "UNITTYPE_Advanced",
+    "UNITTYPE_FactoryBuild",
+    "UNITTYPE_CannonBuildable",
+    "UNITTYPE_Radar",
+    "UNITTYPE_RadarJammer",
+    "UNITTYPE_Custom58"
+  ]
+}

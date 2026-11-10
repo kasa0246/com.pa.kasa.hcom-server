@@ -1,0 +1,281 @@
+{
+  "TEMP_texelinfo": 10.3794,
+  "attachable": {
+    "offsets": {
+      "head": [
+        0,
+        0,
+        3.4
+      ],
+      "root": [
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  "base_spec": "/pa/units/land/base_vehicle/base_vehicle.json",
+  "build_metal_cost": 2500,
+  "description": "!LOC: Experimental Assault Hover Tank - Attacks land and sea targets. Equipped with 200mm plasma gun and advanced APS. Medium range, high damage. Medium armor.",
+  "display_name": "!LOC:Floater",
+  "events": {
+    "build_complete": {
+      "audio_cue": "/SE/Build_Complete/veh"
+    },
+    "died": {
+      "audio_cue": "/SE/Death/Veh",
+      "effect_scale": 2.0,
+      "effect_spec": "/pa/effects/specs/default_explosion_bot_t2.pfx"
+    },
+    "fired0": {
+      "audio_cue": "/SE/Weapons/sea/destroyer_fire",
+      "effect_scale": 5.0,
+      "effect_spec": "/pa/units/land/floater/floater_muzzle_flash.pfx socket_muzzle"
+    },
+    "fired1": {
+      "audio_cue": "/SE/Weapons/air/gunship_fire",
+      "effect_spec": "/pa/effects/specs/default_small_muzzle_flash.pfx socket_right_muzzle"
+    },
+    "fired2": {
+      "audio_cue": "/SE/Weapons/air/gunship_fire",
+      "effect_spec": "/pa/effects/specs/default_small_muzzle_flash.pfx socket_left_muzzle"
+    },
+    "fired3": {
+      "audio_cue": "/SE/Weapons/structure/air_defense_flak_fire"
+    }
+  },
+  "guard_layer": "WL_LandHorizontal",
+  "max_health": 3500,
+  "armor_type": "AT_Custom2",
+  "mesh_bounds": [
+    13,
+    13,
+    5
+  ],
+  "model": {
+    "animtree": "/pa/units/land/floater/anim_tree.json",
+    "filename": "/pa/units/land/floater/model.papa",
+    "animations": {
+      "hover": "/pa/units/land/tank_hover/tank_hover_anim_hover.papa"
+    }
+  },
+  "navigation": {
+    "acceleration": 100,
+    "brake": 100,
+    "move_speed": 14,
+    "turn_speed": 50,
+    "type": "hover"
+  },
+  "physics": {
+    "radius": 10
+  },
+  "recon": {
+    "observer": {
+      "items": [
+        {
+          "channel": "sight",
+          "layer": "surface_and_air",
+          "radius": 180,
+          "shape": "capsule"
+        },
+        {
+          "layer": "mine",
+          "channel": "radar",
+          "shape": "capsule",
+          "radius": 100
+        },
+        {
+          "layer": "mine",
+          "channel": "sight",
+          "shape": "capsule",
+          "radius": 50
+        }
+      ]
+    }
+  },
+  "selection_icon": {
+    "diameter": 25.0
+  },
+  "tools": [
+    {
+      "aim_bone": "bone_pitch",
+      "fire_event": "fired0",
+      "muzzle_bone": [
+        "socket_muzzle"
+      ],
+      "projectiles_per_fire": 1,
+      "record_index": 0,
+      "spec_id": "/pa/units/land/floater/main_weapon.json"
+    },
+    {
+      "aim_bone": "bone_right_pitch",
+      "fire_event": "fired1",
+      "muzzle_bone": [
+        "socket_right_muzzle"
+      ],
+      "projectiles_per_fire": 1,
+      "record_index": 1,
+      "spec_id": "/pa/units/land/floater/second_weapon.json"
+    },
+    {
+      "aim_bone": "bone_left_pitch",
+      "fire_event": "fired2",
+      "muzzle_bone": [
+        "socket_left_muzzle"
+      ],
+      "projectiles_per_fire": 1,
+      "record_index": 2,
+      "spec_id": "/pa/units/land/floater/second_weapon.json"
+    },
+    {
+      "spec_id": "/pa/units/land/tank_heavy_armor/tank_heavy_armor_beam_tool_weapon_easy.json",
+      "aim_bone": "bone_root",
+      "muzzle_bone": "bone_root",
+      "record_index": 3,
+      "fire_event": "fired3"
+    },
+    {
+      "spec_id": "/pa/units/land/tank_heavy_armor/tank_heavy_armor_beam_tool_weapon_hard.json",
+      "aim_bone": "bone_root",
+      "muzzle_bone": "bone_root",
+      "record_index": 4,
+      "fire_event": "fired3"
+    }
+  ],
+  "transportable": {
+    "size": 6
+  },
+  "unit_types": [
+    "UNITTYPE_Tank",
+    "UNITTYPE_Hover",
+    "UNITTYPE_Mobile",
+    "UNITTYPE_Offense",
+    "UNITTYPE_Land",
+    "UNITTYPE_Advanced",
+    "UNITTYPE_FactoryBuild",
+    "UNITTYPE_Custom7"
+  ],
+  "fx_offsets": [
+    {
+      "type": "idle",
+      "filename": "/pa/effects/specs/hover_idle_01.pfx",
+      "bone": "bone_root",
+      "offset": [
+        -3.86,
+        -2.9,
+        0.96
+      ],
+      "orientation": [
+        0,
+        0,
+        -202.5
+      ]
+    },
+    {
+      "type": "idle",
+      "filename": "/pa/effects/specs/hover_idle_01.pfx",
+      "bone": "bone_root",
+      "offset": [
+        3.86,
+        -2.9,
+        0.96
+      ],
+      "orientation": [
+        0,
+        0,
+        22.5
+      ]
+    },
+    {
+      "type": "idle",
+      "filename": "/pa/effects/specs/hover_idle_01.pfx",
+      "bone": "bone_root",
+      "offset": [
+        6.13,
+        1.44,
+        1
+      ],
+      "orientation": [
+        0,
+        0,
+        -15
+      ]
+    },
+    {
+      "type": "idle",
+      "filename": "/pa/effects/specs/hover_idle_01.pfx",
+      "bone": "bone_root",
+      "offset": [
+        -6.13,
+        1.44,
+        1
+      ],
+      "orientation": [
+        0,
+        0,
+        195
+      ]
+    }
+  ],
+  "audio": {
+    "loops": {
+      "move": {
+        "cue": "/SE/Movement/veh/tank_hover_loop",
+        "flag": "vel_changed",
+        "should_start_func": "is_moving",
+        "should_stop_func": "is_not_moving"
+      }
+    },
+    "selection_response": {
+      "cue": "/SE/Selection/veh/tank_hover"
+    }
+  },
+  "headlights": [
+    {
+      "gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa",
+      "offset": [
+        3.8,
+        -2,
+        1.0
+      ],
+      "orientation": [
+        0.0,
+        65.0,
+        0.0
+      ],
+      "near_width": 2.0,
+      "near_height": 2.0,
+      "near_distance": 1.2,
+      "far_distance": 20.0,
+      "color": [
+        0.9,
+        0.92,
+        1.0
+      ],
+      "intensity": 1.4
+    },
+    {
+      "gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa",
+      "offset": [
+        -3.8,
+        -2,
+        1.0
+      ],
+      "orientation": [
+        0.0,
+        65.0,
+        0.0
+      ],
+      "near_width": 2.0,
+      "near_height": 2.0,
+      "near_distance": 1.2,
+      "far_distance": 20.0,
+      "color": [
+        0.9,
+        0.92,
+        1.0
+      ],
+      "intensity": 1.4
+    }
+  ]
+}

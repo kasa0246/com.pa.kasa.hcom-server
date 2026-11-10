@@ -1,0 +1,30 @@
+{
+  "base_spec": "/pa/ammo/base_shell/base_shell.json",
+  "damage": 1500,
+  "splash_damage": 750,
+  "splash_radius": 8,
+  "full_damage_splash_radius": 3,
+  "events": {
+    "died": {
+      "audio_cue": "/SE/Impacts/missile_artillery_long_holkins",
+      "effect_spec": "/pa/units/land/mjolnir/hit.pfx"
+    }
+  },
+  "fx_trail": {
+    "filename": "/pa/units/land/mjolnir/trail.pfx",
+    "offset": [
+      0,
+      0,
+      0
+    ]
+  },
+  "initial_velocity": 330,
+  "lifetime": 15,
+  "max_velocity": 330,
+  "physics": {
+    "add_to_spatial_db": false,
+    "allow_underground": true,
+    "gravity_scalar": 20,
+    "radius": 1
+  }
+}

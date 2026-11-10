@@ -1,0 +1,24 @@
+{
+    "auto_attack": true,
+    "ammo_id": [
+        {
+            "layer": "WL_WaterSurface",
+            "id": "/pa/units/sea/destroyer/destroyer_bomb_ammo.json"
+        }
+    ],
+    "base_spec": "/pa/tools/base_missile_tactical_turret/base_missile_tactical_turret.json",
+    "yaw_range": 0,
+    "pitch_range": 0,
+    "yaw_rate": 360,
+    "pitch_rate": 360,
+    "firing_arc_yaw": 360,
+    "firing_arc_pitch": 360,
+    "max_range": 50,
+    "rate_of_fire": 0.5,
+    "firing_standard_deviation": 5,
+    "spread_fire": true,
+    "target_layers": [
+        "WL_Underwater",
+        "WL_Seafloor"
+    ]
+}

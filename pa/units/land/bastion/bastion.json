@@ -1,0 +1,236 @@
+{
+  "display_name": "!LOC:Bastion",
+  "si_name": "bastion",
+  "description": "!LOC:Fortified Missile Defense Complex - Uses a wide spectrum of guided missiles. Equipped with small radar. Medium range. Attacks everything. Radar stealth.",
+  "TEMP_texelinfo": 21.1872,
+  "atrophy_cool_down": 15,
+  "atrophy_rate": 33.333,
+  "consumption": {
+    "energy": 150
+  },
+  "energy_efficiency_requirement": 0.9,
+  "audio": {
+    "selection_response": {
+      "cue": "/SE/Selection/structure/artillery"
+    }
+  },
+  "base_spec": "/pa/units/land/base_structure/base_structure.json",
+  "build_metal_cost": 2500,
+  "command_caps": [
+    "ORDER_Attack",
+    "ORDER_FactoryBuild"
+  ],
+  "buildable_types": "Custom41",
+  "rolloff_dirs": [
+    [
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      -1,
+      0
+    ]
+  ],
+  "wait_to_rolloff_time": 0,
+  "factory_cooldown_time": 30,
+  "events": {
+    "died": {
+      "audio_cue": "/SE/Death/Factory",
+      "effect_spec": "/pa/effects/specs/default_building_explosion_large.pfx",
+      "effect_scale": 1.0
+    },
+    "fired0": {
+      "audio_cue": "/SE/Weapons/sea/T2_missile_ship_fire",
+      "effect_spec": "/pa/units/sea/hover_ship/hover_ship_muzzle_flash_side.pfx bone_top"
+    },
+    "fired1": {
+      "audio_cue": "/SE/Weapons/bot/bot_tactical_missile_fire",
+      "effect_spec": "/pa/effects/specs/default_muzzle_flash.pfx bone_muzzle01"
+    },
+    "fired2": {
+      "audio_cue": "/SE/Weapons/bot/bot_tactical_missile_fire",
+      "effect_spec": "/pa/effects/specs/default_muzzle_flash.pfx bone_muzzle02"
+    },
+    "fired3": {
+      "audio_cue": "/SE/Weapons/bot/bot_tactical_missile_fire",
+      "effect_spec": "/pa/effects/specs/default_muzzle_flash.pfx bone_muzzle03"
+    }
+  },
+  "fx_offsets": [],
+  "guard_layer": "WL_AnySurface",
+  "max_health": 15000,
+  "armor_type": "AT_Custom2",
+  "mesh_bounds": [
+    19.5,
+    20.5,
+    16
+  ],
+  "model": [
+    {
+      "animtree": "/pa/anim/anim_trees/three_turret_anim_tree.json",
+      "filename": "/pa/units/land/bastion/bastion.papa",
+      "skirt_decal": "/pa/effects/specs/skirt_08.json"
+    }
+  ],
+  "recon": {
+    "observable": {
+      "layer": "surface_and_air",
+      "ignore_radar": true
+    },
+    "observer": {
+      "items": [
+        {
+          "channel": "sight",
+          "layer": "surface_and_air",
+          "radius": 100,
+          "shape": "capsule"
+        },
+        {
+          "channel": "sight",
+          "layer": "mine",
+          "radius": 100,
+          "shape": "capsule"
+        },
+        {
+          "channel": "sight",
+          "layer": "orbital",
+          "radius": 100,
+          "shape": "capsule"
+        },
+        {
+          "layer": "surface_and_air",
+          "channel": "radar",
+          "shape": "capsule",
+          "radius": 300,
+          "uses_energy": true
+        },
+        {
+          "layer": "mine",
+          "channel": "radar",
+          "shape": "capsule",
+          "radius": 300,
+          "uses_energy": true
+        },
+        {
+          "layer": "mine",
+          "channel": "sight",
+          "shape": "capsule",
+          "radius": 200,
+          "uses_energy": true
+        },
+        {
+          "layer": "orbital",
+          "channel": "radar",
+          "shape": "capsule",
+          "radius": 200,
+          "uses_energy": true
+        },
+        {
+          "layer": "orbital",
+          "channel": "sight",
+          "shape": "capsule",
+          "radius": 100,
+          "uses_energy": true
+        }
+      ]
+    }
+  },
+  "selection_icon": {
+    "diameter": 33
+  },
+  "spawn_layers": "WL_AnyHorizontalGroundOrWaterSurface",
+  "tools": [
+    {
+      "aim_bone": "bone_pitch01",
+      "fire_event": "fired1",
+      "muzzle_bone": "bone_muzzle01",
+      "record_index": 0,
+      "spec_id": "/pa/units/land/bastion/bastion_tool_weapon_short.json",
+      "primary_weapon": false,
+      "show_range": false
+    },
+    {
+      "aim_bone": "bone_pitch02",
+      "fire_event": "fired2",
+      "muzzle_bone": "bone_muzzle02",
+      "record_index": 1,
+      "spec_id": "/pa/units/land/bastion/bastion_tool_weapon_short.json",
+      "primary_weapon": false,
+      "show_range": false
+    },
+    {
+      "aim_bone": "bone_pitch03",
+      "fire_event": "fired3",
+      "muzzle_bone": "bone_muzzle03",
+      "record_index": 2,
+      "spec_id": "/pa/units/land/bastion/bastion_tool_weapon_short.json",
+      "primary_weapon": false,
+      "show_range": false
+    },
+    {
+      "spec_id": "/pa/units/sea/missile_ship/missile_ship_tool_weapon_medium.json",
+      "aim_bone": "bone_top",
+      "projectiles_per_fire": 2,
+      "record_index": -1,
+      "fire_event": "fired0",
+      "muzzle_bone": [
+        "bone_top"
+      ],
+      "primary_weapon": true,
+      "show_range": true
+    },
+    {
+      "spec_id": "/pa/units/sea/missile_ship/missile_ship_aa_short_tool_weapon.json",
+      "aim_bone": "bone_top_b",
+      "record_index": -1,
+      "fire_event": "fired0",
+      "muzzle_bone": [
+        "bone_top_b"
+      ],
+      "primary_weapon": false,
+      "show_range": false
+    },
+    {
+      "spec_id": "/pa/units/sea/missile_ship/missile_ship_aa_med_tool_weapon.json",
+      "aim_bone": "bone_top_b",
+      "record_index": -1,
+      "fire_event": "fired0",
+      "muzzle_bone": [
+        "bone_top_b"
+      ],
+      "primary_weapon": false,
+      "show_range": false
+    },
+    {
+      "spec_id": "/pa/units/sea/missile_ship/missile_ship_ash_med_tool_weapon.json",
+      "aim_bone": "bone_top_b",
+      "record_index": -1,
+      "fire_event": "fired0",
+      "muzzle_bone": [
+        "bone_top_b"
+      ],
+      "primary_weapon": false,
+      "show_range": false
+    },
+    {
+      "spec_id": "/pa/units/land/laser_defense/build_arm.json",
+      "aim_bone": "bone_root"
+    }
+  ],
+  "unit_types": [
+    "UNITTYPE_Land",
+    "UNITTYPE_Structure",
+    "UNITTYPE_Tactical",
+    "UNITTYPE_Heavy",
+    "UNITTYPE_SurfaceDefense",
+    "UNITTYPE_Defense",
+    "UNITTYPE_Recon",
+    "UNITTYPE_Advanced",
+    "UNITTYPE_FabAdvBuild",
+    "UNITTYPE_Important",
+    "UNITTYPE_Factory",
+    "UNITTYPE_Custom58"
+  ]
+}

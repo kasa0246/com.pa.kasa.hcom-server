@@ -1,0 +1,34 @@
+{
+  "base_spec": "/pa/tools/base_missile_tactical_turret/base_missile_tactical_turret.json",
+  "ammo_id": "/pa/units/land/bot_tactical_missile/bot_tactical_missile_ammo.json",
+  "ammo_source": "infinite",
+  "rate_of_fire": 0.334,
+  "max_range": 300,
+  "yaw_rate": 0,
+  "pitch_rate": 0,
+  "yaw_range": 0,
+  "pitch_range": 0,
+  "firing_arc_yaw": 360,
+  "firing_arc_pitch": 360,
+  "spread_fire": true,
+  "auto_attack": true,
+  "target_layers": [
+    "WL_LandHorizontal",
+    "WL_WaterSurface",
+    "WL_Air",
+    "WL_Orbital"
+  ],
+  "exclude_unit_types": "Custom1 | Custom2 | Custom10",
+  "target_priorities": [
+    "Commander",
+    "SupportCommander",
+    "Gunship | Bomber",
+    "Air & MissileDefense",
+    "Defense - Wall",
+    "Naval & Advanced & Hover & Offense",
+    "Mobile & Heavy",
+    "Tank - Vehicle",
+    "Structure - Wall"
+  ],
+  "tool_type": "TOOL_Weapon"
+}

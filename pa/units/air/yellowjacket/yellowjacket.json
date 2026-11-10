@@ -1,0 +1,270 @@
+{
+    "TEMP_texelinfo": 10.4258,
+    "audio": {
+        "loops": {
+            "move": {
+                "cue": "/SE/Movement/air/air_bomber_siege_loop",
+                "flag": "vel_changed",
+                "should_start_func": "is_moving_laterally",
+                "should_stop_func": "is_not_moving"
+            }
+        },
+        "selection_response": {
+            "cue": "/SE/Selection/air/bomber_T2"
+        }
+    },
+    "base_spec": "/pa/units/air/base_flyer/base_flyer.json",
+    "build_metal_cost": 8500,
+    "max_health": 2500,
+    "description": "!LOC:Experimental High Altitude Missile Bomber - High altitude. Fires extremely hard to intercept hypersonic missiles. Outranges long range SAM systems. Attacks land and sea targets.",
+    "display_name": "!LOC:Yellowjacket",
+    "si_name": "bomber_hype",
+    "armor_type": "AT_Orbital",
+    "unit_types": [
+        "UNITTYPE_Custom7",
+        "UNITTYPE_Custom12",
+        "UNITTYPE_Bomber",
+        "UNITTYPE_Mobile",
+        "UNITTYPE_Offense",
+        "UNITTYPE_Air",
+        "UNITTYPE_Tactical",
+        "UNITTYPE_Advanced",
+        "UNITTYPE_FactoryBuild"
+    ],
+    "model": {
+        "filename": "/pa/units/air/yellowjacket/yj.papa",
+        "animations": {
+            "idle": "/pa/units/air/yellowjacket/yj_idle.papa",
+            "fly": "/pa/units/air/yellowjacket/yj2_fly.papa"
+        },
+        "animtree": "/pa/anim/anim_trees/yj_anim_tree.json"
+    },
+    "attack_range_frac": 1.05,
+    "navigation": {
+        "type": "air",
+        "acceleration": 40,
+        "brake": 40,
+        "move_speed": 40,
+        "turn_speed": 135,
+        "dodge_radius": 0,
+        "dodge_multiplier": 0.0,
+        "aggressive_distance": 600.0,
+        "aggressive_height": 100.0,
+        "aggressive_behavior": "circle",
+        "circle_min_time": 2.0,
+        "circle_max_time": 4.0,
+        "hover_time": -1.0,
+        "bank_factor": 1,
+        "wobble_factor": 0.05,
+        "wobble_speed": 0.1
+    },
+    "events": {
+        "build_complete": {
+            "audio_cue": "/SE/Build_Complete/air"
+        },
+        "died": {
+            "audio_cue": "/SE/Death/Air",
+            "effect_scale": 2,
+            "effect_spec": "/pa/units/air/base_flyer/base_flyer_death_t2.pfx"
+        },
+        "fired": {
+            "audio_cue": "/SE/Weapons/air/bomber_siege_fire"
+        }
+    },
+    "fx_offsets": [
+        {
+            "bone": "bone_jet_left",
+            "filename": "/pa/units/air/bomber_heavy/bomber_heavy_small_jets.pfx",
+            "offset": [
+                0,
+                0,
+                0
+            ],
+            "orientation": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "type": "moving_forward"
+        },
+        {
+            "bone": "bone_tail_1",
+            "filename": "/pa/units/air/bomber_heavy/bomber_heavy_small_jets.pfx",
+            "offset": [
+                0,
+                0,
+                0
+            ],
+            "orientation": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "type": "moving_forward"
+        },
+        {
+            "bone": "bone_tail_2",
+            "filename": "/pa/units/air/bomber_heavy/bomber_heavy_small_jets.pfx",
+            "offset": [
+                0,
+                0,
+                0
+            ],
+            "orientation": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "type": "moving_forward"
+        },
+        {
+            "bone": "bone_jet_right",
+            "filename": "/pa/units/air/bomber_heavy/bomber_heavy_small_jets.pfx",
+            "offset": [
+                0,
+                0,
+                0
+            ],
+            "orientation": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "type": "moving_forward"
+        },
+        {
+            "bone": "bone_jet_right",
+            "filename": "/pa/units/air/bomber/basic_jet.pfx",
+            "offset": [
+                0,
+                0,
+                0.0
+            ],
+            "orientation": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "type": "idle"
+        },
+        {
+            "bone": "bone_jet_left",
+            "filename": "/pa/units/air/bomber/basic_jet.pfx",
+            "offset": [
+                0,
+                0,
+                0.0
+            ],
+            "orientation": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "type": "idle"
+        }
+    ],
+    "guard_layer": "WL_AnySurface",
+    "guard_radius": 120,
+    "headlights": [
+        {
+            "bone": "bone_root",
+            "color": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "far_distance": 65.0,
+            "gobo": "/pa/effects/textures/gobo/spotlight_gobo.papa",
+            "intensity": 4.0,
+            "near_distance": 8.0,
+            "near_height": 6.5,
+            "near_width": 6.5,
+            "offset": [
+                0,
+                0,
+                -1
+            ],
+            "orientation": [
+                -90.0,
+                -20.0,
+                0.0
+            ],
+            "shadow_resolution": 128
+        }
+    ],
+    "lamps": [
+        {
+            "bone": "bone_root",
+            "color": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "intensity": 3.0,
+            "offset": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "radius": 2.5
+        }
+    ],
+    "mesh_bounds": [
+        24,
+        13.5,
+        4.8
+    ],
+    "physics": {
+        "air_friction": 1.0,
+        "allow_pushing": false,
+        "gravity_scalar": 1,
+        "push_sideways": false,
+        "radius": 9
+    },
+    "recon": {
+        "observable": {
+            "layer": "mine"
+        },
+        "observer": {
+            "items": [
+                {
+                    "channel": "sight",
+                    "layer": "surface_and_air",
+                    "radius": 50,
+                    "shape": "capsule"
+                },
+                {
+                    "channel": "radar",
+                    "layer": "surface_and_air",
+                    "radius": 100,
+                    "shape": "capsule",
+                    "requirer_energy": true
+                },
+                {
+                    "channel": "sight",
+                    "layer": "mine",
+                    "radius": 100,
+                    "shape": "capsule"
+                },
+                {
+                    "channel": "radar",
+                    "layer": "mine",
+                    "radius": 150,
+                    "shape": "capsule",
+                    "requirer_energy": true
+                }
+            ]
+        }
+    },
+    "selection_icon": {
+        "diameter": 32
+    },
+    "tools": [
+        {
+            "aim_bone": "bone_root",
+            "muzzle_bone": "bone_root",
+            "spec_id": "/pa/units/air/yellowjacket/yellowjacket_tool_weapon.json",
+            "projectiles_per_fire": 2
+        }
+    ]
+}
