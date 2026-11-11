@@ -11,7 +11,6 @@
   "area_build_type": "Line",
   "alt_area_build_type": "Sphere",
   "buildable_types": "Economy & EnergyProduction & Basic & SelfDestruct",
-  "default_build_stance": "Continuous",
   "rolloff_dirs": [
     [
       0,

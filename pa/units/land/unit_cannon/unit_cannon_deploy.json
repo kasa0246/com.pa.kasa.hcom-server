@@ -14,7 +14,7 @@
   "audio_loop": "/SE/Movement/missile/unit_cannon_missile_fly_loop",
   "build_metal_cost": 1,
   "cruise_height": 300,
-  "splash_damages_allies": "false",
+  "splash_damages_allies": false,
   "show_strategic_icon": true,
   "show_in_orbital_layer": true,
   "influence_radius": 400,
