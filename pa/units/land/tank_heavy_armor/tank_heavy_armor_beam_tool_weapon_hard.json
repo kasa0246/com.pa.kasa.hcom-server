@@ -26,8 +26,7 @@
     "anti_entity_targets_units": false,
     "anti_entity_targets": [
         "/pa/units/land/bot_tactical_missile/bot_tactical_missile_ammo.json",
-        "/pa/units/land/adv_heavy_bot/adv_heavy_bot_ammo.json",
-        "/pa/units/land/l_rocket_barrage/l_rocket_barrage_ammo.json"
+        "/pa/units/land/adv_heavy_bot/adv_heavy_bot_ammo.json"
     ],
     "target_layers": [
         "WL_Air",

@@ -18,8 +18,6 @@
   "tool_type": "TOOL_Weapon",
   "anti_entity_targets": [
     "/pa/units/land/bot_grenadier/bot_grenadier_ammo.json",
-    "/pa/units/land/l_sniper_bot/l_sniper_bot_ammo.json",
-    "/pa/units/arsenal/l_sniper_bot_up/l_sniper_bot_up_ammo.json",
     "/pa/units/air/gunship/gunship_ammo.json",
     "/pa/units/air/strafer/strafer_rocket_ammo.json",
     "/pa/units/land/artillery_unit_launcher/fpv_drone/fpv_drone_bomb_ammo.json"

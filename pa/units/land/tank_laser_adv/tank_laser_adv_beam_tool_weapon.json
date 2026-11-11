@@ -18,7 +18,7 @@
     "anti_entity_targets": [
         "/pa/units/land/bot_grenadier/bot_grenadier_ammo.json",
         "/pa/units/land/bot_rpg/bot_rpg_ammo.json",
-        "/pa/units/land/bot_rpg_up/bot_rpg_up_ammo.json",
+        "/pa/units/arsenal/unlocked_units/bot_rpg_up/bot_rpg_up_ammo.json",
         "/pa/units/land/artillery_unit_launcher/fpv_drone/fpv_drone_bomb_ammo.json"
     ],
     "target_layers": [
