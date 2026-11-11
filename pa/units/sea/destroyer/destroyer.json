@@ -129,7 +129,7 @@
     },
     {
       "spec_id": "/pa/units/sea/destroyer/destroyer_bomb_tool_weapon.json",
-      "record_index": 3,
+      "record_index": -1,
       "fire_event": "fired3",
       "aim_bone": "bone_torpedo_1l",
       "projectiles_per_fire": 3,
@@ -141,7 +141,7 @@
     },
     {
       "spec_id": "/pa/units/sea/destroyer/destroyer_bomb_tool_weapon.json",
-      "record_index": 4,
+      "record_index": -1,
       "fire_event": "fired3",
       "aim_bone": "bone_torpedo_1r",
       "projectiles_per_fire": 3,

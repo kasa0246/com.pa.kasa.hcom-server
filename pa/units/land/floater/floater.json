@@ -131,14 +131,14 @@
       "spec_id": "/pa/units/land/tank_heavy_armor/tank_heavy_armor_beam_tool_weapon_easy.json",
       "aim_bone": "bone_root",
       "muzzle_bone": "bone_root",
-      "record_index": 3,
+      "record_index": -1,
       "fire_event": "fired3"
     },
     {
       "spec_id": "/pa/units/land/tank_heavy_armor/tank_heavy_armor_beam_tool_weapon_hard.json",
       "aim_bone": "bone_root",
       "muzzle_bone": "bone_root",
-      "record_index": 4,
+      "record_index": -1,
       "fire_event": "fired3"
     }
   ],
