@@ -129,7 +129,7 @@
 		},
 		"fired2": {
 			"audio_cue": "/SE/Weapons/air/fighter_fire",
-			"effect_spec": "/pa/units/air/fighter/hover_ship_muzzle_flash_side.pfx bone_flare"
+			"effect_spec": "/pa/units/sea/hover_ship/hover_ship_muzzle_flash_side.pfx bone_flare"
 		},
 		"died": {
 			"audio_cue": "/SE/Death/Air",

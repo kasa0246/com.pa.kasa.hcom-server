@@ -1,5 +1,5 @@
 {
-  "ammo_id": "/pa/units/base/stun/stun_ammo.json",
+  "ammo_id": "/pa/units/base/dot_huge/dot_huge_ammo.json",
   "auto_attack": true,
   "firing_arc_pitch": 360,
   "firing_arc_yaw": 360,

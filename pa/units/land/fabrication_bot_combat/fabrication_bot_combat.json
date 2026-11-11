@@ -94,11 +94,6 @@
         {
             "spec_id": "/pa/units/land/fabrication_bot_combat/fabrication_bot_combat_build_arm.json",
             "aim_bone": "bone_root"
-        },
-        {
-            "spec_id": "/pa/units/land/fabrication_bot_combat/fabrication_bot_combat_tool_weapon.json",
-            "aim_bone": "bone_root",
-            "muzzle_bone": "socket_muzzle"
         }
     ],
     "events": {

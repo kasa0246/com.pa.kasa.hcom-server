@@ -86,11 +86,11 @@
     },
     "fired1": {
       "audio_cue": "/SE/Death/Air",
-      "effect_spec": "/pa/units/air/fighter_adv/chaff/chaff_hit.pfx bone_root"
+      "effect_spec": "/pa/units/air/fighter_adv/chaff/flare_adv_hit.pfx bone_root"
     },
     "died": {
       "audio_cue": "",
-      "effect_spec": "/pa/units/air/fighter_adv/chaff/chaff_hit.pfx bone_root",
+      "effect_spec": "/pa/units/air/fighter_adv/chaff/flare_adv_hit.pfx bone_root",
       "effect_scale": 1.0
     },
     "teleported": {
@@ -123,7 +123,7 @@
   "fx_offsets": [
     {
       "bone": "bone_root",
-      "filename": "/pa/units/air/fighter_adv/chaff/chaff.pfx",
+      "filename": "/pa/units/air/fighter_adv/chaff/flare_adv.pfx",
       "offset": [
         0,
         0,

@@ -27,7 +27,6 @@
         "/pa/units/land/edison/edison.json",
         "/pa/units/land/pylon/pylon.json",
         "/pa/units/land/pylon/pylon_am.json",
-        "/pa/units/land/spell_heal/spell_heal.json",
         "/pa/units/land/spell_heal/spell_heal_bal.json",
         "/pa/units/land/control_tower/control_tower.json"
     ],

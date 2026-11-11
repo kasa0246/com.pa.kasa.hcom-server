@@ -1,6 +1,6 @@
 {
     "base_spec": "/pa/tools/base_bullet_turret/base_bullet_turret.json",
-    "ammo_id": "/pa/units/land/tank_laser_adv/attack_vehicle_mg_ammo.json",
+    "ammo_id": "/pa/units/land/attack_vehicle/attack_vehicle_mg_ammo.json",
     "rate_of_fire": 5,
     "idle_aim_delay": 1.0,
     "max_range": 85,

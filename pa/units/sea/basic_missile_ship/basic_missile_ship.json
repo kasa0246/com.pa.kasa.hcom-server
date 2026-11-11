@@ -73,8 +73,8 @@
     "model": {
         "filename": "/pa/units/sea/basic_missile_ship/naval_anti_orbital.papa",
         "animations": {
-            "start": "/pa/units/sea/basic_missile_ship/naval_anti_orbital_anim_open.papa",
-            "end": "/pa/units/sea/basic_missile_ship/naval_anti_orbital_anim_close.papa"
+            "start": "/pa/units/sea/basic_missile_ship/naval_anti_orbital_ship_anim_open.papa",
+            "end": "/pa/units/sea/basic_missile_ship/naval_anti_orbital_ship_anim_close.papa"
         },
         "animtree": "/pa/anim/anim_trees/basic_missile_ship_anim_tree.json"
     },

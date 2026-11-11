@@ -47,7 +47,6 @@
         "/pa/units/land/control_tower/control_tower.json",
         "/pa/units/land/pylon/pylon.json",
         "/pa/units/land/pylon/pylon_am.json",
-        "/pa/units/land/spell_heal/spell_heal.json",
         "/pa/units/land/edison/edison.json",
         "/pa/units/land/seizmic/seizmic.json"
     ],
@@ -69,11 +68,6 @@
     },
     "model": {
         "filename": "/pa/units/land/spell_heal/spell_heal.papa",
-        "animations": {
-            "start": "/pa/units/land/spell_heal/spell_heal_anim_start.papa",
-            "end": "/pa/units/land/spell_heal/spell_heal_anim_end.papa"
-        },
-        "animtree": "/pa/anim/anim_trees/tactical_missile_launcher_anim_tree.json",
         "skirt_decal": "/pa/effects/specs/skirt_08.json"
     },
     "tools": [
@@ -91,12 +85,12 @@
         },
         "fired": {
             "audio_cue": "/SE/Weapons/bot/spark_fire",
-            "effect_spec": "/pa/units/land/energy_coil/l_tank_swarm_fire.pfx socket_leftMuzzle"
+            "effect_spec": "/pa/units/land/energy_coil/energy_coil_fire.pfx socket_muzzle socket_leftMuzzle"
         },
         "died": {
-            "audio_cue": "/SE/Death/Bot",
-            "effect_spec": "/pa/effects/specs/st_explosion.pfx",
-            "effect_scale": 1.1
+            "audio_cue": "/SE/Death/Factory",
+            "effect_spec": "/pa/effects/specs/default_building_explosion_large.pfx",
+            "effect_scale": 1.0
         }
     },
     "audio": {

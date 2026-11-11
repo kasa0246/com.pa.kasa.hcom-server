@@ -22,7 +22,8 @@
   },
   "events": {
     "died": {
-      "effect_spec": "/pa/units/air/bomber/bomber_ammo_hit.pfx"
+      "audio_cue": "/SE/Impacts/missile_catapult",
+      "effect_spec": "/pa/effects/specs/default_proj_area_explosion.pfx"
     }
   }
 }

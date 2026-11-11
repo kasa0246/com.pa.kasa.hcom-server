@@ -43,7 +43,7 @@
     "max_velocity": 440,
     "min_velocity": 360,
     "model": {
-        "filename": "/pa/units/misc/empty_model.papa"
+        "filename": "/pa/misc/empty_model.papa"
     },
     "physics": {
         "add_to_spatial_db": false,

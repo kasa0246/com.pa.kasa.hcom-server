@@ -46,10 +46,6 @@
     "fired": {
       "audio_cue": "",
       "effect_spec": ""
-    },
-    "shield_broken": {
-      "audio_cue": "/SE/Death/barrier",
-      "effect_spec": "/pa/units/land/orbital_shield/shield_off.pfx bone_rotator"
     }
   },
   "fx_offsets": [

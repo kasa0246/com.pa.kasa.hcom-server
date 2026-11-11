@@ -173,7 +173,7 @@
         },
         "fired0": {
             "audio_cue": "/SE/Weapons/veh/tank_flame",
-            "effect_spec": "/pa/units/land/demi_titan_bot/fire.pfx socket_left_muzzle /pa/units/land/demi_titan_bot/fire.pfx socket_right_muzzle"
+            "effect_spec": "/pa/units/land/demi_titan_bot/demi_titan_bot_muzzle_flame.pfx socket_left_muzzle /pa/units/land/demi_titan_bot/demi_titan_bot_muzzle_flame.pfx socket_right_muzzle"
         },
         "fired1": {
             "audio_cue": ""
@@ -184,18 +184,7 @@
             "effect_scale": 0.5
         }
     },
-    "fx_offsets": [
-        {
-            "bone": "socket_left_muzzle",
-            "filename": "/pa/units/land/demi_titan_bot/flame.pfx",
-            "type": "idle"
-        },
-        {
-            "bone": "socket_right_muzzle",
-            "filename": "/pa/units/land/demi_titan_bot/flame.pfx",
-            "type": "idle"
-        }
-    ],
+    "fx_offsets": [],
     "audio": {
         "loops": {
             "move": {

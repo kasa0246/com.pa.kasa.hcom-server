@@ -78,7 +78,7 @@
     ],
     "tools": [
         {
-            "spec_id": "/pa/units/land/metal_extractor/metal_depo_tool_weapon_dummy.json",
+            "spec_id": "/pa/units/land/energy_plant/energy_tool_weapon_dummy.json",
             "aim_bone": "bone_root"
         },
         {
