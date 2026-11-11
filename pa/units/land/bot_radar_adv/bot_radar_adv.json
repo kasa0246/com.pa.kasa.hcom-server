@@ -78,7 +78,7 @@
           "channel": "sight",
           "layer": "orbital",
           "radius": 100,
-          "shape": "radar"
+          "shape": "capsule"
         },
         {
           "layer": "surface_and_air",
