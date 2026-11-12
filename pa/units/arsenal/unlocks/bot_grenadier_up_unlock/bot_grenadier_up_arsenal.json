@@ -46,7 +46,7 @@
     25.2
   ],
   "model": {
-    "filename": "/pa/units/arsenal/unlocks/base_unlock/arsenal_bulb.papa"
+    "filename": "/pa/units/misc/empty_unit.papa"
   },
   "factory": {
     "default_build_stance": "Continuous",
