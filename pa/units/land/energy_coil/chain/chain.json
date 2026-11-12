@@ -9,7 +9,7 @@
   "events": {
     "died": {
       "audio_cue": "/SE/Impacts/laser_blast",
-      "effect_spec": "/pa/units/land/energy_coil/chain/electrode.pfx"
+      "effect_spec": "/pa/effects/specs/tesla_hit.pfx"
     },
     "fired": {
       "audio_cue": "/SE/Weapons/bot/spark_fire"

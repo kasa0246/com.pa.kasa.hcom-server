@@ -50,7 +50,7 @@
     },
     "model": [
         {
-            "animtree": "/pa/anim/anim_trees/three_turret_anim_tree.json",
+            "animtree": "/pa/anim/anim_trees/bastion_anim_tree.json",
             "filename": "/pa/units/land/bastion/bastion.papa",
             "skirt_decal": "/pa/effects/specs/skirt_08.json"
         }

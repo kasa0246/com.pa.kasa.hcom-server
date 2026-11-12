@@ -39,7 +39,7 @@
     },
     "fired0": {
       "audio_cue": "/SE/Weapons/bot/sniper_fire",
-      "effect_spec": "/pa/units/land/behemoth/muzzle_flash.pfx bone_muzzle /pa/units/land/behemoth/ground_smoke.pfx bone_root"
+      "effect_spec": "/pa/units/land/behemoth/muzzle_flash.pfx bone_muzzle /pa/units/land/tank_heavy_mortar/tank_heavy_mortar_smoke_skirt.pfx bone_root"
     },
     "fired1": {
       "audio_cue": "/SE/Weapons/sea/hover_small_fire",

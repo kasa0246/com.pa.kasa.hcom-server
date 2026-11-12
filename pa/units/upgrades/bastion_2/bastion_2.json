@@ -31,15 +31,15 @@
     },
     "fired1": {
       "audio_cue": "/SE/Weapons/bot/bot_tactical_missile_fire",
-      "effect_spec": "/pa/effects/specs/default_muzzle_flash.pfx bone_muzzle01"
+      "effect_spec": "/pa/effects/specs/default_muzzle_flash.pfx bone_muzzle_a"
     },
     "fired2": {
       "audio_cue": "/SE/Weapons/bot/bot_tactical_missile_fire",
-      "effect_spec": "/pa/effects/specs/default_muzzle_flash.pfx bone_muzzle02"
+      "effect_spec": "/pa/effects/specs/default_muzzle_flash.pfx bone_muzzle_b"
     },
     "fired3": {
       "audio_cue": "/SE/Weapons/bot/bot_tactical_missile_fire",
-      "effect_spec": "/pa/effects/specs/default_muzzle_flash.pfx bone_muzzle03"
+      "effect_spec": "/pa/effects/specs/default_muzzle_flash.pfx bone_muzzle_c"
     }
   },
   "fx_offsets": [],
@@ -127,23 +127,23 @@
   "spawn_layers": "WL_AnyHorizontalGroundOrWaterSurface",
   "tools": [
     {
-      "aim_bone": "bone_pitch01",
+      "aim_bone": "bone_pitch_a",
       "fire_event": "fired1",
-      "muzzle_bone": "bone_muzzle01",
+      "muzzle_bone": "bone_muzzle_a",
       "record_index": 0,
       "spec_id": "/pa/units/land/bastion/bastion_tool_weapon_short.json"
     },
     {
-      "aim_bone": "bone_pitch02",
+      "aim_bone": "bone_pitch_b",
       "fire_event": "fired2",
-      "muzzle_bone": "bone_muzzle02",
+      "muzzle_bone": "bone_muzzle_b",
       "record_index": 1,
       "spec_id": "/pa/units/land/bastion/bastion_tool_weapon_short.json"
     },
     {
-      "aim_bone": "bone_pitch03",
+      "aim_bone": "bone_pitch_c",
       "fire_event": "fired3",
-      "muzzle_bone": "bone_muzzle03",
+      "muzzle_bone": "bone_muzzle_c",
       "record_index": 2,
       "spec_id": "/pa/units/land/bastion/bastion_tool_weapon_short.json"
     },

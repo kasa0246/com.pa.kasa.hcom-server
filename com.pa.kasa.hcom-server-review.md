@@ -146,7 +146,7 @@ The Note column shows the paths that exist in a different mod. If that mod is en
 
 The review also applied the test to the projectile that each entry names. An entry has an effect only when that projectile exists in the game. Two more entries name Legion Expansion ammo:
 
-- `/pa/units/land/l_rocket_barrage/l_rocket_barrage_ammo.json`, listed by 3 tools: `pa/units/land/cram/cram_beam_tool_weapon_hard.json`, `pa/units/land/tank_heavy_armor/tank_heavy_armor_beam_tool_weapon_hard.json`, `pa/units/land/tank_reaver/tank_reaver_beam_tool_weapon_hard.json`
+- ``, listed by 3 tools: `pa/units/land/cram/cram_beam_tool_weapon_hard.json`, `pa/units/land/tank_heavy_ar/pa/units/land/l_rocket_barrage/l_rocket_barrage_ammo.jsonmor/tank_heavy_armor_beam_tool_weapon_hard.json`, `pa/units/land/tank_reaver/tank_reaver_beam_tool_weapon_hard.json`
 - `/pa/units/land/l_sniper_bot/l_sniper_bot_ammo.json`, listed by 2 tools: `pa/units/land/cram/cram_beam_tool_weapon_easy.json`, `pa/units/land/tank_gatling/cram_beam_tool_weapon_easy.json`
 
 Those projectiles exist only when Legion Expansion is loaded, and Legion Expansion supplies the two files. Thus the review does not count these two entries as defects. The two tools that name the Legion sniper ammo do not name the H-COM sniper ammo `/pa/units/land/bot_sniper/bot_sniper_ammo.json`.
@@ -855,7 +855,7 @@ The mod also has 119 files at paths that other mods own. The counts for each mod
 
 **Found:** Each file is byte-identical to the base-game file.
 
-- `pa/units/air/fabrication_aircraft_adv/fabrication_aircraft_adv.papa`
+- `pa/units/air/fabrication_aircraft_adv/fabrication_aircraft_adv.papa` bs
 - `pa/units/commanders/avatar/avatar.json`
 - `pa/units/orbital/orbital_mine/orbital_mine_ammo.json`
 - `pa/units/sea/torpedo_small/torpedo_small.papa`

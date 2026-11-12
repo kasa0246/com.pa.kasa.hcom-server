@@ -58,7 +58,7 @@
     },
     "animtree": "/pa/anim/anim_trees/grot_anim_tree.json",
     "filename": "/pa/units/land/bot_rpg/grot.papa",
-    "walk_speed": 15
+    "walk_speed": 8
   },
   "navigation": {
     "acceleration": 50,

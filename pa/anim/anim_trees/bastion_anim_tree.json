@@ -5,37 +5,37 @@
   "skeleton_controls": [
     {
       "rotation_axis": "z",
-      "rotation_bone": "bone_turret01",
+      "rotation_bone": "bone_turret_a",
       "type": "procedural_aim",
       "weapon_index": 0
     },
     {
       "rotation_axis": "x",
-      "rotation_bone": "bone_pitch01",
+      "rotation_bone": "bone_pitch_a",
       "type": "procedural_aim",
       "weapon_index": 0
     },
     {
       "rotation_axis": "z",
-      "rotation_bone": "bone_turret02",
+      "rotation_bone": "bone_turret_b",
       "type": "procedural_aim",
       "weapon_index": 1
     },
     {
       "rotation_axis": "x",
-      "rotation_bone": "bone_pitch02",
+      "rotation_bone": "bone_pitch_b",
       "type": "procedural_aim",
       "weapon_index": 1
     },
     {
       "rotation_axis": "z",
-      "rotation_bone": "bone_turret03",
+      "rotation_bone": "bone_turret_c",
       "type": "procedural_aim",
       "weapon_index": 2
     },
     {
       "rotation_axis": "x",
-      "rotation_bone": "bone_pitch03",
+      "rotation_bone": "bone_pitch_c",
       "type": "procedural_aim",
       "weapon_index": 2
     }

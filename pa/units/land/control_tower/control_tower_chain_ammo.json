@@ -4,7 +4,7 @@
   "damage": 350,
   "events": {
     "died": {
-      "effect_spec": "/pa/units/land/energy_coil/chain/electrode.pfx"
+      "effect_spec": "/pa/effects/specs/tesla_hit.pfx"
     }
   },
   "flight_type": "Staged",

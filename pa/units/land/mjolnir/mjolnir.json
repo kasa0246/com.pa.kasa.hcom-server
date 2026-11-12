@@ -35,22 +35,10 @@
   "events": {
     "fired": {
       "audio_cue": "/SE/Weapons/veh/tank_T2_leveler",
-      "effect_spec": "/pa/units/land/mjolnir/muzzle_flash.pfx socket_muzzle /pa/units/land/mjolnir/artillery_muzzle_ground.pfx bone_root /pa/effects/specs/default_muzzle_flash.pfx bone_effect"
+      "effect_spec": "/pa/units/land/mjolnir/mjolnir_muzzle_flash.pfx socket_muzzle /pa/effects/specs/default_muzzle_flash.pfx bone_effect"
     }
   },
   "guard_layer": "WL_AnySurface",
-  "fx_offsets": [
-    {
-      "bone": "bone_turret",
-      "filename": "/pa/units/land/mjolnir/energy_rods.pfx",
-      "offset": [
-        0,
-        0,
-        0
-      ],
-      "type": "idle"
-    }
-  ],
   "headlights": [
     {
       "color": [

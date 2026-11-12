@@ -16,7 +16,7 @@
         }
     },
     "production": {
-        "energy": 5000
+        "energy": 750
     },
     "unit_types": [
         "UNITTYPE_Custom58",

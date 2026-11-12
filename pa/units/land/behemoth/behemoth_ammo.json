@@ -3,7 +3,7 @@
   "damage": 3500,
   "events": {
     "died": {
-      "audio_cue": "/SE/Impacts/shell_bullet",
+      "audio_cue": "/SE/Impacts/cannon_uber",
       "effect_scale": 1.0,
       "effect_spec": "/pa/units/land/behemoth/main_gun_exp.pfx"
     }
@@ -29,7 +29,7 @@
     "gravity_scalar": 120
   },
   "splash_damage": 1500,
-  "splash_radius": 5,
+  "splash_radius": 0,
   "armor_damage_map": {
     "AT_Commander": 0.5
   }

@@ -19,7 +19,7 @@
       "audio_cue": "/SE/Death/land",
       "effect_scale": 0.5
     },
-    "fired0": {
+    "fired": {
       "audio_cue": "/SE/Weapons/bot/grenadier_fire",
       "effect_spec": "/pa/effects/specs/default_small_muzzle_flash.pfx socket_muzzle_1a /pa/effects/specs/default_small_muzzle_flash.pfx socket_muzzle_2a /pa/effects/specs/default_small_muzzle_flash.pfx socket_muzzle_3a /pa/effects/specs/default_small_muzzle_flash.pfx socket_muzzle_4a /pa/effects/specs/default_small_muzzle_flash.pfx socket_muzzle_5a /pa/effects/specs/default_small_muzzle_flash.pfx socket_muzzle_6a"
     }
@@ -79,7 +79,7 @@
         "socket_muzzle_5"
       ],
       "projectiles_per_fire": 6,
-      "fire_event": "fired0",
+      "fire_event": "fired",
       "spec_id": "/pa/units/land/furrow/furrow_tool_weapon.json"
     }
   ],
