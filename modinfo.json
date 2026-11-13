@@ -30,13 +30,11 @@
             "coui://ui/mods/com.pa.kasa.hcom-server/icon_atlas.js"
         ],
         "live_game_build_bar": [
-            "coui://ui/mods/com.pa.kasa.hcom-server/arsenal_build_bar.js"
+            "coui://ui/mods/com.pa.kasa.hcom-server/live_build_bar.js"
         ],
         "live_game": [
-            "coui://ui/mods/com.pa.kasa.hcom-server/arsenal.js",
-            "coui://ui/mods/com.pa.kasa.hcom-server/arsenal_live_game.js",
-            "coui://ui/mods/com.pa.kasa.hcom-server/solar_mechanics.js",
-            "coui://ui/mods/com.pa.kasa.hcom-server/wind_mechanics.js",
+            "coui://ui/mods/com.pa.kasa.hcom-server/research.js",
+            "coui://ui/mods/com.pa.kasa.hcom-server/research_live_game.js",
             "coui://ui/mods/com.pa.kasa.hcom-server/mechanics.js",
             "coui://ui/mods/AutoFactory/live_game/init.js",
             "coui://ui/mods/com.pa.kasa.hcom-server/spawn_landing_capsule.js"
