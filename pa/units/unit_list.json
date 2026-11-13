@@ -15,56 +15,56 @@
         "/pa/units/land/landing_capsule/starting_energy.json",
         "/pa/units/arsenal/arsenal/arsenal.json",
         "/pa/units/arsenal/unlocked_units/orbital_railgun_up/orbital_railgun_up.json",
-        "/pa/units/arsenal/unlocks/orbital_railgun_up_unlock/orbital_railgun_up_arsenal.json",
+
         "/pa/units/arsenal/unlocks/orbital_railgun_up_unlock/orbital_railgun_up_unlock.json",
         "/pa/units/arsenal/unlocked_units/orbital_battleship_up/orbital_battleship_up.json",
-        "/pa/units/arsenal/unlocks/orbital_battleship_up_unlock/orbital_battleship_up_arsenal.json",
+
         "/pa/units/arsenal/unlocks/orbital_battleship_up_unlock/orbital_battleship_up_unlock.json",
         "/pa/units/arsenal/unlocked_units/tank_light_laser_up/tank_light_laser_up.json",
-        "/pa/units/arsenal/unlocks/tank_light_laser_up_unlock/tank_light_laser_up_arsenal.json",
+
         "/pa/units/arsenal/unlocks/tank_light_laser_up_unlock/tank_light_laser_up_unlock.json",
         "/pa/units/arsenal/unlocked_units/tank_hover_up/tank_hover_up.json",
-        "/pa/units/arsenal/unlocks/tank_hover_up_unlock/tank_hover_up_arsenal.json",
+
         "/pa/units/arsenal/unlocks/tank_hover_up_unlock/tank_hover_up_unlock.json",
         "/pa/units/arsenal/unlocked_units/tank_heavy_mortar_up/tank_heavy_mortar_up.json",
-        "/pa/units/arsenal/unlocks/tank_heavy_mortar_up_unlock/tank_heavy_mortar_up_arsenal.json",
+
         "/pa/units/arsenal/unlocks/tank_heavy_mortar_up_unlock/tank_heavy_mortar_up_unlock.json",
         "/pa/units/arsenal/unlocked_units/assault_bot_adv_up/assault_bot_adv_up.json",
-        "/pa/units/arsenal/unlocks/assault_bot_adv_up_unlock/assault_bot_adv_up_arsenal.json",
+
         "/pa/units/arsenal/unlocks/assault_bot_adv_up_unlock/assault_bot_adv_up_unlock.json",
         "/pa/units/arsenal/unlocked_units/assault_bot_up/assault_bot_up.json",
-        "/pa/units/arsenal/unlocks/assault_bot_up_unlock/assault_bot_up_arsenal.json",
+
         "/pa/units/arsenal/unlocks/assault_bot_up_unlock/assault_bot_up_unlock.json",
         "/pa/units/arsenal/unlocked_units/tank_laser_adv_up/tank_laser_adv_up.json",
-        "/pa/units/arsenal/unlocks/tank_laser_adv_up_unlock/tank_laser_adv_up_arsenal.json",
+
         "/pa/units/arsenal/unlocks/tank_laser_adv_up_unlock/tank_laser_adv_up_unlock.json",
         "/pa/units/arsenal/unlocked_units/adv_heavy_bot_up/adv_heavy_bot_up.json",
-        "/pa/units/arsenal/unlocks/adv_heavy_bot_up_unlock/adv_heavy_bot_up_arsenal.json",
+
         "/pa/units/arsenal/unlocks/adv_heavy_bot_up_unlock/adv_heavy_bot_up_unlock.json",
         "/pa/units/arsenal/unlocked_units/tank_heavy_armor_up/tank_heavy_armor_up.json",
-        "/pa/units/arsenal/unlocks/tank_heavy_armor_up_unlock/tank_heavy_armor_up_arsenal.json",
+
         "/pa/units/arsenal/unlocks/tank_heavy_armor_up_unlock/tank_heavy_armor_up_unlock.json",
         "/pa/units/arsenal/unlocked_units/bot_rpg_up/bot_rpg_up.json",
-        "/pa/units/arsenal/unlocks/bot_rpg_up_unlock/bot_rpg_up_arsenal.json",
+
         "/pa/units/arsenal/unlocks/bot_rpg_up_unlock/bot_rpg_up_unlock.json",
         "/pa/units/arsenal/unlocked_units/bot_grenadier_up/bot_grenadier_up.json",
-        "/pa/units/arsenal/unlocks/bot_grenadier_up_unlock/bot_grenadier_up_arsenal.json",
+
         "/pa/units/arsenal/unlocks/bot_grenadier_up_unlock/bot_grenadier_up_unlock.json",
         "/pa/units/land/nuke_launcher/nuke_launcher_up.json",
-        "/pa/units/arsenal/unlocks/nuke_unlock/nuke_arsenal.json",
+
         "/pa/units/arsenal/unlocks/nuke_unlock/nuke_unlock.json",
-        "/pa/units/arsenal/unlocks/nuke_ammo_unlock/nuke_ammo_arsenal.json",
+
         "/pa/units/arsenal/unlocks/nuke_ammo_unlock/nuke_ammo_unlock.json",
-        "/pa/units/arsenal/unlocks/hype_ammo_unlock/hype_ammo_arsenal.json",
+
         "/pa/units/arsenal/unlocks/hype_ammo_unlock/hype_ammo_unlock.json",
         "/pa/units/land/anti_nuke_launcher/anti_nuke_launcher_up.json",
-        "/pa/units/arsenal/unlocks/anti_nuke_up_unlock/anti_nuke_up_arsenal.json",
+
         "/pa/units/arsenal/unlocks/anti_nuke_up_unlock/anti_nuke_up_unlock.json",
         "/pa/units/arsenal/unlocked_units/gunship_up/gunship_up.json",
-        "/pa/units/arsenal/unlocks/gunship_up_unlock/gunship_up_arsenal.json",
+
         "/pa/units/arsenal/unlocks/gunship_up_unlock/gunship_up_unlock.json",
         "/pa/units/arsenal/unlocked_units/bot_sniper_up/bot_sniper_up.json",
-        "/pa/units/arsenal/unlocks/bot_sniper_up_unlock/bot_sniper_up_arsenal.json",
+
         "/pa/units/arsenal/unlocks/bot_sniper_up_unlock/bot_sniper_up_unlock.json",
         "/pa/units/orbital/deep_space_radar/deep_space_radar.json",
         "/pa/units/orbital/deep_space_radar/scanner.json",

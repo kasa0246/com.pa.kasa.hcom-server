@@ -1,5 +1,5 @@
 {
-  "display_name": "!LOC:Arsenal",
+  "display_name": "!LOC:Arsenal Research Facility",
   "si_name": "arsenal",
   "description": "!LOC:Upgrades and unlocks unit blueprints. Changes are applied to all newly built units. Upgrades cannot be reversed but have no downsides - upgraded units are about 2x more powerful.",
   "TEMP_texelinfo": 38.3936,
@@ -40,20 +40,27 @@
   },
   "factory_cooldown_time": 5,
   "max_health": 5000,
-  "mesh_bounds": [
-    15,
-    15,
-    30
+  "model": [
+    {
+      "layer": "WL_LandHorizontal",
+      "filename": "/pa/units/arsenal/arsenal/adv_reactor.papa",
+      "animations": {
+        "idle": "/pa/units/arsenal/arsenal/adv_reactor_idle.papa"
+      },
+      "animtree": "/pa/anim/anim_trees/constant_idle_anim_tree.json"
+    }
   ],
-  "model": {
-    "filename": "/pa/units/arsenal/arsenal/arsenal.papa"
-  },
   "physics": {
     "collision_layers": "WL_AnyHorizontalGroundOrWaterSurface"
   },
-  "placement_size": [
+  "mesh_bounds": [
     20,
-    20
+    20,
+    35
+  ],
+  "placement_size": [
+    30,
+    30
   ],
   "recon": {
     "observer": {

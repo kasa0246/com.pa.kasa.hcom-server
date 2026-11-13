@@ -5,7 +5,7 @@
 
 model.unitsToCommand = [["/pa/units/structure/control_node/portal/portal_charging.json", "altFireSelf"]]
 
-//hardcoded locks, arsenal packs can add to this by appending to it, units that have been locked will be removed, ensures units stay locked on resets
+//hardcoded locks, research packs can add to this by appending to it, units that have been locked will be removed, ensures units stay locked on resets
 
 model.unitsToLock = [
                     "/pa/units/arsenal/unlocked_units/tank_light_laser_up/tank_light_laser_up.json",
@@ -41,9 +41,9 @@ model.unitsToLock = [
 //tracks locked units
 model.lockedUnits = [];
 
-//hardcoded pairs, can be added to by arsenal packs by appending, format is [[arsenalfactoryunit,[unitsToUnlock],[unitToLock],replaceLockedUnitsBool]
+//hardcoded pairs, can be added to by research packs by appending, format is [[researchfactoryunit,[unitsToUnlock],[unitToLock],replaceLockedUnitsBool]
 
-//with the addition of replacing units queued I think I will have it be default as the only edge case is arsenal which I will just not track
+//with the addition of replacing units queued I think I will have it be default as the only edge case is research which I will just not track
 
 //to combo replace/lock have locked units be on the end of the unitsToLock array and not match up numerically with the unitsToUnlock array
 
@@ -51,58 +51,65 @@ model.lockedUnits = [];
 
 model.unlockPairs = [
 
+    //alpha grunt
+    [//trigger unit
+    [],//units added
+    [],//units replaced/locked
+    true],//is a replace rather than just locks
+
+    
     //orbital_railgun_up
     ["/pa/units/arsenal/unlocks/orbital_railgun_up_unlock/orbital_railgun_up_unlock.json",
     ["/pa/units/arsenal/unlocked_units/orbital_railgun_up/orbital_railgun_up.json"],
-    ["/pa/units/orbital/orbital_railgun/orbital_railgun.json", "/pa/units/arsenal/unlocks/orbital_railgun_up_unlock/orbital_railgun_up_unlock.json","/pa/units/arsenal/unlocks/orbital_railgun_up_unlock/orbital_railgun_up_arsenal.json"],
+    ["/pa/units/orbital/orbital_railgun/orbital_railgun.json", "/pa/units/arsenal/unlocks/orbital_railgun_up_unlock/orbital_railgun_up_unlock.json"],
     true],
 
     //orbital_battleship_up
     ["/pa/units/arsenal/unlocks/orbital_battleship_up_unlock/orbital_battleship_up_unlock.json",
     ["/pa/units/arsenal/unlocked_units/orbital_battleship_up/orbital_battleship_up.json"],
-    ["/pa/units/orbital/orbital_battleship/orbital_battleship.json", "/pa/units/arsenal/unlocks/orbital_battleship_up_unlock/orbital_battleship_up_unlock.json","/pa/units/arsenal/unlocks/orbital_battleship_up_unlock/orbital_battleship_up_arsenal.json"],
+    ["/pa/units/orbital/orbital_battleship/orbital_battleship.json", "/pa/units/arsenal/unlocks/orbital_battleship_up_unlock/orbital_battleship_up_unlock.json"],
     true],
 
     //LR_ballistic_missile_unlock
     ["/pa/units/arsenal/unlocks/nuke_unlock/nuke_unlock.json",
     ["/pa/units/land/nuke_launcher/nuke_launcher.json", "/pa/units/land/tactical_missile_launcher/tactical_missile_launcher.json", "/pa/units/land/shah/shah.json", "/pa/units/arsenal/unlocks/nuke_ammo_unlock/nuke_ammo_unlock.json", "/pa/units/arsenal/unlocks/nuke_ammo_unlock/nuke_ammo_arsenal.json", "/pa/units/arsenal/unlocks/hype_ammo_unlock/hype_ammo_unlock.json", "/pa/units/arsenal/unlocks/hype_ammo_unlock/hype_ammo_arsenal.json"],
-    ["/pa/units/arsenal/unlocks/nuke_unlock/nuke_unlock.json", "/pa/units/arsenal/unlocks/nuke_unlock/nuke_arsenal.json"],
+    ["/pa/units/arsenal/unlocks/nuke_unlock/nuke_unlock.json"],
     false],
 
     //nuke_launcher_up
     ["/pa/units/arsenal/unlocks/nuke_ammo_unlock/nuke_ammo_unlock.json",
     ["/pa/units/land/nuke_launcher/nuke_launcher_up.json"],
-    ["/pa/units/land/nuke_launcher/nuke_launcher.json", "/pa/units/arsenal/unlocks/nuke_ammo_unlock/nuke_ammo_unlock.json", "/pa/units/arsenal/unlocks/nuke_ammo_unlock/nuke_ammo_arsenal.json"],
+    ["/pa/units/land/nuke_launcher/nuke_launcher.json", "/pa/units/arsenal/unlocks/nuke_ammo_unlock/nuke_ammo_unlock.json"],
     true],
 
     //hype_ammo_unlock
     ["/pa/units/arsenal/unlocks/hype_ammo_unlock/hype_ammo_unlock.json",
     ["/pa/units/land/missile_facility/large_dot_ammo.json", "/pa/units/land/missile_facility/precision_strike_ammo.json", "/pa/units/land/missile_facility/large_stun_ammo.json", "/pa/units/air/yellowjacket/yellowjacket.json"],
-    ["/pa/units/arsenal/unlocks/hype_ammo_unlock/hype_ammo_unlock.json", "/pa/units/arsenal/unlocks/hype_ammo_unlock/hype_ammo_arsenal.json"],
+    ["/pa/units/arsenal/unlocks/hype_ammo_unlock/hype_ammo_unlock.json"],
     false],
 
     //anti_nuke_up
     ["/pa/units/arsenal/unlocks/anti_nuke_up_unlock/anti_nuke_up_unlock.json",
     ["/pa/units/land/anti_nuke_launcher/anti_nuke_launcher_up.json", "/pa/units/land/tank_anti_nuke/tank_anti_nuke_up.json"],
-    ["/pa/units/land/anti_nuke_launcher/anti_nuke_launcher.json", "/pa/units/land/tank_anti_nuke/tank_anti_nuke.json", "/pa/units/arsenal/unlocks/anti_nuke_up_unlock/anti_nuke_up_unlock.json", "/pa/units/arsenal/unlocks/anti_nuke_up_unlock/anti_nuke_up_arsenal.json"],
+    ["/pa/units/land/anti_nuke_launcher/anti_nuke_launcher.json", "/pa/units/land/tank_anti_nuke/tank_anti_nuke.json", "/pa/units/arsenal/unlocks/anti_nuke_up_unlock/anti_nuke_up_unlock.json"],
     true],
 
     //gunship_up
     ["/pa/units/arsenal/unlocks/gunship_up_unlock/gunship_up_unlock.json",
     ["/pa/units/arsenal/unlocked_units/gunship_up/gunship_up.json"],
-    ["/pa/units/air/gunship/gunship.json","/pa/units/arsenal/unlocks/gunship_up_unlock/gunship_up_unlock.json","/pa/units/arsenal/unlocks/gunship_up_unlock/gunship_up_arsenal.json"],
+    ["/pa/units/air/gunship/gunship.json","/pa/units/arsenal/unlocks/gunship_up_unlock/gunship_up_unlock.json"],
     true],
 
     //bot_sniper_up
     ["/pa/units/arsenal/unlocks/bot_sniper_up_unlock/bot_sniper_up_unlock.json",
     ["/pa/units/arsenal/unlocked_units/bot_sniper_up/bot_sniper_up.json"],
-    ["/pa/units/land/bot_sniper/bot_sniper.json","/pa/units/arsenal/unlocks/bot_sniper_up_unlock/bot_sniper_up_unlock.json","/pa/units/arsenal/unlocks/bot_sniper_up_unlock/bot_sniper_up_arsenal.json"],
+    ["/pa/units/land/bot_sniper/bot_sniper.json","/pa/units/arsenal/unlocks/bot_sniper_up_unlock/bot_sniper_up_unlock.json"],
     true],
 
     //tank_light_laser_up
     ["/pa/units/arsenal/unlocks/tank_light_laser_up_unlock/tank_light_laser_up_unlock.json",
     ["/pa/units/arsenal/unlocked_units/tank_light_laser_up/tank_light_laser_up.json"],
-    ["/pa/units/land/tank_light_laser/tank_light_laser.json","/pa/units/arsenal/unlocks/tank_light_laser_up_unlock/tank_light_laser_up_unlock.json","/pa/units/arsenal/unlocks/tank_light_laser_up_unlock/tank_light_laser_up_arsenal.json"],
+    ["/pa/units/land/tank_light_laser/tank_light_laser.json","/pa/units/arsenal/unlocks/tank_light_laser_up_unlock/tank_light_laser_up_unlock.json"],
     true],
 
     //tank_hover_up
@@ -114,131 +121,53 @@ model.unlockPairs = [
     //tank_heavy_mortar_up
     ["/pa/units/arsenal/unlocks/tank_heavy_mortar_up_unlock/tank_heavy_mortar_up_unlock.json",
     ["/pa/units/arsenal/unlocked_units/tank_heavy_mortar_up/tank_heavy_mortar_up.json"],
-    ["/pa/units/land/tank_heavy_mortar/tank_heavy_mortar.json","/pa/units/arsenal/unlocks/tank_heavy_mortar_up_unlock/tank_heavy_mortar_up_unlock.json","/pa/units/arsenal/unlocks/tank_heavy_mortar_up_unlock/tank_heavy_mortar_up_arsenal.json"],
+    ["/pa/units/land/tank_heavy_mortar/tank_heavy_mortar.json","/pa/units/arsenal/unlocks/tank_heavy_mortar_up_unlock/tank_heavy_mortar_up_unlock.json"],
     true],
     
     //assault_bot_adv_up
     ["/pa/units/arsenal/unlocks/assault_bot_adv_up_unlock/assault_bot_adv_up_unlock.json",
     ["/pa/units/arsenal/unlocked_units/assault_bot_adv_up/assault_bot_adv_up.json"],
-    ["/pa/units/land/assault_bot_adv/assault_bot_adv.json","/pa/units/arsenal/unlocks/assault_bot_adv_up_unlock/assault_bot_adv_up_unlock.json","/pa/units/arsenal/unlocks/assault_bot_adv_up_unlock/assault_bot_adv_up_arsenal.json"],
+    ["/pa/units/land/assault_bot_adv/assault_bot_adv.json","/pa/units/arsenal/unlocks/assault_bot_adv_up_unlock/assault_bot_adv_up_unlock.json"],
     true],
 
     //assault_bot_up
     ["/pa/units/arsenal/unlocks/assault_bot_up_unlock/assault_bot_up_unlock.json",
     ["/pa/units/arsenal/unlocked_units/assault_bot_up/assault_bot_up.json"],
-    ["/pa/units/land/assault_bot/assault_bot.json","/pa/units/arsenal/unlocks/assault_bot_up_unlock/assault_bot_up_unlock.json","/pa/units/arsenal/unlocks/assault_bot_up_unlock/assault_bot_up_arsenal.json"],
+    ["/pa/units/land/assault_bot/assault_bot.json","/pa/units/arsenal/unlocks/assault_bot_up_unlock/assault_bot_up_unlock.json"],
     true],
 
     //bot_rpg_up
     ["/pa/units/arsenal/unlocks/bot_rpg_up_unlock/bot_rpg_up_unlock.json",
     ["/pa/units/arsenal/unlocked_units/bot_rpg_up/bot_rpg_up.json"],
-    ["/pa/units/land/bot_rpg/bot_rpg.json","/pa/units/arsenal/unlocks/bot_rpg_up_unlock/bot_rpg_up_unlock.json","/pa/units/arsenal/unlocks/bot_rpg_up_unlock/bot_rpg_up_arsenal.json"],
+    ["/pa/units/land/bot_rpg/bot_rpg.json","/pa/units/arsenal/unlocks/bot_rpg_up_unlock/bot_rpg_up_unlock.json"],
     true],
 
     //bot_grenadier_up
     ["/pa/units/arsenal/unlocks/bot_grenadier_up_unlock/bot_grenadier_up_unlock.json",
     ["/pa/units/arsenal/unlocked_units/bot_grenadier_up/bot_grenadier_up.json"],
-    ["/pa/units/land/bot_grenadier/bot_grenadier.json","/pa/units/arsenal/unlocks/bot_grenadier_up_unlock/bot_grenadier_up_unlock.json","/pa/units/arsenal/unlocks/bot_grenadier_up_unlock/bot_grenadier_up_arsenal.json"],
+    ["/pa/units/land/bot_grenadier/bot_grenadier.json","/pa/units/arsenal/unlocks/bot_grenadier_up_unlock/bot_grenadier_up_unlock.json"],
     true],
 
     //adv_heavy_bot_up
     ["/pa/units/arsenal/unlocks/adv_heavy_bot_up_unlock/adv_heavy_bot_up_unlock.json",
     ["/pa/units/arsenal/unlocked_units/adv_heavy_bot_up/adv_heavy_bot_up.json"],
-    ["/pa/units/land/adv_heavy_bot/adv_heavy_bot.json","/pa/units/arsenal/unlocks/adv_heavy_bot_up_unlock/adv_heavy_bot_up_unlock.json","/pa/units/arsenal/unlocks/adv_heavy_bot_up_unlock/adv_heavy_bot_up_arsenal.json"],
+    ["/pa/units/land/adv_heavy_bot/adv_heavy_bot.json","/pa/units/arsenal/unlocks/adv_heavy_bot_up_unlock/adv_heavy_bot_up_unlock.json"],
     true],
 
     //tank_laser_adv_up
     ["/pa/units/arsenal/unlocks/tank_laser_adv_up_unlock/tank_laser_adv_up_unlock.json",
     ["/pa/units/arsenal/unlocked_units/tank_laser_adv_up/tank_laser_adv_up.json"],
-    ["/pa/units/land/tank_laser_adv/tank_laser_adv.json","/pa/units/arsenal/unlocks/tank_laser_adv_up_unlock/tank_laser_adv_up_unlock.json","/pa/units/arsenal/unlocks/tank_laser_adv_up_unlock/tank_laser_adv_up_arsenal.json"],
+    ["/pa/units/land/tank_laser_adv/tank_laser_adv.json","/pa/units/arsenal/unlocks/tank_laser_adv_up_unlock/tank_laser_adv_up_unlock.json"],
     true],
 
     //tank_heavy_armor_up
     ["/pa/units/arsenal/unlocks/tank_heavy_armor_up_unlock/tank_heavy_armor_up_unlock.json",
     ["/pa/units/arsenal/unlocked_units/tank_heavy_armor_up/tank_heavy_armor_up.json"],
-    ["/pa/units/land/tank_heavy_armor/tank_heavy_armor.json","/pa/units/arsenal/unlocks/tank_heavy_armor_up_unlock/tank_heavy_armor_up_unlock.json","/pa/units/arsenal/unlocks/tank_heavy_armor_up_unlock/tank_heavy_armor_up_arsenal.json"],
-    true],
-    
-
-
-
-    //bugs
-
-    //alpha grunt
-    ["/pa/units/research/unlocks/bug_grunt_big_unlock/bug_grunt_big_unlock.json",//trigger unit
-        ["/pa/units/land/bug_grunt_big/bug_grunt_big.json"],//units added
-        ["/pa/units/land/bug_grunt/bug_grunt.json","/pa/units/research/unlocks/bug_grunt_big_unlock/bug_grunt_big_unlock.json","/pa/units/research/unlocks/bug_grunt_big_unlock/research_grunt.json"],//units replaced/locked
-        true],//is a replace rather than just locks
-    
-        //stealth ripper
-        ["/pa/units/research/unlocks/bug_ripper_stealth_unlock/bug_ripper_stealth_unlock.json",
-        ["/pa/units/land/bug_ripper_stealth/bug_ripper_stealth.json"],
-        ["/pa/units/land/bug_ripper/bug_ripper.json","/pa/units/research/unlocks/bug_ripper_stealth_unlock/bug_ripper_stealth_unlock.json","/pa/units/research/unlocks/bug_ripper_stealth_unlock/research_ripper.json"],
-        true],
-    
-        //cheap combat fabs
-        ["/pa/units/research/unlocks/bug_combat_fab_cheap_unlock/bug_combat_fab_cheap_unlock.json",
-        ["/pa/units/land/bug_combat_fab/bug_combat_fab_cheap.json"],
-        ["/pa/units/land/bug_combat_fab/bug_combat_fab.json","/pa/units/research/unlocks/bug_combat_fab_cheap_unlock/bug_combat_fab_cheap_unlock.json", "/pa/units/research/unlocks/bug_combat_fab_cheap_unlock/research_combat_fab.json"],
-        true],
-    
-        //fast needler
-        ["/pa/units/research/unlocks/bug_needler_fast_unlock/bug_needler_fast_unlock.json",
-        ["/pa/units/land/bug_needler/bug_needler_fast.json"],
-        ["/pa/units/land/bug_needler/bug_needler.json","/pa/units/research/unlocks/bug_needler_fast_unlock/bug_needler_fast_unlock.json","/pa/units/research/unlocks/bug_needler_fast_unlock/research_needler.json"],
-         true],
-    
-         //boomer mine transform unlock
-        ["/pa/units/research/unlocks/bug_boomer_mine_unlock/bug_boomer_mine_unlock.json",
-        ["/pa/units/land/bug_boomer/bug_boomer_r.json","/pa/units/structure/bug_mine/bug_mine.json"],
-        ["/pa/units/land/bug_boomer/bug_boomer.json","/pa/units/structure/bug_mine/bug_mine.json", "/pa/units/research/unlocks/bug_boomer_mine_unlock/bug_boomer_mine_unlock.json", "/pa/units/research/unlocks/bug_boomer_mine_unlock/research_boomer_mine.json"],
-         true],
-         
-         //crusher unlock
-        ["/pa/units/research/unlocks/bug_crusher_unlock/bug_crusher_unlock.json",
-        ["/pa/units/land/bug_crusher/bug_crusher.json"],
-        ["/pa/units/research/unlocks/bug_crusher_unlock/bug_crusher_unlock.json", "/pa/units/research/unlocks/bug_crusher_unlock/research_crusher.json"],
-        false],
-    
-        //hydra unlock
-        ["/pa/units/research/unlocks/bug_hydra_unlock/bug_hydra_unlock.json",
-        ["/pa/units/land/bug_hydra/bug_hydra.json"],
-        ["/pa/units/research/unlocks/bug_hydra_unlock/bug_hydra_unlock.json","/pa/units/research/unlocks/bug_hydra_unlock/research_hydra.json"],
-        false],
-    
-        //chomper unlock
-        ["/pa/units/research/unlocks/bug_chomper_unlock/bug_chomper_unlock.json",
-        ["/pa/units/orbital/bug_orbital_chomper/bug_orbital_chomper.json"],
-        ["/pa/units/research/unlocks/bug_chomper_unlock/bug_chomper_unlock.json","/pa/units/research/unlocks/bug_chomper_unlock/research_bug_chomper.json"],
-        false],
-    
-        //bug carrier unlock
-        ["/pa/units/research/unlocks/bug_orbital_battleship_unlock/bug_orbital_battleship_unlock.json",
-        ["/pa/units/orbital/bug_orbital_battleship/bug_orbital_battleship.json"],
-        ["/pa/units/research/unlocks/bug_orbital_battleship_unlock/bug_orbital_battleship_unlock.json","/pa/units/research/unlocks/bug_orbital_battleship_unlock/research_bug_orbital_battleship.json"],
-        false],
-    
-        //bug orbital laser unlock
-        ["/pa/units/research/unlocks/bug_orbital_laser_unlock/bug_orbital_laser_unlock.json",
-        ["/pa/units/orbital/bug_orbital_laser/bug_orbital_laser.json"],
-        ["/pa/units/research/unlocks/bug_orbital_laser_unlock/bug_orbital_laser_unlock.json","/pa/units/research/unlocks/bug_orbital_laser_unlock/research_bug_orbital_laser.json"],
-        false],
-    
-        //bug advanced orbital radar unlock
-        ["/pa/units/research/unlocks/bug_advanced_orbital_radar_unlock/bug_advanced_orbital_radar_unlock.json",
-        ["/pa/units/orbital/bug_advanced_orbital_radar/bug_advanced_orbital_radar.json"],
-        ["/pa/units/research/unlocks/bug_advanced_orbital_radar_unlock/bug_advanced_orbital_radar_unlock.json","/pa/units/research/unlocks/bug_advanced_orbital_radar_unlock/research_bug_advanced_orbital_radar.json"],
-        false],
-    
-        //orb fighter vision unlock
-        ["/pa/units/research/unlocks/bug_orbital_fighter_vision_unlock/bug_orbital_fighter_vision_unlock.json",
-        ["/pa/units/orbital/bug_orbital_fighter/bug_orbital_fighter_vision.json"],
-        ["/pa/units/orbital/bug_orbital_fighter/bug_orbital_fighter.json","/pa/units/research/unlocks/bug_orbital_fighter_vision_unlock/bug_orbital_fighter_vision_unlock.json","/pa/units/research/unlocks/bug_orbital_fighter_vision_unlock/research_bug_orbital_fighter_vision.json"],
-        true]
-
+    ["/pa/units/land/tank_heavy_armor/tank_heavy_armor.json","/pa/units/arsenal/unlocks/tank_heavy_armor_up_unlock/tank_heavy_armor_up_unlock.json"],
+    true]
 ]
 
-//for circular arsenal the older ones need to be deleted if a newer arsenal is done.
+//for circular research the older ones need to be deleted if a newer research is done.
 model.deleteOldPairs = [
 
 ]
@@ -270,7 +199,7 @@ model.unitCommand = function(unitId, unitState, commandType){
     else{return}
 }
 
-arsenalLoop = function(){
+researchLoop = function(){
    
     model.unitsToLock.forEach(function(unit){
        
@@ -312,18 +241,17 @@ arsenalLoop = function(){
                        
                         if(result[0].built_frac == undefined){
                       
-                       
-
                         //if the unlock should actually be a replace
                         if(pair[3] !== true){
                         pair[1].forEach(function(unit){
-                            console.log("unlocking ",+unit)
+                            console.log("unlocking ",unit) // Corrected logging
                             api.Panel.message("build_bar", 'unlockUnit',unit)
+                            api.Panel.message(api.panels["LiveGame_FloatZone"].id, 'unlockResearch', pair[0]);
                      
                         })
                         if(pair[2] !== undefined){
                             pair[2].forEach(function(unit){
-                                console.log("locking ",+unit)
+                                console.log("locking ",unit) // Corrected logging
                                 api.Panel.message("build_bar", 'lockUnit',unit)
                                 model.lockedUnits.push(unit)
                             })
@@ -334,18 +262,23 @@ arsenalLoop = function(){
                             for(var i = 0; i< pair[2].length;i++){
                                 if(pair[1][i] == pair[2][i] && pair[1][i] !== undefined){//needed for more unlocks combined with replace
                                     api.Panel.message("build_bar", 'unlockUnit',pair[1][i])
+                                    api.Panel.message(api.panels["LiveGame_FloatZone"].id, 'unlockResearch', pair[0]);
                                 }
                                 else if(pair[1][i] !== undefined){//matching replace
                                  
                                     api.Panel.message("build_bar", 'replaceUnit',[[pair[2][i]],[pair[1][i]], pair[3]])
+                                    api.Panel.message(api.panels["LiveGame_FloatZone"].id, 'unlockResearch', pair[0]);
                                 }
                                 else{//lock the pair 2 as it has no match
                                    
-                                    //replace that sets the new unit to undefined as a way to cancel its build order
-                                    api.Panel.message("build_bar", 'replaceUnit',[[pair[2][i]],[undefined], pair[3]])
                                     api.Panel.message("build_bar", 'lockUnit',pair[2][i])
+                                    api.Panel.message(api.panels["LiveGame_FloatZone"].id, 'unlockResearch', pair[0]);
                                 }
                             }
+                        }
+
+                        if(model.clearConsumedTriggerQueue){
+                            model.clearConsumedTriggerQueue(pair[0]);
                         }
 
 
@@ -377,18 +310,18 @@ arsenalLoop = function(){
     }
     
 
-    _.delay(arsenalLoop,1000)
+    _.delay(researchLoop,1000)
 
 }
 
 
 
-_.delay(arsenalLoop,1000)
+_.delay(researchLoop,1000)
 
 
 var world = api.getWorldView(0)
 
-// the below is yoinked from scenarios, it is not really needed to be this complex for arsenal
+// the below is yoinked from scenarios, it is not really needed to be this complex for research
 
 
 var unitJsons = model.unitSpecs//I think this has a list of unit keys that then have types
@@ -589,3 +522,43 @@ model.playerArmy = function(playerId, planetId,unitType, stateFlag,unitTypeValue
 handlers.buildRestart = function(payload){//build ui has restarted so tell it what to lock again
     model.reLockUnits();
 }
+
+// ===== Research Map Panel Integration =====
+
+/**
+ * Helper function to get the current set of researched trigger specs.
+ * Deduplicates and returns only unique research/upgrade specs that have been completed.
+ */
+model.getResearchedTriggers = function() {
+    var researchedSet = {};
+    var armyPromise = model.allPlayerArmy(model.armyIndex());
+
+    return armyPromise.then(function(result) {
+        var armyKeys = _.keys(result);
+        console.log('[Research Tracker] Army has ' + armyKeys.length + ' unique specs');
+
+        // Iterate through unlockPairs to find what we've researched
+        var researchCount = 0;
+        model.unlockPairs.forEach(function(pair) {
+            var triggerSpec = pair[0];
+            var unlockedUnits = pair[1];
+
+            if (triggerSpec && triggerSpec.length > 0) {
+                // Check if trigger spec exists in army (means it was built/completed)
+                if (_.contains(armyKeys, triggerSpec)) {
+                    researchedSet[triggerSpec] = true;
+                    console.log('[Research Tracker] ✓ Researched:', triggerSpec);
+                    researchCount++;
+                }
+            }
+        });
+
+        var resultKeys = Object.keys(researchedSet);
+        console.log('[Research Tracker] Found ' + resultKeys.length + ' researched specs out of ' + model.unlockPairs.length + ' total pairs');
+        return resultKeys;
+    });
+};
+
+// requestResearchMapState handler is defined in research_live_game.js
+// (includes faction availability data alongside researched specs)
+
