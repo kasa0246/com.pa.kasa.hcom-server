@@ -94,12 +94,12 @@
         }
     },
     "model": {
-        "filename": "/pa/units/air/solar_drone/solar_droneX.papa",
+        "filename": "/pa/units/air/solar_drone/solar_drone_small.papa",
         "animations": {
-            "fly": "/pa/units/air/solar_drone/solar_drone_anim_flyX.papa",
-            "building": "/pa/units/air/solar_drone/solar_drone_anim_buildingX.papa",
-            "deploy": "/pa/units/air/solar_drone/solar_drone_anim_deployX.papa",
-            "idle": "/pa/units/air/solar_drone/solar_drone_anim_idleX.papa"
+            "fly": "/pa/units/air/solar_drone/solar_drone_anim_fly_small.papa",
+            "building": "/pa/units/air/solar_drone/solar_drone_anim_building_small.papa",
+            "deploy": "/pa/units/air/solar_drone/solar_drone_anim_deploy_small.papa",
+            "idle": "/pa/units/air/solar_drone/solar_drone_anim_idle_small.papa"
         },
         "animtree": "/pa/anim/anim_trees/solar_drone_anim_tree.json"
     },

@@ -68,9 +68,9 @@
         }
     },
     "model": {
-        "filename": "/pa/units/land/attack_vehicle/attack_vehicleX.papa",
+        "filename": "/pa/units/land/attack_vehicle/attack_vehicle_small.papa",
         "animations": {
-            "run": "/pa/units/land/attack_vehicle/attack_vehicle_anim_runX.papa"
+            "run": "/pa/units/land/attack_vehicle/attack_vehicle_anim_run_small.papa"
         },
         "walk_speed": 12,
         "animtree": "/pa/anim/anim_trees/attack_vehicle_anim_tree.json"

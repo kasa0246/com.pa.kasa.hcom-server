@@ -69,7 +69,7 @@
         }
     },
     "model": {
-        "filename": "/pa/units/orbital/orbital_fighter/orbital_fighterX.papa",
+        "filename": "/pa/units/orbital/orbital_fighter/orbital_fighter_small.papa",
         "animations": {
             "deploy": "/pa/units/orbital/orbital_fighter/orbital_fighter_anim_deployX.papa",
             "closed": "/pa/units/orbital/orbital_fighter/orbital_fighter_anim_closedX.papa"

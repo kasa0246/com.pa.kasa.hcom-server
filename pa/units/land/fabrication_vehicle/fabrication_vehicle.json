@@ -84,7 +84,7 @@
     }
   },
   "model": {
-    "filename": "/pa/units/land/fabrication_vehicle/fabrication_vehicleX.papa",
+    "filename": "/pa/units/land/fabrication_vehicle/fabrication_vehicle_big.papa",
     "animtree": "/pa/anim/anim_trees/fabrication_turret_anim_tree.json",
     "arrows": 5
   },

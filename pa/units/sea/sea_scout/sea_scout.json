@@ -57,7 +57,7 @@
     }
   },
   "model": {
-    "filename": "/pa/units/sea/sea_scout/sea_scoutX.papa",
+    "filename": "/pa/units/sea/sea_scout/sea_scout_small.papa",
     "animtree": "/pa/anim/anim_trees/sea_scout_anim_tree.json"
   },
   "tools": [

@@ -16,7 +16,7 @@
     "delay": 0.0,
     "burnable_remove_radius": 10.0
   },
-  "spawn_unit_on_death": "/pa/units/land/bot_nanoswarmX/bot_nanoswarmX.json",
+  "spawn_unit_on_death": "/pa/units/land/bot_picoswarm/bot_picoswarm.json",
   "fx_trail": {
     "filename": "/pa/effects/specs/none.pfx"
   },

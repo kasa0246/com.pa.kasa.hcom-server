@@ -12,7 +12,7 @@
     "alt_area_max_radius": 100.0,
     "buildable_projectiles": [
         "/pa/units/land/nuke_launcher/nuke_launcher_ammo.json",
-        "/pa/units/land/missile_facility/large_DOT_ammo.json",
+        "/pa/units/land/missile_facility/large_dot_ammo.json",
         "/pa/units/land/missile_facility/large_stun_ammo.json",
         "/pa/units/land/missile_facility/precision_strike_ammo.json"
     ],

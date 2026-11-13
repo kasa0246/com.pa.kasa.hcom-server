@@ -124,18 +124,18 @@
   "model": [
     {
       "layer": "WL_LandHorizontal",
-      "filename": "/pa/units/land/artillery_short/artillery_shortX.papa",
+      "filename": "/pa/units/land/artillery_short/artillery_short_small.papa",
       "animations": {
-        "aim_up": "/pa/units/land/artillery_short/artillery_short_anim_aimUpX.papa"
+        "aim_up": "/pa/units/land/artillery_short/artillery_short_anim_aimUp_small.papa"
       },
       "animtree": "/pa/anim/anim_trees/artillery_building_anim_tree.json",
       "skirt_decal": "/pa/effects/specs/skirt_artillery_short.json"
     },
     {
       "layer": "WL_WaterSurface",
-      "filename": "/pa/units/sea/artillery_short/artillery_shortX.papa",
+      "filename": "/pa/units/sea/artillery_short/artillery_short_small.papa",
       "animations": {
-        "aim_up": "/pa/units/sea/artillery_short/artillery_short_anim_aimUpX.papa"
+        "aim_up": "/pa/units/sea/artillery_short/artillery_short_anim_aimUp_small.papa"
       },
       "animtree": "/pa/anim/anim_trees/artillery_building_anim_tree.json"
     }

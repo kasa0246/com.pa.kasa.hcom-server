@@ -59,11 +59,11 @@
         }
     },
     "model": {
-        "filename": "/pa/units/land/bot_bomb/bot_bombX.papa",
+        "filename": "/pa/units/land/bot_bomb/bot_bomb_small.papa",
         "animations": {
-            "death01": "/pa/units/land/bot_bomb/bot_bomb_anim_death01X.papa",
-            "idle": "/pa/units/land/bot_bomb/bot_bomb_anim_idleX.papa",
-            "walk": "/pa/units/land/bot_bomb/bot_bomb_anim_runX.papa"
+            "death01": "/pa/units/land/bot_bomb/bot_bomb_anim_death01_small.papa",
+            "idle": "/pa/units/land/bot_bomb/bot_bomb_anim_idle_small.papa",
+            "walk": "/pa/units/land/bot_bomb/bot_bomb_anim_run_small.papa"
         },
         "animtree": "/pa/anim/anim_trees/bot_bomb_anim_tree.json",
         "walk_speed": 40

@@ -72,20 +72,20 @@
     }
   },
   "model": {
-    "filename": "/pa/units/land/bot_nanoswarmX/bot_nanoswarmX.papa",
+    "filename": "/pa/units/land/bot_picoswarm/bot_picoswarm.papa",
     "animations": {
-      "idle": "/pa/units/land/bot_nanoswarmX/bot_nanoswarm_anim_idleX.papa"
+      "idle": "/pa/units/land/bot_picoswarm/bot_picoswarm_anim_idle.papa"
     },
     "animtree": "/pa/anim/anim_trees/bot_nanoswarm_anim_tree.json"
   },
   "tools": [
     {
-      "spec_id": "/pa/units/land/bot_nanoswarmX/bot_nanoswarmX_tool_weapon.json",
+      "spec_id": "/pa/units/land/bot_picoswarm/bot_picoswarm_tool_weapon.json",
       "aim_bone": "bone_body"
     },
     {
       "aim_bone": "bone_root",
-      "spec_id": "/pa/units/land/bot_nanoswarmX/bot_nanoswarmX_death_tool_weapon.json"
+      "spec_id": "/pa/units/land/bot_picoswarm/bot_picoswarm_death_tool_weapon.json"
     }
   ],
   "events": {

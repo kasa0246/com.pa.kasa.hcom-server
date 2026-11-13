@@ -67,7 +67,7 @@
         }
     },
     "model": {
-        "filename": "/pa/units/air/air_scout/air_scoutX.papa",
+        "filename": "/pa/units/air/air_scout/air_scout_small.papa",
         "arrows": 5
     },
     "events": {

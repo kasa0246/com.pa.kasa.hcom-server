@@ -83,10 +83,10 @@
     }
   },
   "model": {
-    "filename": "/pa/units/land/fabrication_vehicle_adv/fabrication_vehicle_advX.papa",
+    "filename": "/pa/units/land/fabrication_vehicle_adv/fabrication_vehicle_adv_small.papa",
     "animations": {
-      "death01": "/pa/units/land/fabrication_vehicle_adv/fabrication_vehicle_adv_anim_death01X.papa",
-      "drive": "/pa/units/land/fabrication_vehicle_adv/fabrication_vehicle_adv_anim_driveX.papa"
+      "death01": "/pa/units/land/fabrication_vehicle_adv/fabrication_vehicle_adv_anim_death01_small.papa",
+      "drive": "/pa/units/land/fabrication_vehicle_adv/fabrication_vehicle_adv_anim_drive_small.papa"
     },
     "animtree": "/pa/anim/anim_trees/turret_wheels_anim_tree.json",
     "arrows": 5

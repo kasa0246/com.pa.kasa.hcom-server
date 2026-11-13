@@ -88,7 +88,7 @@
         }
     },
     "model": {
-        "filename": "/pa/units/land/hover_fab/fabrication_bargeX.papa",
+        "filename": "/pa/units/land/hover_fab/fabrication_barge_small.papa",
         "animations": {
             "hover": "/pa/units/land/tank_hover/tank_hover_anim_hover.papa"
         },
