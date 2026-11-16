@@ -38,7 +38,6 @@
             "coui://ui/mods/com.pa.kasa.hcom-server/research.js",
             "coui://ui/mods/com.pa.kasa.hcom-server/research_live_game.js",
             "coui://ui/mods/com.pa.kasa.hcom-server/mechanics.js",
-            "coui://ui/mods/com.pa.kasa.hcom-server/live_game/init.js",
             "coui://ui/mods/com.pa.kasa.hcom-server/spawn_landing_capsule.js"
         ]
     }

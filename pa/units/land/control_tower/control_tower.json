@@ -94,7 +94,7 @@
         },
         "fired": {
             "audio_cue": "/SE/Weapons/bot/spark_fire",
-            "effect_spec": "/pa/units/paeiou/energy_coil/energy_coil_fire.pfx socket_1 /pa/units/land/energy_coil/energy_coil_fire.pfx socket_2 /pa/units/land/energy_coil/energy_coil_fire.pfx socket_3"
+            "effect_spec": "/pa/units/paeiou/energy_coil/energy_coil_fire.pfx socket_1 /pa/units/paeiou/energy_coil/energy_coil_fire.pfx socket_2 /pa/units/paeiou/energy_coil/energy_coil_fire.pfx socket_3"
         },
         "died": {
             "audio_cue": "/SE/Death/Factory",

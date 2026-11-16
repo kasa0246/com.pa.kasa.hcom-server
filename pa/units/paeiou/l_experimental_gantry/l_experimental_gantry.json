@@ -7,8 +7,6 @@
         "UNITTYPE_Construction",
         "UNITTYPE_Structure",
         "UNITTYPE_Important",
-        "UNITTYPE_FabAdvBuild",
-        "UNITTYPE_Custom1",
         "UNITTYPE_NoBuild"
     ]
 }

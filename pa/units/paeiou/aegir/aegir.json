@@ -10,8 +10,6 @@
         "UNITTYPE_Sub",
         "UNITTYPE_Titan",
         "UNITTYPE_Important",
-        "UNITTYPE_FabOrbBuild",
-        "UNITTYPE_Custom1",
         "UNITTYPE_NoBuild"
     ]
 }
