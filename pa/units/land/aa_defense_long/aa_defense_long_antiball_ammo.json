@@ -27,7 +27,7 @@
         }
     },
     "fx_trail": {
-        "filename": "/pa/units/land/basic_missile_defence/missile_trail.json",
+        "filename": "/pa/units/addon/basic_missile_defence/missile_trail.json",
         "offset": [
             0,
             0,

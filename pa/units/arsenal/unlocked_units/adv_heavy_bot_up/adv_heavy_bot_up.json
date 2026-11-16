@@ -72,12 +72,12 @@
 	"model": {
 		"filename": "/pa/units/arsenal/unlocked_units/adv_heavy_bot_up/centaur_up.papa",
 		"animations": {
-			"walk": "/pa/units/land/adv_heavy_bot/centaur_run.papa",
-			"idle": "/pa/units/land/adv_heavy_bot/centaur_idle.papa",
-			"death": "/pa/units/land/adv_heavy_bot/centaur_death.papa",
-			"dead": "/pa/units/land/adv_heavy_bot/centaur_dead.papa"
+			"walk": "/pa/units/addon/adv_heavy_bot/centaur_run.papa",
+			"idle": "/pa/units/addon/adv_heavy_bot/centaur_idle.papa",
+			"death": "/pa/units/addon/adv_heavy_bot/centaur_death.papa",
+			"dead": "/pa/units/addon/adv_heavy_bot/centaur_dead.papa"
 		},
-		"animtree": "/pa/units/land/adv_heavy_bot/centaur_anim_tree.json",
+		"animtree": "/pa/units/addon/adv_heavy_bot/centaur_anim_tree.json",
 		"walk_speed": 14
 	},
 	"tools": [

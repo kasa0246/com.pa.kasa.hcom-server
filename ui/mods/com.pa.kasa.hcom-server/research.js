@@ -151,7 +151,7 @@ model.unlockPairs = [
     //adv_heavy_bot_up
     ["/pa/units/arsenal/unlocks/adv_heavy_bot_up_unlock/adv_heavy_bot_up_unlock.json",
     ["/pa/units/arsenal/unlocked_units/adv_heavy_bot_up/adv_heavy_bot_up.json"],
-    ["/pa/units/land/adv_heavy_bot/adv_heavy_bot.json","/pa/units/arsenal/unlocks/adv_heavy_bot_up_unlock/adv_heavy_bot_up_unlock.json"],
+    ["/pa/units/addon/adv_heavy_bot/adv_heavy_bot.json","/pa/units/arsenal/unlocks/adv_heavy_bot_up_unlock/adv_heavy_bot_up_unlock.json"],
     true],
 
     //tank_laser_adv_up

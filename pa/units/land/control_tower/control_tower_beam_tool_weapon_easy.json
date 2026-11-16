@@ -19,7 +19,7 @@
     "anti_entity_targets_units": false,
     "anti_entity_targets": [
         "/pa/units/land/bot_tactical_missile/bot_tactical_missile_ammo.json",
-        "/pa/units/land/adv_heavy_bot/adv_heavy_bot_ammo.json",
+        "/pa/units/addon/adv_heavy_bot/adv_heavy_bot_ammo.json",
         "/pa/units/sea/drone_carrier/drone/drone_bomb_ammo.json",
         "/pa/units/land/artillery_unit_launcher/fpv_drone/fpv_drone_bomb_ammo.json",
         "/pa/units/land/tactical_missile_launcher/tactical_missile_launcher_ammo_short.json"

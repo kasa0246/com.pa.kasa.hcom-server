@@ -1,6 +1,6 @@
 var newBuild = {
 	//turrets
-	"/pa/units/land/pounder/pounder.json": ["combat", 8, { row: 1, column: 2 }],
+	"/pa/units/addon/pounder/pounder.json": ["combat", 8, { row: 1, column: 2 }],
 	"/pa/units/land/artillery_long/artillery_long.json": ["combat", 2, { row: 0, column: 2 }],
 	"/pa/units/land/cram/cram.json": ["combat", 18, { row: 2, column: 6 }],
 	"/pa/units/land/cram_adv/cram_adv.json": ["combat", 12, { row: 1, column: 6 }],
@@ -12,10 +12,10 @@ var newBuild = {
 	"/pa/units/land/aa_defense_long/aa_defense_long.json": ["combat", 1, { row: 0, column: 1 }],
 	"/pa/units/land/bastion/bastion.json": ["combat", 7, { row: 0, column: 7 }],
 	"/pa/units/land/artillery_unit_launcher/artillery_unit_launcher.json": ["combat", 15, { row: 2, column: 3 }],
-	"/pa/units/land/basic_missile_defence/basic_missile_defence.json": ["combat", 9, { row: 1, column: 3 }],
+	"/pa/units/addon/basic_missile_defence/basic_missile_defence.json": ["combat", 9, { row: 1, column: 3 }],
 	"/pa/units/land/tactical_missile_launcher/tactical_missile_launcher.json": ["combat", 3, { row: 0, column: 3 }],
 	"/pa/units/orbital/ion_defense/ion_defense.json": ["combat", 17, { row: 2, column: 5 }],
-	"/pa/units/land/skyranger/skyranger.json": ["combat", 11, { row: 1, column: 5 }],
+	"/pa/units/l_addon/basic_missile_defence/basic_missile_defence.json": ["combat", 11, { row: 1, column: 5 }],
 	"/pa/units/land/maciota/maciota.json": ["combat", 5, { row: 0, column: 5 }],
 	"/pa/units/sea/torpedo_launcher/torpedo_launcher.json": ["combat", 20, { row: 2, column: 8 }],
 	"/pa/units/sea/torpedo_launcher_adv/torpedo_launcher_adv.json": ["combat", 21, { row: 1, column: 8 }],
@@ -78,7 +78,7 @@ var newBuild = {
 
 
 	//air
-	"/pa/units/air/adv_stealth_transport/adv_stealth_transport.json": ["air", 11, { row: 1, column: 6 }],
+	"/pa/units/addon/adv_stealth_transport/adv_stealth_transport.json": ["air", 11, { row: 1, column: 6 }],
 	"/pa/units/air/bomber_adv/bomber_adv.json": ["air", 12, { row: 1, column: 7 }],
 	"/pa/units/paeiou/horntail/horntail.json": ["air", 13, { row: 2, column: 2 }],
 	"/pa/units/air/transport/transport.json": ["air", 17, { row: 2, column: 6 }],
@@ -87,12 +87,12 @@ var newBuild = {
 
 	"/pa/units/air/air_scout_adv/air_scout_adv.json": ["air", 3, { row: 1, column: 3 }],
 	"/pa/units/air/solar_drone/solar_drone.json": ["air", 15, { row: 2, column: 4 }],
-	"/pa/units/air/swordfish/swordfish.json": ["air", 16, { row: 2, column: 5 }],
+	"/pa/units/addon/swordfish/swordfish.json": ["air", 16, { row: 2, column: 5 }],
 	//bots
-	"/pa/units/land/adv_heavy_bot/adv_heavy_bot.json": ["bot", 11, { row: 1, column: 5 }],
+	"/pa/units/addon/adv_heavy_bot/adv_heavy_bot.json": ["bot", 11, { row: 1, column: 5 }],
 	"/pa/units/paeiou/spider/spider.json": ["bot", 12, { row: 1, column: 6 }],
 	"/pa/units/land/bot_rpg/bot_rpg.json": ["bot", 17, { row: 2, column: 5 }],
-	"/pa/units/land/rex/rex.json": ["bot", 15, { row: 2, column: 4 }],
+	"/pa/units/addon/rex/rex.json": ["bot", 15, { row: 2, column: 4 }],
 	"/pa/units/land/bot_bomb/bot_bomb.json": ["bot", 18, { row: 2, column: 7 }],
 	"/pa/units/land/bot_radar_adv/bot_radar_adv.json": ["bot", 13, { row: 1, column: 7 }],
 	//tanks
@@ -101,7 +101,7 @@ var newBuild = {
 
 	"/pa/units/land/aom_tank/aom_tank.json": ["vehicle", 11, { row: 1, column: 6 }],
 	"/pa/units/paeiou/katrina/katrina.json": ["vehicle", 14, { row: 1, column: 7 }],
-	"/pa/units/land/adv_tank_hover/adv_tank_hover.json": ["vehicle", 10, { row: 1, column: 5 }],
+	"/pa/units/addon/adv_tank_hover/adv_tank_hover.json": ["vehicle", 10, { row: 1, column: 5 }],
 	"/pa/units/land/hover_fab/hover_fab.json": ["vehicle", 19, { row: 2, column: 7 }],
 	"/pa/units/land/tank_aa/tank_aa.json": ["vehicle", 15, { row: 1, column: 8 }],
 	"/pa/units/land/t_tank_flak/t_tank_flak.json": ["vehicle", 20, { row: 2, column: 8 }],
@@ -118,17 +118,17 @@ var newBuild = {
 	"/pa/units/sea/attack_sub/attack_sub.json": ["sea", 18, { row: 2, column: 6 }],
 	//utility
 	"/pa/units/land/orbital_shield/orbital_shield.json": ["utility", 0, { row: 0, column: 0 }],
-	"/pa/units/land/shield_gen/shield_gen.json": ["utility", 5, { row: 1, column: 0 }],
+	"/pa/units/addon/shield_gen/shield_gen.json": ["utility", 5, { row: 1, column: 0 }],
 	"/pa/units/land/bot_tree/moving_tree_mine/moving_tree_mine.json": ["utility", 6, { row: 1, column: 0 }],
-	"/pa/units/land/jammer_titan/jammer_titan.json": ["utility", 1, { row: 0, column: 1 }],
+	"/pa/units/addon/jammer_titan/jammer_titan.json": ["utility", 1, { row: 0, column: 1 }],
 	"/pa/units/land/radar_jammer/radar_jammer.json": ["utility", 7, { row: 1, column: 1 }],
 	"/pa/units/orbital/deep_space_radar/deep_space_radar.json": ["utility", 3, { row: 0, column: 2 }],
 	"/pa/units/paeiou/solar_cell/solar_cell.json": ["utility", 19, { row: 2, column: 5 }],
 	"/pa/units/land/wind_turbine/wind_turbine.json": ["utility", 20, { row: 1, column: 5 }],
-	"/pa/units/land/fab_tower/fab_tower.json": ["utility", 21, { row: 0, column: 5 }],
+	"/pa/units/addon/fab_tower/fab_tower.json": ["utility", 21, { row: 0, column: 5 }],
 	//eperimental eco
 	"/pa/units/land/metal_destructor/metal_destructor.json": ["utility", 6, { row: 0, column: 6 }],
-	"/pa/units/land/adv_metal_generator/adv_metal_generator.json": ["utility", 12, { row: 1, column: 6 }],
+	"/pa/units/addon/adv_metal_generator/adv_metal_generator.json": ["utility", 12, { row: 1, column: 6 }],
 	"/pa/units/land/t_metal_extractor_1/t_metal_extractor_1.json": ["utility", 18, { row: 2, column: 6 }],
 
 	//engines
@@ -162,12 +162,12 @@ var newBuild = {
 	"/pa/units/land/tank_nuke/tank_nuke.json": ["exp", 12, { row: 2, column: 2 }],
 	"/pa/units/land/mjolnir/mjolnir.json": ["exp", 13, { row: 2, column: 3 }],
 	"/pa/units/paeiou/floater/floater.json": ["exp", 14, { row: 2, column: 4 }],
-	"/pa/units/land/stalker/stalker.json": ["exp", 15, { row: 2, column: 6 }],
+	"/pa/units/addon/stalker/stalker.json": ["exp", 15, { row: 2, column: 6 }],
 	"/pa/units/land/shah/shah.json": ["exp", 16, { row: 2, column: 5 }],
 	//titans
 	"/pa/units/orbital/titan_orbital/titan_orbital.json": ["titan", 0, { row: 2, column: 0 }],
 	"/pa/units/air/titan_air/titan_air.json": ["titan", 1, { row: 2, column: 1 }],
-	"/pa/units/land/demi_titan_bot/demi_titan_bot.json": ["titan", 2, { row: 2, column: 2 }],
+	"/pa/units/addon/demi_titan_bot/demi_titan_bot.json": ["titan", 2, { row: 2, column: 2 }],
 	"/pa/units/land/titan_bot/titan_bot.json": ["titan", 3, { row: 2, column: 3 }],
 	"/pa/units/land/titan_vehicle/titan_vehicle.json": ["titan", 4, { row: 2, column: 4 }],
 	//energy

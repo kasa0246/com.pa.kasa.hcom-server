@@ -1,7 +1,7 @@
 {
     "base_spec": "/pa/tools/base_missile_tactical_turret/base_missile_tactical_turret.json",
     "tool_type": "TOOL_Weapon",
-    "ammo_id": "/pa/units/land/basic_missile_defence/basic_missile_defence_ammo.json",
+    "ammo_id": "/pa/units/addon/basic_missile_defence/basic_missile_defence_ammo.json",
     "rate_of_fire": 0.5,
     "ammo_source": "metal",
     "ammo_capacity": 225,

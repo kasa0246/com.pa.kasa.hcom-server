@@ -25,11 +25,11 @@
     "anti_entity_targets": [
         "/pa/units/land/assault_bot_adv/assault_bot_adv_torpedo_ammo_water.json",
         "/pa/units/land/assault_bot_adv/assault_bot_adv_torpedo_ammo_land.json",
-        "/pa/units/land/adv_tank_hover/adv_tank_hover_torpedo_ammo_land.json",
+        "/pa/units/addon/adv_tank_hover/adv_tank_hover_torpedo_ammo_land.json",
         "/pa/units/land/tank_heavy_armor/tank_heavy_armor_torpedo_ammo_water.json",
         "/pa/units/land/tank_heavy_armor/tank_heavy_armor_torpedo_ammo_land.json",
         "/pa/units/air/strafer/strafer_ammo_torpedo.json",
-        "/pa/units/air/swordfish/swordfish_ammo_torpedo.json",
+        "/pa/units/addon/swordfish/swordfish_ammo_torpedo.json",
         "/pa/units/sea/destroyer/destroyer_torpedo_ammo.json",
         "/pa/units/sea/attack_sub/attack_sub_main_ammo.json",
         "/pa/units/sea/attack_sub/attack_sub_torpedo_ammo.json",

@@ -20,14 +20,14 @@
         "/pa/units/land/artillery_short/artillery_short_ammo.json",
         "/pa/units/sea/battleship/battleship_ammo.json",
         "/pa/units/land/artillery_long/artillery_long_ammo.json",
-        "/pa/units/land/pounder/pounder_ammo.json",
+        "/pa/units/addon/pounder/pounder_ammo.json",
         "/pa/units/land/tank_heavy_mortar/tank_heavy_mortar_ammo.json",
         "/pa/units/land/bot_grenadier/bot_grenadier_ammo.json",
         "/pa/units/air/gunship/gunship_ammo.json",
         "/pa/units/air/strafer/strafer_rocket_ammo.json",
         "/pa/units/air/strafer/strafer_bomb_ammo.json",
         "/pa/units/air/bomber/bomber_ammo.json",
-        "/pa/units/land/adv_heavy_bot/adv_heavy_bot_ammo.json",
+        "/pa/units/addon/adv_heavy_bot/adv_heavy_bot_ammo.json",
         "/pa/units/land/eclipse/eclipse_ammo.json"
     ],
     "target_layers": [

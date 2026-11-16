@@ -107,8 +107,8 @@
                         doCommand(worldView, army[item[0]], currentPlanet, [], item[1], true);
                     }
                 });
-                if (army.hasOwnProperty('/pa/units/land/fab_tower/fab_tower.json')) {
-                    doCommand(worldView, army['/pa/units/land/fab_tower/fab_tower.json'], currentPlanet, advancedIdArray).then(function (result) {
+                if (army.hasOwnProperty('/pa/units/addon/fab_tower/fab_tower.json')) {
+                    doCommand(worldView, army['/pa/units/addon/fab_tower/fab_tower.json'], currentPlanet, advancedIdArray).then(function (result) {
                         advancedIdArray = result;
                     });
                 }

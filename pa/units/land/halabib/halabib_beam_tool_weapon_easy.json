@@ -24,7 +24,7 @@
         "/pa/units/land/artillery_unit_launcher/fpv_drone/fpv_drone_bomb_ammo.json",
         "/pa/units/land/artillery_short/artillery_short_ammo.json",
         "/pa/units/land/tank_heavy_mortar/tank_heavy_mortar_ammo.json",
-        "/pa/units/land/pounder/pounder_ammo.json",
+        "/pa/units/addon/pounder/pounder_ammo.json",
         "/pa/units/land/bot_tactical_missile/bot_tactical_missile_ammo.json",
         "/pa/units/sea/battleship/battleship_ammo.json",
         "/pa/units/land/tactical_missile_launcher/tactical_missile_launcher_ammo_short.json",

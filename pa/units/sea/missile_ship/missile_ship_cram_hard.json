@@ -18,7 +18,7 @@
         "/pa/units/land/titan_vehicle/titan_vehicle_ammo_main.json",
         "/pa/units/land/tactical_missile_launcher/tactical_missile_launcher_ammo.json",
         "/pa/units/air/bomber_heavy/bomber_heavy_ammo.json",
-        "/pa/units/land/pounder/pounder_ammo.json",
+        "/pa/units/addon/pounder/pounder_ammo.json",
         "/pa/units/sea/missile_ship/missile_ship_ammo.json",
         "/pa/units/air/bomber_adv/bomber_adv_ammo.json",
         "/pa/units/paeiou/yellowjacket/yellowjacket_ammo.json"

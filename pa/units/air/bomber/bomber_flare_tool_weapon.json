@@ -26,7 +26,7 @@
         "/pa/units/commanders/base_commander/base_commander_aa_ammo.json",
         "/pa/units/land/bot_aa/bot_aa_ammo.json",
         "/pa/units/land/bot_tactical_missile/bot_tactical_missile_ammo.json",
-        "/pa/units/land/adv_heavy_bot/adv_heavy_bot_ammo.json",
+        "/pa/units/addon/adv_heavy_bot/adv_heavy_bot_ammo.json",
         "/pa/units/sea/frigate/frigate_ammo_aa.json",
         "/pa/units/sea/missile_ship/missile_ship_aa_ammo.json"
     ],

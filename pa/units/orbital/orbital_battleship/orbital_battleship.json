@@ -283,7 +283,7 @@
         },
         {
             "bone": "bone_root",
-            "filename": "/pa/units/land/shield_gen/shield_small.pfx",
+            "filename": "/pa/units/addon/shield_gen/shield_small.pfx",
             "offset": [
                 0,
                 0,
