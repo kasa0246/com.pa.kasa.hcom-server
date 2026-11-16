@@ -1,0 +1,14 @@
+{
+    "base_spec": "/pa/units/paeiou/experimental_gantry/experimental_gantry.json",
+    "description": "!LOC:Experimental Manufacturing - Builds experimental units.",
+    "display_name": "!LOC:Experimental Gantry",
+    "unit_types": [
+        "UNITTYPE_Factory",
+        "UNITTYPE_Construction",
+        "UNITTYPE_Structure",
+        "UNITTYPE_Important",
+        "UNITTYPE_FabAdvBuild",
+        "UNITTYPE_Custom1",
+        "UNITTYPE_NoBuild"
+    ]
+}

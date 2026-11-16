@@ -20,7 +20,7 @@ model.unitsToLock = [
                     "/pa/units/arsenal/unlocked_units/bot_grenadier_up/bot_grenadier_up.json",
                     "/pa/units/arsenal/unlocked_units/gunship_up/gunship_up.json",
                     "/pa/units/land/nuke_launcher/nuke_launcher.json",
-                    "/pa/units/air/yellowjacket/yellowjacket.json",
+                    "/pa/units/paeiou/yellowjacket/yellowjacket.json",
                     "/pa/units/arsenal/unlocks/nuke_ammo_unlock/nuke_ammo_unlock.json",
                     "/pa/units/arsenal/unlocks/nuke_ammo_unlock/nuke_ammo_arsenal.json",
                     "/pa/units/arsenal/unlocks/hype_ammo_unlock/hype_ammo_unlock.json",
@@ -84,7 +84,7 @@ model.unlockPairs = [
 
     //hype_ammo_unlock
     ["/pa/units/arsenal/unlocks/hype_ammo_unlock/hype_ammo_unlock.json",
-    ["/pa/units/land/missile_facility/large_dot_ammo.json", "/pa/units/land/missile_facility/precision_strike_ammo.json", "/pa/units/land/missile_facility/large_stun_ammo.json", "/pa/units/air/yellowjacket/yellowjacket.json"],
+    ["/pa/units/land/missile_facility/large_dot_ammo.json", "/pa/units/land/missile_facility/precision_strike_ammo.json", "/pa/units/land/missile_facility/large_stun_ammo.json", "/pa/units/paeiou/yellowjacket/yellowjacket.json"],
     ["/pa/units/arsenal/unlocks/hype_ammo_unlock/hype_ammo_unlock.json"],
     false],
 

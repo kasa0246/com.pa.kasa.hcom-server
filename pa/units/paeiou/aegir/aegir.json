@@ -1,0 +1,17 @@
+{
+    "base_spec": "/pa/units/paeiou/poseidon/poseidon.json",
+    "description": "!LOC:Submarine Carrier Titan - Radar stealth with very high damage. Attacks land, sea, air, and undersea targets.",
+    "display_name": "!LOC:\u00c6gir",
+    "unit_types": [
+        "UNITTYPE_Naval",
+        "UNITTYPE_Mobile",
+        "UNITTYPE_Offense",
+        "UNITTYPE_Advanced",
+        "UNITTYPE_Sub",
+        "UNITTYPE_Titan",
+        "UNITTYPE_Important",
+        "UNITTYPE_FabOrbBuild",
+        "UNITTYPE_Custom1",
+        "UNITTYPE_NoBuild"
+    ]
+}

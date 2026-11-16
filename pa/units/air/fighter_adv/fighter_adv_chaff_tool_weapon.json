@@ -16,7 +16,7 @@
     "/pa/units/land/aa_missile_vehicle/aa_missile_vehicle_ammo.json",
     "/pa/units/land/air_defense/air_defense_ammo.json",
     "/pa/units/land/aa_defense_long/aa_defense_long_ammo.json",
-    "/pa/units/land/spider/spider_aa_ammo.json",
+    "/pa/units/paeiou/spider/spider_aa_ammo.json",
     "/pa/units/commanders/base_commander/base_commander_aa_ammo.json",
     "/pa/units/land/bot_aa/bot_aa_ammo.json",
     "/pa/units/land/bot_tactical_missile/bot_tactical_missile_ammo.json",

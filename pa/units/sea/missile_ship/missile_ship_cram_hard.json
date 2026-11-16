@@ -1,6 +1,6 @@
 {
     "base_spec": "/pa/tools/base_missile_turret/base_missile_turret.json",
-    "ammo_id": "/pa/units/land/spider/spider_cram_ammo.json",
+    "ammo_id": "/pa/units/paeiou/spider/spider_cram_ammo.json",
     "rate_of_fire": 0.2,
     "max_range": 200,
     "yaw_rate": 3600,
@@ -21,7 +21,7 @@
         "/pa/units/land/pounder/pounder_ammo.json",
         "/pa/units/sea/missile_ship/missile_ship_ammo.json",
         "/pa/units/air/bomber_adv/bomber_adv_ammo.json",
-        "/pa/units/air/yellowjacket/yellowjacket_ammo.json"
+        "/pa/units/paeiou/yellowjacket/yellowjacket_ammo.json"
     ],
     "target_layers": [
         "WL_Air"

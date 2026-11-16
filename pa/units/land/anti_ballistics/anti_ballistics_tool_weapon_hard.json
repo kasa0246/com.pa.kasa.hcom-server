@@ -24,7 +24,7 @@
         "/pa/units/sea/missile_ship/missile_ship_ammo.json",
         "/pa/units/land/tactical_missile_launcher/tactical_missile_launcher_ammo.json",
         "/pa/units/air/bomber_heavy/bomber_heavy_ammo.json",
-        "/pa/units/air/yellowjacket/yellowjacket_ammo.json"
+        "/pa/units/paeiou/yellowjacket/yellowjacket_ammo.json"
     ],
     "target_layers": [
         "WL_Air"

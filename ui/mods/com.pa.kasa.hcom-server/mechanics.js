@@ -121,7 +121,7 @@
     // 2. SOLAR MECHANICS LOOP (Steady: 60 seconds)
     // ============================================================
     var solarUnitsToCommand = [
-        ["/pa/units/land/solar_cell/solar_cell.json", "altFireSelf"]
+        ["/pa/units/paeiou/solar_cell/solar_cell.json", "altFireSelf"]
     ];
 
     var solarAutomation = function () {

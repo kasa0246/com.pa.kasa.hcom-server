@@ -1,6 +1,6 @@
 {
     "base_spec": "/pa/tools/base_missile_turret/base_missile_turret.json",
-    "ammo_id": "/pa/units/land/spider/spider_cram_ammo.json",
+    "ammo_id": "/pa/units/paeiou/spider/spider_cram_ammo.json",
     "rate_of_fire": 0.5,
     "max_range": 200,
     "yaw_rate": 3600,
