@@ -36,10 +36,5 @@
     "AT_Custom8": 0.7,
     "AT_Custom9": 0.5,
     "AT_Custom0": 0.2
-  },
-  "events": {
-    "died": {
-      "effect_spec": "/pa/units/air/strafer/strafer_ammo_hit.pfx"
-    }
   }
 }

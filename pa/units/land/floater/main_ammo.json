@@ -9,10 +9,6 @@
     "events": {
         "spawned": {
             "audio_cue": "/SE/Weapons/commander/Commander_gun_fire"
-        },
-        "died": {
-            "audio_cue": "/SE/Impacts/missile_tactical",
-            "effect_spec": "/pa/units/land/bot_tactical_missile/bot_tactical_missile_ammo_hit.pfx"
         }
     },
     "flight_type": "Seeking",

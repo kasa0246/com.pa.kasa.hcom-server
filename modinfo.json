@@ -16,9 +16,9 @@
         "titans"
     ],
     "context": "server",
-    "date": "2026-11-12",
-    "build": "124685",
-    "version": "1.1.0",
+    "date": "2026-11-16",
+    "build": "124723",
+    "version": "1.5.0",
     "dependencies": [
         "com.pa.kasa.hcom-client"
     ],
@@ -36,7 +36,7 @@
             "coui://ui/mods/com.pa.kasa.hcom-server/research.js",
             "coui://ui/mods/com.pa.kasa.hcom-server/research_live_game.js",
             "coui://ui/mods/com.pa.kasa.hcom-server/mechanics.js",
-            "coui://ui/mods/AutoFactory/live_game/init.js",
+            "coui://ui/mods/com.pa.kasa.hcom-server/live_game/init.js",
             "coui://ui/mods/com.pa.kasa.hcom-server/spawn_landing_capsule.js"
         ]
     }

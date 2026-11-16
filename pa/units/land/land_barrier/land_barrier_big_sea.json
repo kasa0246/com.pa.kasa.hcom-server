@@ -3,7 +3,7 @@
   "unit_name": "Great Wall",
   "si_name": "land_barrier",
   "display_name": "!LOC:Great Sea Barrier",
-  "description": "!LOC:Improved Barrier - Blocks units and protects from incoming fire. Adaminte armor.",
+  "description": "!LOC:Improved Barrier - Blocks units and protects from incoming fire. Adamantite armor.",
   "max_health": 2500,
   "build_metal_cost": 250,
   "armor_type": "AT_Commander",
