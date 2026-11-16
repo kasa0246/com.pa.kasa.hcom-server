@@ -110,11 +110,11 @@
     },
     "fired0": {
       "audio_cue": "/SE/Weapons/sea/hover_small_fire",
-      "effect_spec": "/pa/units/sea/hover_ship/hover_ship_muzzle_flash_side.pfx socket_rightMuzzle /pa/units/sea/hover_ship/hover_ship_muzzle_flash_side.pfx socket_leftMuzzle"
+      "effect_spec": "/pa/effects/specs/muzzle_burst_flash_small.pfx socket_rightMuzzle /pa/effects/specs/muzzle_burst_flash_small.pfx socket_leftMuzzle"
     },
     "fired1": {
       "audio_cue": "/SE/Weapons/bot/bot_aa_fire",
-      "effect_spec": "/pa/units/sea/hover_ship/hover_ship_muzzle_flash_side.pfx bone_launcher_1 /pa/units/sea/hover_ship/hover_ship_muzzle_flash_side.pfx bone_launcher_2"
+      "effect_spec": "/pa/effects/specs/muzzle_burst_flash_big.pfx bone_launcher_1 /pa/effects/specs/muzzle_burst_flash_big.pfx bone_launcher_2"
     }
   },
   "audio": {

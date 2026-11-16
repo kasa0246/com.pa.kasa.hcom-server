@@ -67,14 +67,11 @@
         },
         "died": {
             "audio_cue": "/SE/Death/Air",
-            "effect_spec": "/pa/units/thorosmen/st_bot_white_hole/white_hole/shockwave.pfx",
-            "effect_scale": 1.5
+            "died": {
+                "audio_cue": "/SE/Death/Factory",
+                "effect_scale": 0.5
+            }
         }
-    },
-    "death": {
-        "decals": [
-            "/pa/units/thorosmen/st_bot_white_hole/white_hole/shockwave.pfx"
-        ]
     },
     "audio": {
         "loops": {

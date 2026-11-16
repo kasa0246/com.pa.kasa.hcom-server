@@ -1,11 +1,6 @@
 {
   "base_spec": "/pa/ammo/base_bullet/base_bullet.json",
   "fx_trail": {
-    "offset": [
-      0.0,
-      0.0,
-      0.0
-    ],
     "filename": "/pa/units/land/assault_bot_adv/assault_bot_adv_ammo_trail.pfx"
   },
   "damage": 250,
@@ -27,11 +22,5 @@
     "AT_Custom8": 0.8,
     "AT_Custom9": 0.5,
     "AT_Custom0": 0.2
-  },
-  "events": {
-    "died": {
-      "audio_cue": "/SE/Impacts/shell_bullet",
-      "effect_spec": "/pa/units/land/assault_bot_adv/assault_bot_adv_ammo_hit.pfx"
-    }
   }
 }

@@ -43,18 +43,22 @@
       "rotates_to_velocity": true
     }
   ],
-  "events": {
-    "died": {
-      "effect_spec": "/pa/units/sea/missile_ship/missile_ship_ammo_hit.pfx"
-    }
-  },
-  "audio_loop": "/SE/Movement/missile/missileship_fly_loop",
-  "fx_trail": {
-    "offset": [
-      0.0,
-      2.2,
-      0.0
-    ],
-    "filename": "/pa/units/sea/missile_ship/missile_ship_ammo_trail.pfx"
-  }
+"model": {
+        "filename": "/pa/units/air/missile_tactical/missile_tactical_small.papa"
+    },
+    "fx_trail": {
+        "filename": "/pa/units/sea/missile_ship/missile_ship_ammo_trail.pfx",
+        "offset": [
+            0.0,
+            3.45,
+            0.0
+        ]
+    },
+    "events": {
+        "died": {
+            "audio_cue": "/SE/Impacts/missile_tactical",
+            "effect_spec": "/pa/effects/specs/default_proj_area_explosion.pfx"
+        }
+    },
+    "audio_loop": "/SE/Movement/missile/missileship_fly_loop"
 }

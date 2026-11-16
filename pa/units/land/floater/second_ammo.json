@@ -16,12 +16,11 @@
     "AT_Custom0": 0.267
   },
   "fx_trail": {
-    "filename": "/pa/units/sea/sea_scout/sea_scout_ammo_trail.pfx"
+    "filename": "/pa/units/air/strafer/strafer_ammo_trail.pfx"
   },
   "events": {
     "died": {
-      "audio_cue": "/SE/Impacts/shell_tank",
-      "effect_spec": "/pa/units/sea/sea_scout/sea_scout_ammo_hit.pfx"
+      "audio_cue": "/SE/Impacts/shell_tank"
     }
   },
   "initial_velocity": 150.0,

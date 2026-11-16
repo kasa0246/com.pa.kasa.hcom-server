@@ -24,21 +24,25 @@
     "AT_Custom9": 0.6,
     "AT_Custom0": 0.4
   },
-  "audio_loop": "/SE/Movement/missile/artillery_long_missile_fly_loop",
+  "spawn_unit_on_death": "/pa/units/land/bot_nanoswarm/spawner.json",
   "model": {
     "filename": "/pa/units/air/shell_large/shell_large.papa"
   },
-  "spawn_unit_on_death": "/pa/units/thorosmen/bot_freeze/minion/minion.json",
   "fx_trail": {
-    "filename": "/pa/units/land/artillery_long/artillery_long_ammo_trail.pfx"
+    "filename": "/pa/units/land/artillery_long/artillery_long_ammo_trail.pfx",
+    "offset": [
+      0.0,
+      1.0,
+      0.0
+    ]
   },
   "events": {
     "died": {
       "audio_cue": "/SE/Impacts/missile_artillery_long_holkins",
-      "effect_spec": "/pa/units/land/artillery_long/artillery_long_ammo_hit.pfx",
-      "effect_scale": 0.55
+      "effect_spec": "/pa/effects/specs/default_building_explosion.pfx"
     }
   },
+  "audio_loop": "/SE/Movement/missile/artillery_long_missile_fly_loop",
   "physics": {
     "add_to_spatial_db": true
   }

@@ -27,10 +27,10 @@
         }
     },
     "fx_trail": {
-        "filename": "/pa/units/air/gunship/trail.pfx",
+        "filename": "/pa/units/air/gunship/gunship_ammo_trail.pfx",
         "offset": [
             0.0,
-            1.3,
+            2.2,
             0.0
         ]
     },

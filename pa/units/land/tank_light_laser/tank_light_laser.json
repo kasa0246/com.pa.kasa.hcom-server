@@ -93,7 +93,7 @@
     },
     "fired0": {
       "audio_cue": "/SE/Weapons/veh/tank_light_fire",
-      "effect_spec": "/pa/units/land/tank_light_laser/tank_light_laser_muzzle_flash.pfx socket_muzzle /pa/units/land/tank_light_laser/tank_light_laser_burst_flash.pfx bone_root"
+      "effect_spec": "/pa/effects/specs/tank_muzzle_flash.pfx socket_muzzle"
     },
     "fired1": {
       "audio_cue": "/SE/Weapons/bot/assault_fire",

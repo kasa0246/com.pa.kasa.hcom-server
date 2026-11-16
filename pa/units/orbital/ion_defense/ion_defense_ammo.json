@@ -25,15 +25,15 @@
   "fx_trail": {
     "offset": [
       0.0,
-      22.5,
+      0.0,
       0.0
     ],
-    "filename": "/pa/units/orbital/orbital_battleship/green_laser_trail.pfx"
+    "filename": "/pa/units/orbital/ion_defense/ion_defense_ammo_trail.pfx"
   },
   "events": {
     "died": {
       "audio_cue": "/SE/Impacts/missile_artillery_short",
-      "effect_spec": "/pa/units/orbital/orbital_battleship/green_laser_hit.pfx"
+      "effect_spec": "/pa/units/orbital/ion_defense/ion_defense_ammo_hit.pfx"
     }
   }
 }

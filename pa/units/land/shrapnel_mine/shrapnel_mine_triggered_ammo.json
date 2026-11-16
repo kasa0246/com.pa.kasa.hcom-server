@@ -15,19 +15,8 @@
     "AT_Custom9": 0.2,
     "AT_Custom0": 0.1
   },
-  "events": {
-    "died": {
-      "audio_cue": "/SE/Impacts/shell_tank",
-      "effect_spec": "/pa/units/land/shrapnel_mine/shrapnel_hit.pfx"
-    }
-  },
   "fx_trail": {
-    "filename": "/pa/units/land/shrapnel_mine/shrapnel_trail.pfx",
-    "offset": [
-      0.0,
-      0.5,
-      0.0
-    ]
+    "filename": "/pa/units/air/strafer/strafer_ammo_trail.pfx"
   },
   "initial_velocity": 200,
   "lifetime": 0.5,

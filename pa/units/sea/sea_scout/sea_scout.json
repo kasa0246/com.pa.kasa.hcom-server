@@ -81,7 +81,7 @@
     },
     "fired0": {
       "audio_cue": "/SE/Weapons/sea/sea_scout_fire",
-      "effect_spec": "/pa/units/sea/sea_scout/sea_scout_muzzle_flash.pfx socket_muzzle"
+      "effect_spec": "/pa/effects/specs/tank_muzzle_flash.pfx socket_muzzle"
     },
     "fired1": {
       "audio_cue": "/SE/Weapons/sea/attack_sub_fire"

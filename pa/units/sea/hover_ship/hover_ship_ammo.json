@@ -4,7 +4,13 @@
   "splash_damage": 150,
   "splash_radius": 5,
   "full_damage_splash_radius": 1,
-  "armor_damage_map": {"AT_Custom1":0.8, "AT_Custom2":0.6, "AT_Custom3":0.4, "AT_Custom0":0.0,  "AT_Commander":0.4},
+  "armor_damage_map": {
+    "AT_Custom1": 0.8,
+    "AT_Custom2": 0.6,
+    "AT_Custom3": 0.4,
+    "AT_Custom0": 0.0,
+    "AT_Commander": 0.4
+  },
   "initial_velocity": 250.0,
   "max_velocity": 250.0,
   "lifetime": 5,
@@ -13,7 +19,8 @@
   },
   "events": {
     "died": {
-      "effect_spec": "/pa/units/sea/hover_ship/hover_ship_ammo_hit.pfx"
+      "effect_spec": "/pa/units/sea/battleship/battleship_hit.pfx",
+      "effect_scale": 0.75
     }
   },
   "physics": {

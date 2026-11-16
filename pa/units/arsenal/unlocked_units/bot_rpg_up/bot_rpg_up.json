@@ -42,7 +42,7 @@
     "fired1": {
       "audio_cue": "/SE/Weapons/air/fighter_fire",
       "effect_scale": 0.5,
-      "effect_spec": "/pa/units/sea/hover_ship/hover_ship_muzzle_flash_side.pfx socket_muzzle /pa/units/sea/hover_ship/hover_ship_muzzle_flash_side.pfx bone_recoil"
+      "effect_spec": "/pa/effects/specs/muzzle_burst_flash_small.pfx socket_muzzle /pa/effects/specs/muzzle_burst_flash_small.pfx bone_recoil"
     }
   },
   "guard_layer": "WL_AnySurface",

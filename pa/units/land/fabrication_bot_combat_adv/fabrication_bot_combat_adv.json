@@ -109,7 +109,7 @@
         },
         "fired0": {
             "audio_cue": "/SE/Weapons/bot/assault_adv_fire",
-            "effect_spec": "/pa/units/land/assault_bot_adv/assault_bot_adv_muzzle_flash.pfx socket_muzzleFront"
+            "effect_spec": "/pa/effects/specs/tank_muzzle_flash.pfx socket_muzzleFront"
         },
         "died": {
             "audio_cue": "/SE/Death/Bot",

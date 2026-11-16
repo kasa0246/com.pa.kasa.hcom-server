@@ -35,11 +35,5 @@
     "gravity_scalar": 10,
     "add_to_spatial_db": false,
     "allow_underground": true
-  },
-  "events": {
-    "died": {
-      "audio_cue": "/SE/Impacts/shell_tank",
-      "effect_spec": "/pa/units/land/tank_hover/tank_hover_ammo_hit.pfx"
-    }
   }
 }

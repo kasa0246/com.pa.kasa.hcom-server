@@ -133,7 +133,7 @@
     },
     "fired0": {
       "audio_cue": "/SE/Weapons/veh/tank_T2_leveler",
-      "effect_spec": "/pa/units/land/tank_laser_adv/tank_laser_adv_muzzle_flash.pfx socket_leftMuzzle /pa/units/land/tank_laser_adv/tank_laser_adv_muzzle_flash.pfx socket_rightMuzzle"
+      "effect_spec": "/pa/effects/specs/tank_muzzle_flash.pfx socket_leftMuzzle /pa/effects/specs/tank_muzzle_flash.pfx socket_rightMuzzle"
     },
     "fired1": {
       "audio_cue": "/SE/Weapons/bot/bot_tactical_missile_fire",
@@ -144,7 +144,7 @@
     },
     "fired3": {
       "audio_cue": "/SE/Weapons/sea/hover_small_fire",
-      "effect_spec": "/pa/units/sea/hover_ship/hover_ship_muzzle_flash_side.pfx rct_muzzle_right /pa/units/sea/hover_ship/hover_ship_muzzle_flash_side.pfx rct_muzzle_left",
+      "effect_spec": "/pa/effects/specs/tank_muzzle_flash.pfx rct_muzzle_right /pa/effects/specs/muzzle_burst_flash_small.pfx rct_muzzle_left",
       "effect_scale": 0.5
     },
     "died": {

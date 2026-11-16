@@ -55,7 +55,7 @@
   },
   "show_in_orbital_layer": true,
   "show_strategic_icon": true,
-  "si_name": "large_DOT_ammo",
+  "si_name": "large_dot_ammo",
   "signal_type": "nuke",
   "spawn_layers": "WL_Air",
   "splash_damage": 10000,

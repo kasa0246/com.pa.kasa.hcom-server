@@ -158,12 +158,12 @@
     },
     "fired0": {
       "audio_cue": "/SE/Weapons/veh/tank_T2_leveler",
-      "effect_spec": "/pa/units/sea/destroyer/destroyer_muzzle_flash.pfx socket_leftMuzzle01",
+      "effect_spec": "/pa/effects/specs/tank_muzzle_flash.pfx socket_leftMuzzle01",
       "effect_scale": 5.0
     },
     "fired1": {
       "audio_cue": "/SE/Weapons/veh/tank_T2_leveler",
-      "effect_spec": "/pa/units/sea/destroyer/destroyer_muzzle_flash.pfx socket_leftMuzzle02",
+      "effect_spec": "/pa/effects/specs/tank_muzzle_flash.pfx socket_leftMuzzle02",
       "effect_scale": 5.0
     },
     "fired2": {

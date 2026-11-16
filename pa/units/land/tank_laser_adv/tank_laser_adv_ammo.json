@@ -40,10 +40,5 @@
     "gravity_scalar": 12,
     "add_to_spatial_db": false,
     "allow_underground": true
-  },
-  "events": {
-    "died": {
-      "effect_spec": "/pa/units/land/tank_laser_adv/tank_laser_adv_ammo_hit.pfx"
-    }
   }
 }

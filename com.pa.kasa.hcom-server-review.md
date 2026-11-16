@@ -342,7 +342,7 @@ The reference walk did not reach 8 of these specs from `unit_list.json`: `arsena
 
 </details>
 - Each structure has `model.filename` set to `/pa/units/arsenal/unlocks/base_unlock/arsenal_bulb.papa`. That file is not in this mod, the client mod, or the base game.
-- The build test in BLO-001 found no route to these structures. Their `unit_types` do not include `Custom58`. No `buildable_types` expression of a unit that a player can get matches them. The stock debug unit `avatar.json` is the only registered unit with an expression that matches.
+- The build test in BLO-001 found no route to these structures. Their `unit_types` do not include `Custom58`. No `buildable_types` expression of a unit that a player can get matches them. The stock debug unit `avatar.json` is the only registered unit with an expression that matches. 
 - `shared_build.js` gives the structures positions on the build bar. `arsenal.js:68` adds `nuke_ammo_arsenal.json` and `hype_ammo_arsenal.json` to the build bar after an unlock. Thus the author appears to expect that players build them.
 - `pa/units/arsenal/arsenal/arsenal.json` has `buildable_types` `Custom23`, so it builds the `*_unlock.json` units without these structures.
 
@@ -855,7 +855,7 @@ The mod also has 119 files at paths that other mods own. The counts for each mod
 
 **Found:** Each file is byte-identical to the base-game file.
 
-- `pa/units/air/fabrication_aircraft_adv/fabrication_aircraft_adv.papa` bs
+- `pa/units/air/fabrication_aircraft_adv/fabrication_aircraft_adv.papa`
 - `pa/units/commanders/avatar/avatar.json`
 - `pa/units/orbital/orbital_mine/orbital_mine_ammo.json`
 - `pa/units/sea/torpedo_small/torpedo_small.papa`

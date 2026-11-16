@@ -132,7 +132,7 @@
         },
         "fired": {
             "audio_cue": "/SE/Weapons/veh/tank_T2_sheller",
-            "effect_spec": "/pa/units/land/tank_heavy_mortar/tank_heavy_mortar_muzzle_flash.pfx socket_muzzle /pa/effects/specs/artillery_muzzle_ground.pfx",
+            "effect_spec": "/pa/effects/specs/tank_muzzle_flash.pfx socket_muzzle /pa/effects/specs/artillery_muzzle_ground.pfx",
             "effect_scale": 2.0
         },
         "died": {

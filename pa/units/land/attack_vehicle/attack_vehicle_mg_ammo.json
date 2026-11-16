@@ -24,10 +24,5 @@
   },
   "fx_trail": {
     "filename": "/pa/units/land/attack_vehicle/attack_vehicle_ammo_trail.pfx"
-  },
-  "events": {
-    "died": {
-      "effect_spec": "/pa/units/land/attack_vehicle/attack_vehicle_ammo_hit.pfx"
-    }
   }
 }

@@ -26,7 +26,8 @@
   },
   "events": {
     "died": {
-      "effect_spec": "/pa/units/sea/hover_ship/hover_ship_ammo_hit.pfx"
+      "effect_spec": "/pa/units/sea/battleship/battleship_hit.pfx",
+      "effect_scale": 0.75
     }
   },
   "physics": {

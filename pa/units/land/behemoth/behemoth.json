@@ -43,7 +43,7 @@
     },
     "fired1": {
       "audio_cue": "/SE/Weapons/sea/hover_small_fire",
-      "effect_spec": "/pa/units/sea/hover_ship/hover_ship_muzzle_flash_side.pfx bone_mg",
+      "effect_spec": "/pa/effects/specs/tank_muzzle_flash.pfx bone_mg",
       "effect_scale": 0.5
     },
     "fired2": {

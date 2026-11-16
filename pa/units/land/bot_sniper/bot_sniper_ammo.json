@@ -22,12 +22,6 @@
     "AT_Custom9": 1,
     "AT_Custom0": 1
   },
-  "events": {
-    "died": {
-      "audio_cue": "/SE/Impacts/shell_bullet",
-      "effect_spec": "/pa/units/land/bot_sniper/bot_sniper_ammo_hit.pfx"
-    }
-  },
   "fx_trail": {
     "offset": [
       0.0,

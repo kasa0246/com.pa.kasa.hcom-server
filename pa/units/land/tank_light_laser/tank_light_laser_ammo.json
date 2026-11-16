@@ -34,11 +34,5 @@
     "gravity_scalar": 7,
     "add_to_spatial_db": false,
     "allow_underground": true
-  },
-  "events": {
-    "died": {
-      "audio_cue": "/SE/Impacts/shell_tank",
-      "effect_spec": "/pa/units/land/tank_light_laser/tank_light_laser_ammo_hit.pfx"
-    }
   }
 }

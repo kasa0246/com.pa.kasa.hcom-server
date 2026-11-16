@@ -176,20 +176,19 @@
             "audio_cue": "/SE/Build_Complete/sea"
         },
         "fired0": {
-            "audio_cue": "/SE/Weapons/sea/T2_missile_ship_fire",
-            "effect_spec": ""
+            "audio_cue": "/SE/Weapons/sea/T2_missile_ship_fire"
         },
         "fired1": {
             "audio_cue": "/SE/Weapons/structure/air_defense_fire",
-            "effect_spec": "/pa/units/sea/hover_ship/hover_ship_muzzle_flash_side.pfx socket_muzzle_01"
+            "effect_spec": "/pa/effects/specs/muzzle_burst_flash_small.pfx socket_muzzle_01"
         },
         "fired2": {
             "audio_cue": "/SE/Weapons/sea/hover_small_fire",
-            "effect_spec": "/pa/units/sea/hover_ship/hover_ship_muzzle_flash_side.pfx bone_muzzle"
+            "effect_spec": "/pa/effects/specs/muzzle_burst_flash_small.pfx bone_muzzle"
         },
         "fired3": {
             "audio_cue": "/SE/Weapons/sea/T2_missile_ship_fire",
-            "effect_spec": "/pa/units/sea/hover_ship/hover_ship_muzzle_flash_side.pfx bone_missile_1 /pa/units/sea/hover_ship/hover_ship_muzzle_flash_side.pfx bone_missile_2"
+            "effect_spec": "/pa/effects/specs/muzzle_burst_flash_small.pfx bone_missile_1 /pa/effects/specs/muzzle_burst_flash_small.pfx bone_missile_2"
         },
         "died": {
             "audio_cue": "/SE/Death/Sea",

@@ -34,11 +34,12 @@
   "model": {
     "filename": "/pa/units/air/shell/shell.papa"
   },
-  "audio_loop": "/SE/Movement/missile/tactical_missile_fly_loop",
   "events": {
     "died": {
-      "audio_cue": "/SE/Impacts/shell_tank",
-      "effect_spec": "/pa/units/land/tank_heavy_mortar/tank_heavy_mortar_ammo_hit.pfx"
+      "audio_cue": "/SE/Impacts/missile_artillery_short",
+      "effect_spec": "/pa/effects/specs/default_explosion.pfx",
+      "effect_scale": 1.5
     }
-  }
+  },
+  "audio_loop": "/SE/Movement/missile/tactical_missile_fly_loop"
 }

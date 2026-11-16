@@ -20,15 +20,15 @@
     },
     "initial_velocity": 1000.0,
     "max_velocity": 1000.0,
-    "lifetime": 1.5,
+    "lifetime": 0.5,
     "turn_rate": 45,
     "fx_trail": {
-        "filename": "/pa/units/orbital/orbital_battleship/yellow_laser_trail.pfx",
         "offset": [
             0.0,
-            15,
+            0.0,
             0.0
-        ]
+        ],
+        "filename": "/pa/units/land/laser_defense/laser_defense_ammo_trail.pfx"
     },
     "events": {
         "died": {

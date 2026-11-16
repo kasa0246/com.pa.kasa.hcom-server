@@ -308,19 +308,19 @@
     },
     "fired0": {
       "audio_cue": "/SE/Weapons/sea/T2_battleship_fire",
-      "effect_spec": "/pa/units/sea/battleship/battleship_muzzle_flash.pfx socket_muzzle01 /pa/units/sea/battleship/battleship_muzzle_flash.pfx socket_muzzle02 /pa/units/sea/battleship/battleship_muzzle_flash.pfx socket_muzzle03"
+      "effect_spec": "/pa/effects/specs/tank_muzzle_flash.pfx socket_muzzle01 /pa/effects/specs/tank_muzzle_flash.pfx socket_muzzle02 /pa/effects/specs/tank_muzzle_flash.pfx socket_muzzle03"
     },
     "fired1": {
       "audio_cue": "/SE/Weapons/sea/T2_battleship_fire",
-      "effect_spec": "/pa/units/sea/battleship/battleship_muzzle_flash.pfx socket_muzzle04 /pa/units/sea/battleship/battleship_muzzle_flash.pfx socket_muzzle05 /pa/units/sea/battleship/battleship_muzzle_flash.pfx socket_muzzle06"
+      "effect_spec": "/pa/effects/specs/tank_muzzle_flash.pfx socket_muzzle04 /pa/effects/specs/tank_muzzle_flash.pfx socket_muzzle05 /pa/effects/specs/tank_muzzle_flash.pfx socket_muzzle06"
     },
     "fired2": {
       "audio_cue": "/SE/Weapons/sea/T2_battleship_fire",
-      "effect_spec": "/pa/units/sea/battleship/battleship_muzzle_flash.pfx socket_muzzle10 /pa/units/sea/battleship/battleship_muzzle_flash.pfx socket_muzzle11 /pa/units/sea/battleship/battleship_muzzle_flash.pfx socket_muzzle12"
+      "effect_spec": "/pa/effects/specs/tank_muzzle_flash.pfx socket_muzzle10 /pa/effects/specs/tank_muzzle_flash.pfx socket_muzzle11 /pa/effects/specs/tank_muzzle_flash.pfx socket_muzzle12"
     },
     "fired3": {
       "audio_cue": "/SE/Weapons/sea/hover_small_fire",
-      "effect_spec": "/pa/units/sea/hover_ship/hover_ship_muzzle_flash_side.pfx bone_aa_l1 /pa/units/sea/hover_ship/hover_ship_muzzle_flash_side.pfx bone_aa_l2 /pa/units/sea/hover_ship/hover_ship_muzzle_flash_side.pfx bone_aa_l3 /pa/units/sea/hover_ship/hover_ship_muzzle_flash_side.pfx bone_aa_r1 /pa/units/sea/hover_ship/hover_ship_muzzle_flash_side.pfx bone_aa_r2 /pa/units/sea/hover_ship/hover_ship_muzzle_flash_side.pfx bone_aa_r3"
+      "effect_spec": "/pa/effects/specs/muzzle_burst_flash_big.pfx bone_aa_l1 /pa/effects/specs/muzzle_burst_flash_big.pfx bone_aa_l2 /pa/effects/specs/muzzle_burst_flash_big.pfx bone_aa_l3 /pa/effects/specs/muzzle_burst_flash_big.pfx bone_aa_r1 /pa/effects/specs/muzzle_burst_flash_big.pfx bone_aa_r2 /pa/effects/specs/muzzle_burst_flash_big.pfx bone_aa_r3"
     }
   },
   "audio": {

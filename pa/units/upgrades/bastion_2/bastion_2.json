@@ -27,7 +27,7 @@
     },
     "fired0": {
       "audio_cue": "/SE/Weapons/sea/T2_missile_ship_fire",
-      "effect_spec": "/pa/units/sea/hover_ship/hover_ship_muzzle_flash_side.pfx bone_top"
+      "effect_spec": "/pa/effects/specs/missiile_burst_launch_big.pfx bone_top"
     },
     "fired1": {
       "audio_cue": "/SE/Weapons/bot/bot_tactical_missile_fire",

@@ -182,22 +182,22 @@
     },
     "fired0": {
       "audio_cue": "/SE/Weapons/sea/hover_fire",
-      "effect_spec": "/pa/units/sea/hover_ship/hover_ship_muzzle_flash.pfx socket_rightMuzzle01 /pa/units/sea/hover_ship/hover_ship_muzzle_flash.pfx socket_leftMuzzle01",
+      "effect_spec": "/pa/effects/specs/tank_muzzle_flash.pfx socket_rightMuzzle01 /pa/effects/specs/tank_muzzle_flash.pfx socket_leftMuzzle01",
       "effect_scale": 2
     },
     "fired1": {
       "audio_cue": "/SE/Weapons/sea/hover_fire",
-      "effect_spec": "/pa/units/sea/hover_ship/hover_ship_muzzle_flash.pfx socket_rightMuzzle02 /pa/units/sea/hover_ship/hover_ship_muzzle_flash.pfx socket_leftMuzzle02",
+      "effect_spec": "/pa/effects/specs/tank_muzzle_flash.pfx socket_rightMuzzle02 /pa/effects/specs/tank_muzzle_flash.pfx socket_leftMuzzle02",
       "effect_scale": 2
     },
     "fired2": {
       "audio_cue": "/SE/Weapons/sea/hover_small_fire",
-      "effect_spec": "/pa/units/sea/hover_ship/hover_ship_muzzle_flash_side.pfx socket_rightMuzzle03 /pa/units/sea/hover_ship/hover_ship_muzzle_flash_side.pfx socket_leftMuzzle03",
+      "effect_spec": "/pa/effects/specs/tank_muzzle_flash.pfx socket_rightMuzzle03 /pa/effects/specs/tank_muzzle_flash.pfx socket_leftMuzzle03",
       "effect_scale": 1.0
     },
     "fired3": {
       "audio_cue": "/SE/Weapons/sea/hover_small_fire",
-      "effect_spec": "/pa/units/sea/hover_ship/hover_ship_muzzle_flash_side.pfx socket_rightMuzzle04 /pa/units/sea/hover_ship/hover_ship_muzzle_flash_side.pfx socket_leftMuzzle04",
+      "effect_spec": "/pa/effects/specs/tank_muzzle_flash.pfx socket_rightMuzzle04 /pa/effects/specs/tank_muzzle_flash.pfx socket_leftMuzzle04",
       "effect_scale": 1.0
     },
     "died": {
