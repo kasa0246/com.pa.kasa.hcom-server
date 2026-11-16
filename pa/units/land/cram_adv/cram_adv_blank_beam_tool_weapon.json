@@ -27,7 +27,7 @@
         "/pa/units/air/strafer/strafer_rocket_ammo.json",
         "/pa/units/air/strafer/strafer_bomb_ammo.json",
         "/pa/units/air/bomber/bomber_ammo.json",
-        "/pa/units/land/katrina/katrina_ammo.json",
+        "/pa/units/land/eclipse/eclipse_ammo.json",
         "/pa/units/land/adv_heavy_bot/adv_heavy_bot_ammo.json",
         "/pa/units/land/pounder/pounder_ammo.json"
     ],

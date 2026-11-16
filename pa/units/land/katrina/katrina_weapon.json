@@ -1,7 +1,7 @@
 {
     "ammo_capacity": 520,
     "ammo_demand": 20,
-    "ammo_id": "/pa/units/land/katrina/katrina_ammo.json",
+    "ammo_id": "/pa/units/land/eclipse/eclipse_ammo.json",
     "ammo_per_shot": 60,
     "ammo_source": "energy",
     "auto_attack": true,

@@ -15,7 +15,7 @@
     "auto_task_type": "anti_entity",
     "anti_entity_targets_units": false,
     "anti_entity_targets": [
-        "/pa/units/land/katrina/katrina_ammo.json",
+        "/pa/units/land/eclipse/eclipse_ammo.json",
         "/pa/units/land/bot_grenadier/bot_grenadier_ammo.json",
         "/pa/units/land/air_defense/air_defense_ammo.json"
     ],

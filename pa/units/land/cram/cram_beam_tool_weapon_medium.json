@@ -18,7 +18,7 @@
   "anti_entity_targets_units": false,
   "tool_type": "TOOL_Weapon",
   "anti_entity_targets": [
-    "/pa/units/land/katrina/katrina_ammo.json"
+    "/pa/units/land/eclipse/eclipse_ammo.json"
   ],
   "target_layers": [
     "WL_Air"
