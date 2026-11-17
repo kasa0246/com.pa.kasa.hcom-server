@@ -114,7 +114,7 @@ var newBuild = {
 	"/pa/units/sea/nuclear_sub/nuclear_sub.json": ["sea", 9, { row: 1, column: 6 }],
 	"/pa/units/sea/destroyer/destroyer.json": ["sea", 13, { row: 2, column: 1 }],
 	"/pa/units/sea/frigate/frigate.json": ["sea", 14, { row: 2, column: 2 }],
-	"/pa/units/sea/basic_missile_ship/basic_missile_ship.json": ["sea", 15, { row: 2, column: 3 }],
+	"/pa/units/addon/naval_anti_orbital_ship/basic_missile_ship.json": ["sea", 15, { row: 2, column: 3 }],
 	"/pa/units/sea/attack_sub/attack_sub.json": ["sea", 18, { row: 2, column: 6 }],
 	//utility
 	"/pa/units/land/orbital_shield/orbital_shield.json": ["utility", 0, { row: 0, column: 0 }],

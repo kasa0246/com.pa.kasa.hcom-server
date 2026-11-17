@@ -21,7 +21,8 @@
     "version": "1.5.0",
     "dependencies": [
         "com.pa.kasa.hcom-client",
-        "com.pa.kasa.hcom-s17-compatibility",
+        "com.pa.kasa.hcom-compatibility",
+        "pa.mla.unit.addon",
         "com.pa.daedelus.experimentals"
     ],
     "companions": [

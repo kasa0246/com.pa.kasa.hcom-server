@@ -332,7 +332,7 @@
         "/pa/units/sea/frigate/frigate.json",
         "/pa/units/paeiou/dolfin/dolfin.json",
         "/pa/units/sea/missile_ship/missile_ship.json",
-        "/pa/units/sea/basic_missile_ship/basic_missile_ship.json",
+        "/pa/units/addon/naval_anti_orbital_ship/basic_missile_ship.json",
         "/pa/units/sea/naval_factory/naval_factory.json",
         "/pa/units/sea/naval_factory_adv/naval_factory_adv.json",
         "/pa/units/sea/nuclear_sub/nuclear_sub.json",

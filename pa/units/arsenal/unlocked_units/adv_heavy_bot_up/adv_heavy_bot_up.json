@@ -70,7 +70,7 @@
 		}
 	},
 	"model": {
-		"filename": "/pa/units/arsenal/unlocked_units/adv_heavy_bot_up/centaur_up.papa",
+		"filename": "/pa/units/addon/adv_heavy_bot/centaur.papa",
 		"animations": {
 			"walk": "/pa/units/addon/adv_heavy_bot/centaur_run.papa",
 			"idle": "/pa/units/addon/adv_heavy_bot/centaur_idle.papa",
