@@ -4,7 +4,7 @@
     "description": "For debugging purposes",
     "max_health": 200000,
     "build_metal_cost": 1,
-    "buildable_types": "(Structure & Basic | Structure & Advanced | FabBuild | FabAdvBuild | FabOrbBuild | Titan) - NoBuild",
+    "buildable_types": "(Structure & Basic | Structure & Advanced | FabBuild | FabAdvBuild | FabOrbBuild | Titan) - (NoBuild | Custom1 | Custom2)",
     "production": {
         "energy": 100000,
         "metal": 100000
