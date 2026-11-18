@@ -96,31 +96,61 @@
         ["/pa/units/land/energy_plant_adv/energy_plant_adv_2_base_2.json", "altFireSelf"]
     ];
 
-    var defenseAutomation = function () {
-        var worldView = api.getWorldView(0);
-        var armyindex = model.armyIndex() !== undefined ? model.armyIndex() : model.armyId();
+   var defenseAutomation = function () {
+    var worldView = api.getWorldView(0);
+    var armyindex = model.armyIndex() !== undefined
+        ? model.armyIndex()
+        : model.armyId();
 
-        if (worldView && armyindex !== undefined) {
-            fetchArmyUnits(worldView, armyindex, function (army, currentPlanet) {
-                defenseUnitsToCommand.forEach(function (item) {
-                    if (army.hasOwnProperty(item[0])) {
-                        doCommand(worldView, army[item[0]], currentPlanet, [], item[1], true);
-                    }
-                });
-                if (army.hasOwnProperty('/pa/units/addon/fab_tower/fab_tower.json')) {
-                    doCommand(worldView, army['/pa/units/addon/fab_tower/fab_tower.json'], currentPlanet, advancedIdArray).then(function (result) {
-                         advancedIdArray = result;
-                    });
-}
-                if (army.hasOwnProperty('/pa/units/addon/adv_fab_tower/adv_fab_tower.json')) {
-                    doCommand(worldView, army['/pa/units/addon/adv_fab_tower/adv_fab_tower.json'], currentPlanet, advancedIdArray).then(function (result) {
-                        advancedIdArray = result;
-                    });
-}
+    if (worldView && armyindex !== undefined) {
+        fetchArmyUnits(worldView, armyindex, function (army, currentPlanet) {
+
+            defenseUnitsToCommand.forEach(function (item) {
+                if (army.hasOwnProperty(item[0])) {
+                    doCommand(
+                        worldView,
+                        army[item[0]],
+                        currentPlanet,
+                        [],
+                        item[1],
+                        true
+                    );
+                }
             });
-        }
-        _.delay(defenseAutomation, 5000);
-    };
+
+            // Process both fabricator towers sequentially.
+            var towerCommands = Promise.resolve(advancedIdArray);
+
+            if (army.hasOwnProperty('/pa/units/addon/fab_tower/fab_tower.json')) {
+                towerCommands = towerCommands.then(function (ids) {
+                    return doCommand(
+                        worldView,
+                        army['/pa/units/addon/fab_tower/fab_tower.json'],
+                        currentPlanet,
+                        ids
+                    );
+                });
+            }
+
+            if (army.hasOwnProperty('/pa/units/addon/adv_fab_tower/adv_fab_tower.json')) {
+                towerCommands = towerCommands.then(function (ids) {
+                    return doCommand(
+                        worldView,
+                        army['/pa/units/addon/adv_fab_tower/adv_fab_tower.json'],
+                        currentPlanet,
+                        ids
+                    );
+                });
+            }
+
+            towerCommands.then(function (result) {
+                advancedIdArray = result;
+            });
+        });
+    }
+
+    _.delay(defenseAutomation, 5000);
+};
 
     // ============================================================
     // 2. SOLAR MECHANICS LOOP (Steady: 60 seconds)

@@ -3,7 +3,7 @@
     "unit_name": "Advanced Fabrication Tower",
     "si_name": "adv_fab_tower",
     "display_name": "!LOC:Experimental Fabrication Tower",
-    "description": "!LOC:Advanced Fabrication Tower - Can assist in construction. More efficient than other fabricators.",
+    "description": "!LOC:Experimental Fabrication Tower - Can assist in construction. More efficient than other fabricators.",
     "max_health": 3500,
     "build_metal_cost": 3200,
     "atrophy_rate": 7.5,
@@ -77,7 +77,6 @@
         "UNITTYPE_Construction",
         "UNITTYPE_Advanced",
         "UNITTYPE_Structure",
-        "UNITTYPE_Fabber",
         "UNITTYPE_Custom7"
     ],
     "command_caps": [
