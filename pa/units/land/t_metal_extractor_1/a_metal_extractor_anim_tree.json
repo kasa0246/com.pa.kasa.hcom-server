@@ -7,37 +7,7 @@
 			},
 			"living": {
 				"type": "playback",
-				"anim_name": "idle",
-				"events": [
-					{
-						"time": 2.28333,
-						"type": "effect",
-						"parameters": {
-							"bone": "bone_root",
-							"spec": "/pa/units/land/t_metal_extractor_1/a_metal_extractor_effect_in.pfx",
-							"effect_scale": 1.0,
-							"bone_offset": [
-								0.0,
-								0.0,
-								0.0
-							]
-						}
-					},
-					{
-						"time": 0.0,
-						"type": "effect",
-						"parameters": {
-							"bone": "bone_root",
-							"spec": "/pa/units/land/t_metal_extractor_1/a_metal_extractor_effect_out.pfx",
-							"effect_scale": 1.0,
-							"bone_offset": [
-								0.0,
-								0.0,
-								0.0
-							]
-						}
-					}
-				]
+				"anim_name": "idle"
 			},
 			"dead": {
 				"type": "bind_pose"
