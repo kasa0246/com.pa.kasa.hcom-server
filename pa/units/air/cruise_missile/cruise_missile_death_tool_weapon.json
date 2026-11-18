@@ -1,7 +1,7 @@
 {
   "ammo_capacity": 20,
   "ammo_demand": 1,
-  "ammo_id": "/pa/units/addon/basic_missile_defence/cruise_missile/cruise_missile_death_ammo.json",
+  "ammo_id": "/pa/units/air/cruise_missile/cruise_missile_death_ammo.json",
   "ammo_per_shot": 20,
   "ammo_source": "time",
   "auto_fire_when_charged": true,

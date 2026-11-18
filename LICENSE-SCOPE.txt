@@ -1,0 +1,78 @@
+# H-COM — LICENSE SCOPE AND DOCUMENTATION
+
+Copyright (c) 2026 kasa
+
+## 1. GENERAL
+
+Hardcore Combat Overhaul (H-COM) is a modification for Planetary Annihilation: TITANS.
+H-COM contains a combination of original work created by kasa, third-party materials, individually authorized assets, and modified original game files.
+The presence of any material within H-COM does not imply ownership of that material by kasa.
+
+## 2. ORIGINAL H-COM WORK
+
+The MIT License included with H-COM applies exclusively to original materials created by kasa for H-COM and explicitly identified in MIT-INCLUSIONS.txt.
+This may include original particle effects, models, textures, scripts, configuration files and other independently created materials.
+Materials not explicitly identified in MIT-INCLUSIONS.txt are not covered by the H-COM MIT License.
+The MIT License does not grant rights to any third-party materials or original Planetary Annihilation game assets.
+
+## 3. INCLUDED MATERIALS
+
+MIT-INCLUSIONS.txt provides an explicit inventory of original materials created by kasa that are covered by the H-COM MIT License.
+Only materials identified in this document are included within the scope of the H-COM MIT License.
+The inclusion of a modified version of an existing third-party or original game asset does not automatically establish ownership of the underlying material or grant relicensing rights to kasa.
+
+Materials not listed in MIT-INCLUSIONS.txt remain subject to their respective original ownership and licensing conditions.
+
+## 4. THIRD-PARTY MATERIALS AND ATTRIBUTION
+
+THIRD-PARTY-ASSETS.txt provides an inventory of third-party materials included in or used by H-COM.
+It identifies their original authors, sources, ownership, permission status and relationship to H-COM.
+
+THIRD-PARTY-LICENSES.txt contains the applicable third-party license texts, copyright notices, attribution records and additional licensing information.
+Third-party materials retain their respective original ownership and licensing conditions.
+
+## 5. DEPENDENCIES
+
+H-COM may require or interact with other Planetary Annihilation mods.
+Dependencies remain separate projects and retain their original authorship, ownership and licensing conditions.
+The inclusion or use of a dependency does not imply that kasa owns, maintains or claims authorship of its contents.
+Any H-COM modifications or compatibility adjustments to dependency-related files are subject to the rights applicable to the original materials.
+
+## 6. ORIGINAL GAME MATERIALS
+
+Original Planetary Annihilation: TITANS game files incorporated into H-COM or modified for compatibility and gameplay purposes remain subject to the applicable rights and terms of their original copyright holders.
+Such materials are not relicensed under the H-COM MIT License.
+
+## 7. DOCUMENTATION HIERARCHY
+
+The following documents describe the licensing structure of H-COM:
+
+**LICENSE**
+
+The MIT License governing original H-COM contributions created by kasa and explicitly included in MIT-INCLUSIONS.txt.
+
+**LICENSE-SCOPE.txt**
+
+This document, explaining the scope and relationship of the licensing documents.
+
+**MIT-INCLUSIONS.txt**
+
+An explicit inventory of original materials created by kasa and covered by the H-COM MIT License.
+
+**THIRD-PARTY-ASSETS.txt**
+
+An inventory of third-party materials and their ownership, provenance and permission status.
+
+**THIRD-PARTY-LICENSES.txt**
+
+The applicable third-party license texts, copyright notices and attribution records.
+
+## 8. OWNERSHIP DISCLAIMER
+
+Unless explicitly identified as original H-COM work created by kasa and listed in MIT-INCLUSIONS.txt, no claim of authorship or ownership is made over third-party assets, dependency contents or original Planetary Annihilation game materials.
+
+All such materials remain the property of their respective copyright holders.
+
+============================================================
+END OF DOCUMENT
+============================================================

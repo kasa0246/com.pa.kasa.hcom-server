@@ -11,7 +11,7 @@
     "lifetime": 2.5,
     "influence_radius": 400,
     "model": {
-        "filename": "/pa/units/addon/basic_missile_defence/cruise_missile/cruise_missile_2.papa"
+        "filename": "/pa/units/air/cruise_missile/cruise_missile_2.papa"
     },
     "events": {
         "died": {
@@ -20,7 +20,7 @@
             "effect_scale": 0.5
         }
     },
-    "spawn_unit_on_death": "/pa/units/addon/basic_missile_defence/cruise_missile/cruise_missile.json",
+    "spawn_unit_on_death": "/pa/units/air/cruise_missile/cruise_missile.json",
     "spawn_unit_on_death_with_velocity": true,
     "fx_trail": {
         "filename": "/pa/units/addon/basic_missile_defence/missile_trail.json",

@@ -1,0 +1,282 @@
+# H-COM — THIRD-PARTY ASSET INVENTORY
+
+Copyright (c) 2026 kasa
+
+This document identifies third-party materials incorporated into, modified for, or otherwise used by H-COM.
+
+All listed materials remain the property of their respective original copyright holders unless otherwise explicitly stated.
+
+Modifications made by kasa do not transfer ownership of the original materials.
+
+---
+
+## SECTION I — OPEN-SOURCE THIRD-PARTY MATERIALS
+
+### NO. 1 — TITAN GANTRY
+
+Original author: Wondible
+
+Original mod: Titan Gantry
+
+Original mod identifier: com.wondible.pa.titan_gantry
+
+Original source:
+https://forums.uberent.com/threads/rel-server-titan-gantry.70945/
+
+Original license: Apache License 2.0
+
+License documentation: THIRD-PARTY-LICENSES.txt — No. 1
+
+Files incorporated into H-COM:
+- /pa/units/land/titan_gantry/
+
+Modifications:
+- Buildbar icon and basic unit stats.
+
+---
+
+### NO. 2 — CONTROL TOWER
+
+Original author: ferretmaster
+
+Original mod: Bug Mode / Server Scenarios
+
+Original mod identifier: com.pa.ferretmaster.scenarios
+
+Original source:
+https://github.com/Ferret-Master/Scenarios
+
+Original license: MIT License
+
+License documentation: THIRD-PARTY-LICENSES.txt — No. 2
+
+Files incorporated into H-COM:
+- /pa/units/land/control_tower/
+
+Modifications:
+- Adapted and modified for H-COM.
+
+---
+
+### NO. 3 — EXILES FACTION UNITS
+
+Original authors: NikolaMX, BOIYOUSAYWHAT
+
+Original mod: Exiles Faction
+
+Original mod identifier: com.pa.nik.exiles
+
+Original source:
+https://github.com/NikolaMX/Exiles-Faction
+
+Original license: MIT License
+
+License documentation: THIRD-PARTY-LICENSES.txt — No. 3
+
+Files incorporated into H-COM:
+- /pa/units/land/anti_ballistics/
+- /pa/units/land/missile_facility/
+- /pa/units/land/pylon/
+- /pa/units/land/seizmic/
+- /pa/units/land/shah/
+- /pa/units/land/t_metal_extractor_1/
+- /pa/units/land/t_tank_flak/
+- /pa/units/land/tank_gatling/
+- /pa/units/land/ambush_twr/
+- /pa/units/air/t_transport_adv/
+- /pa/units/arsenal/adv_reactor.papa and associated textures.
+
+Modifications:
+- Heavily modified for H-COM compatibility and balance.
+
+---
+
+### NO. 4 — RESEARCH MECHANICS
+
+Original author: NikolaMX
+
+Original mod: Haunted Mayhem / Medieval Mode
+
+Original mod identifier: medieval_mode
+
+Original source:
+https://github.com/NikolaMX/haunted-mayhem.git
+
+Original license: MIT License
+
+License documentation: THIRD-PARTY-LICENSES.txt — No. 4
+
+Original components:
+- research.js
+- research_live_game.js
+- live_game_buildbar.js
+
+Use in H-COM:
+- Research mechanics and associated implementation.
+
+Modifications:
+- Adapted and modified for H-COM's research and unlock system.
+
+---
+
+### NO. 5 — EDISON MODEL
+
+Original authors: Bot, Taiga
+
+Original mod: Upgradable Turrets
+
+Original mod identifier: pa.mla.unit.upgradable-turrets
+
+Original source:
+https://github.com/BotWhan/com.pa.upgradable-turrets
+
+Original license: MIT License
+
+License documentation: THIRD-PARTY-LICENSES.txt — No. 5
+
+Files incorporated into H-COM:
+- /pa/units/land/edison/
+
+Modifications:
+- Adapted and modified for H-COM.
+
+---
+
+### NO. 6 — AUTOFACTORY V2
+
+Original author:
+Ferretmaster
+
+Original mod identifier:
+com.pa.ferretmaster.Autofactory
+
+Original source:
+https://github.com/Ferret-Master/AutoFactory-V2.git
+
+Original license:
+["Do what you want, just give credit."]
+
+Relationship to H-COM:
+Core mechanic used to auto-queue energy plants producing energy charges. 
+
+Affected directories:
+- All files in \ui\mods\com.pa.kasa.hcom-server\live_game & \ui\mods\com.pa.kasa.hcom-server\live_game_options_bar & \ui\mods\com.pa.kasa.hcom-server\settings
+
+Modifications:
+- Repurposed for H-COM.
+
+Ownership:
+All original or modified assets, models, textures, scripts and other materials remain attributable to their respective original authors and copyright holders. Modifications and compatibility adjustments made by kasa do not transfer ownership of the underlying materials, which remain credited to their respective original authors.
+
+---
+
+## SECTION II — INDIVIDUALLY AUTHORIZED MATERIALS
+
+### NO. 7 — OSMECH UNITS
+
+Original authors: Mr.Loló and ARES LORD
+
+Original mod: Osmech
+
+Original source:
+https://github.com/ATLASLORD/Thorosmen.git
+
+Permission granted by:
+Mr.Loló
+
+Permission date:
+18.11.2026
+
+Permission scope:
+Use and feature assets in H-COM.
+
+Files incorporated into H-COM:
+- /pa/units/land/halabib/
+- /pa/units/land/spell_tower/
+- /pa/units/land/maciota/
+- /pa/units/land/metal_destructor/
+- /pa/thorosmen/bot_freeze/
+- /pa/thorosmen/bunker_build/
+- /pa/thorosmen/drill/
+
+Modifications:
+- Rebalanced for H-COM.
+
+License:
+No open-source license specified.
+
+Ownership:
+Original materials remain the property of their respective copyright holders.
+
+Licensing restrictions:
+Inclusion in H-COM is based on individual permission from the original copyright holder. No additional redistribution, relicensing or sublicensing rights are claimed beyond the scope of the permission granted.
+
+---
+
+## SECTION III — DEPENDENCY-RELATED MATERIALS
+
+Materials in this section originate from other Planetary Annihilation modifications used as dependencies or as the basis for H-COM compatibility modifications.
+
+The listed directories identify the locations of original materials used or modified by H-COM.
+
+Original assets and underlying files remain the property of their respective copyright holders. H-COM does not claim ownership of these materials.
+
+Their applicable licensing and redistribution conditions remain unchanged.
+
+### NO. 8 — SECOND WAVE EXPANSION
+
+Original author:
+Anonemous2, billthebluebot, Taiga, Quitch, Quildtide, Ferretmaster, Tatarstan, DrWondertainment
+
+Original mod identifier:
+pa.mla.unit.addon
+
+Original source:
+https://github.com/Anonemous2/pa.mla.unit.addon
+
+Original license:
+[NO LICENSE]
+
+Relationship to H-COM:
+Dependency / Compatibility modifications.
+
+Affected directories:
+- All files in /pa/units/addon/ and /pa/units/l_addon/
+
+Modifications:
+- Rebalanced and repurposed for H-COM. 
+
+Ownership:
+All original or modified assets, models, textures, scripts and other materials remain attributable to their respective original authors and copyright holders. Modifications and compatibility adjustments made by kasa do not transfer ownership of the underlying materials, which remain credited to their respective original authors.
+
+### NO. 9 — SECTION 17 - ENDGAME UNITS
+
+Original author:
+Team DAEDALUS, Quildtide, Taiga, Anonemous2
+
+Original mod identifier:
+com.pa.daedelus.experimentals
+
+Original source:
+https://github.com/DAEDALUS-Modding/Section-17.git
+
+Original license:
+[NO LICENSE]
+
+Relationship to H-COM:
+Dependency / Compatibility modifications.
+
+Affected directories:
+- All files in /pa/units/paeiou/
+
+Modifications:
+- Rebalanced and repurposed for H-COM. H-COM gives the Experimental Gantry a meaningful purpose by adding over a dozen buildable units and establishing an entire T3 ecosystem around it, including economy structures and turrets.
+
+Ownership:
+All original or modified assets, models, textures, scripts and other materials remain attributable to their respective original authors and copyright holders. Modifications and compatibility adjustments made by kasa do not transfer ownership of the underlying materials, which remain credited to their respective original authors.
+
+---
+
+============================================================
+END OF DOCUMENT
+============================================================

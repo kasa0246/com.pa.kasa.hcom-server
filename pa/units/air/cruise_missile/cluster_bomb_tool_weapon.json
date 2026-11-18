@@ -1,5 +1,5 @@
 {
-  "ammo_id": "/pa/units/addon/basic_missile_defence/cruise_missile/cluster_bomb_ammo.json",
+  "ammo_id": "/pa/units/air/cruise_missile/cluster_bomb_ammo.json",
   "auto_attack": true,
   "rate_of_fire": 0.08,
   "firing_standard_deviation": 20,

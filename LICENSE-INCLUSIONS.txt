@@ -1,0 +1,321 @@
+# H-COM — MIT LICENSED MATERIALS
+
+Copyright (c) 2026 kasa
+
+## 1. SCOPE
+
+The MIT License included with H-COM applies exclusively to the original materials created by kasa and explicitly identified in this document.
+
+Only the files listed below are included in this license.
+
+No other files, assets, or materials distributed with or used by H-COM are covered by this MIT License unless explicitly stated otherwise.
+
+## 2. ORIGINAL PARTICLE EFFECTS
+
+The following particle effects (`.pfx`) were independently created by kasa for H-COM and are released under the MIT License.
+
+**Files:**
+- /pa/effects/specs/missile_burst_launch_big.pfx
+- /pa/effects/specs/missile_burst_launch_small.pfx
+- /pa/units/air/bomber/bomber_ammo_trail.pfx
+- /pa/units/air/bomber_adv/hype_ammo_trail.pfx
+- /pa/units/air/bomber_heavy/bomber_heavy_ammo_trail.pfx
+- /pa/units/air/fighter/flare_trail.pfx
+- /pa/units/air/fighter/flare_hit.pfx
+- /pa/units/air/fighter_adv/chaff/flare_adv.pfx
+- /pa/units/air/fighter_adv/chaff/flare_adv_hit.pfx
+- /pa/units/air/strafer/strafer_ammo_trail.pfx
+- /pa/units/air/t_transport_adv/jet_exp.pfx
+- /pa/units/land/air_defense/air_defense_ammo_trail.pfx
+- /pa/units/land/ambush_twr/ambush_twr_ammo_trail.pfx
+- /pa/units/land/artillery_long/ambush_twr_ammo_trail.pfx
+- /pa/units/land/artillery_long/artillery_long_ammo_trail.pfx
+- /pa/units/land/artillery_short/artillery_short_ammo_trail.pfx
+- /pa/units/land/artillery_unit_launcher/artillery_unit_launcher_ammo_trail.pfx
+- /pa/units/land/assault_bot/assault_bot_ammo_trail.pfx
+- /pa/units/land/assault_bot_adv/torpedo_purple_trail.pfx
+- /pa/units/land/assault_bot_adv/torpedo_red_trail.pfx
+- /pa/units/land/assault_bot_adv/assault_bot_adv_ammo_trail.pfx
+- /pa/units/land/assault_bot_adv/torpedo_green_trail.pfx
+- /pa/units/land/attack_vehicle/attack_vehicle_ammo_trail.pfx
+- /pa/units/land/behemoth/muzzle_flash.pfx
+- /pa/units/land/behemoth/main_gun_exp.pfx
+- /pa/units/land/behemoth/main_gun_trail.pfx
+- /pa/units/land/bot_aa/bot_aa_ammo_trail.pfx
+- /pa/units/land/bot_grenadier/bot_grenadier_ammo_trail.pfx
+- /pa/units/land/bot_sniper/bot_sniper_ammo_trail.pfx
+- /pa/units/land/bot_support_commander/bot_support_commander_ammo_trail.pfx
+- /pa/units/land/bot_tactical_missile/bot_tactical_missile_ammo_trail.pfx
+- /pa/units/land/laser_defense/laser_defense_ammo_trail.pfx
+- /pa/units/land/laser_defense_adv/laser_defense_adv_ammo_trail.pfx
+- /pa/units/land/laser_defense_single/laser_defense_single_ammo_trail.pfx
+- /pa/units/land/maciota/ion_defense_proj_trail.pfx
+- /pa/units/land/mjolnir/mjolnir_muzzle_flash.pfx
+- /pa/units/land/mjolnir/mjolnir_ammo_hit.pfx
+- /pa/units/land/mjolnir/mjolnir_ammo_trail.pfx
+- /pa/units/land/shrapnel_mine/shrapnel_muzzle_flash.pfx
+- /pa/units/land/tactical_missile_launcher/ballistic_missile_trail.pfx
+- /pa/units/land/tactical_missile_launcher/ballistic_missile_trail_short.pfx
+- /pa/units/land/tank_hover/tank_hover_ammo_trail.pfx
+- /pa/units/land/tank_laser_adv/tank_laser_adv_ammo_trail.pfx
+- /pa/units/land/tank_light_laser/tank_light_laser_ammo_trail.pfx
+- /pa/units/orbital/ion_defense/ion_defense_muzzle_flash.pfx
+- /pa/units/orbital/ion_defense/ion_defense_ammo_hit.pfx
+- /pa/units/orbital/ion_defense/ion_defense_ammo_trail.pfx
+- /pa/units/orbital/orbital_battleship/yellow_laser_hit.pfx
+- /pa/units/orbital/orbital_battleship/orange_laser_hit.pfx
+- /pa/units/orbital/orbital_battleship/orange_laser_trail.pfx
+
+
+## 3. ORIGINAL 3D MODELS, TEXTURES AND ANIMATIONS
+
+The following .papa files were independently created by kasa for H-COM and are released under the MIT License.
+
+**Files:**
+- /pa/units/air/air_scout_adv/a50.papa
+- /pa/units/air/air_scout_adv/a50_material.papa
+- /pa/units/air/air_scout_adv/a50_diffuse.papa
+- /pa/units/air/air_scout_adv/a50_idle.papa
+- /pa/units/air/air_scout_adv/a50_mask.papa
+
+- /pa/units/air/cruise_missile/cruise_missile_2.papa
+- /pa/units/air/cruise_missile/cruise_missile.papa
+- /pa/units/air/cruise_missile/cruise_missile_2_material.papa
+- /pa/units/air/cruise_missile/cruise_missile_deploy.papa
+- /pa/units/air/cruise_missile/cruise_missile_diffuse.papa
+- /pa/units/air/cruise_missile/cruise_missile_mask.papa
+- /pa/units/air/cruise_missile/cruise_missile_material.papa
+- /pa/units/air/cruise_missile/cruise_missile_2_diffuse.papa
+- /pa/units/air/cruise_missile/cruise_missile_2_mask.papa
+
+- /pa/units/air/ufo/ufo.papa
+- /pa/units/air/ufo/ufo_idle.papa
+- /pa/units/air/ufo/ufo_mask.papa
+- /pa/units/air/ufo/ufo_material.papa
+- /pa/units/air/ufo/ufo_diffuse.papa
+
+- /pa/units/arsenal/unlocked_units/bot_rpg_up/grot_med.papa
+- /pa/units/arsenal/unlocked_units/bot_rpg_up/grot_med_material.papa
+- /pa/units/arsenal/unlocked_units/bot_rpg_up/grot_med_diffuse.papa
+- /pa/units/arsenal/unlocked_units/bot_rpg_up/grot_med_mask.papa
+
+- /pa/units/land/aa_defense_long/aa_defense_long.papa
+- /pa/units/land/aa_defense_long/aa_defense_long_material.papa
+- /pa/units/land/aa_defense_long/aa_defense_long_base.papa
+- /pa/units/land/aa_defense_long/aa_defense_long_diffuse.papa
+- /pa/units/land/aa_defense_long/aa_defense_long_mask.papa
+
+- /pa/units/land/artillery_unit_launcher/fpv_drone/switchblade_2.papa"
+- /pa/units/land/artillery_unit_launcher/fpv_drone/switchblade.papa"
+- /pa/units/land/artillery_unit_launcher/fpv_drone/switchblade_material.papa"
+- /pa/units/land/artillery_unit_launcher/fpv_drone/switchblade_2_diffuse.papa"
+- /pa/units/land/artillery_unit_launcher/fpv_drone/switchblade_2_mask.papa"
+- /pa/units/land/artillery_unit_launcher/fpv_drone/switchblade_2_material.papa"
+- /pa/units/land/artillery_unit_launcher/fpv_drone/switchblade_deploy.papa"
+- /pa/units/land/artillery_unit_launcher/fpv_drone/switchblade_diffuse.papa"
+- /pa/units/land/artillery_unit_launcher/fpv_drone/switchblade_fly.papa"
+- /pa/units/land/artillery_unit_launcher/fpv_drone/switchblade_mask.papa"
+
+- /pa/units/land/bot_radar_adv/globemaster.papa
+- /pa/units/land/bot_radar_adv/globemaster_material.papa
+- /pa/units/land/bot_radar_adv/globemaster_walk.papa
+- /pa/units/land/bot_radar_adv/globemaster_diffuse.papa
+- /pa/units/land/bot_radar_adv/globemaster_idle.papa
+- /pa/units/land/bot_radar_adv/globemaster_mask.papa
+
+- /pa/units/land/bot_rpg/grot.papa
+- /pa/units/land/bot_rpg/grot_material.papa
+- /pa/units/land/bot_rpg/grot_anim_idle.papa
+- /pa/units/land/bot_rpg/grot_anim_walk.papa
+- /pa/units/land/bot_rpg/grot_diffuse.papa
+- /pa/units/land/bot_rpg/grot_mask.papa
+
+- /pa/units/land/cram/cram.papa
+- /pa/units/land/cram/cram_material.papa
+- /pa/units/land/cram/cram_diffuse.papa
+- /pa/units/land/cram/cram_idle.papa
+- /pa/units/land/cram/cram_mask.papa
+
+- /pa/units/land/cram_adv/cram_adv.papa
+- /pa/units/land/cram_adv/cram_adv_material.papa
+- /pa/units/land/cram_adv/cram_adv_diffuse.papa
+- /pa/units/land/cram_adv/cram_adv_mask.papa
+
+- /pa/units/land/eclipse/eclipse.papa
+- /pa/units/land/eclipse/eclipse_material.papa
+- /pa/units/land/eclipse/eclipse_anim_fire.papa
+- /pa/units/land/eclipse/eclipse_diffuse.papa
+- /pa/units/land/eclipse/eclipse_mask.papa
+
+- /pa/units/land/furrow/furrow.papa
+- /pa/units/land/furrow/furrow_mask.papa
+- /pa/units/land/furrow/furrow_material.papa
+- /pa/units/land/furrow/furrow_anim_fire.papa
+- /pa/units/land/furrow/furrow_diffuse.papa
+
+- /pa/units/land/land_mine_exp/land_mine_exp.papa
+- /pa/units/land/land_mine_exp/land_mine_exp_material.papa
+- /pa/units/land/land_mine_exp/land_mine_exp_diffuse.papa
+- /pa/units/land/land_mine_exp/land_mine_exp_mask.papa
+
+- /pa/units/land/mjolnir/mjolnir.papa
+- /pa/units/land/mjolnir/mjolnir_material.papa
+- /pa/units/land/mjolnir/mjolnir_diffuse.papa
+- /pa/units/land/mjolnir/mjolnir_mask.papa
+
+- /pa/units/land/orbital_shield/orbital_shield_anim_start.papa
+- /pa/units/land/orbital_shield/orbital_shield_anim_loop.papa
+
+- /pa/units/land/shrapnel_mine/shrapnel_mine.papa
+- /pa/units/land/shrapnel_mine/shrapnel_mine_material.papa
+- /pa/units/land/shrapnel_mine/shrapnel_mine_diffuse.papa
+- /pa/units/land/shrapnel_mine/shrapnel_mine_fire.papa
+- /pa/units/land/shrapnel_mine/shrapnel_mine_mask.papa
+
+- /pa/units/land/tank_aa/tank_aa.papa
+- /pa/units/land/tank_aa/tank_aa_material.papa
+- /pa/units/land/tank_aa/tank_aa_diffuse.papa
+- /pa/units/land/tank_aa/tank_aa_idle.papa
+- /pa/units/land/tank_aa/tank_aa_mask.papa
+
+- /pa/units/land/tank_flak/aa_truck_long.papa
+- /pa/units/land/tank_flak/aa_truck_long_mask.papa
+- /pa/units/land/tank_flak/aa_truck_long_material.papa
+- /pa/units/land/tank_flak/aa_truck_long_anim_build.papa
+- /pa/units/land/tank_flak/aa_truck_long_anim_deploy.papa
+- /pa/units/land/tank_flak/aa_truck_long_diffuse.papa
+
+- /pa/units/land/wind_turbine/wind_turbine.papa
+- /pa/units/land/wind_turbine/wind_turbine_material.papa
+- /pa/units/land/wind_turbine/wind_turbine_anim_work.papa
+- /pa/units/land/wind_turbine/wind_turbine_diffuse.papa
+- /pa/units/land/wind_turbine/wind_turbine_mask.papa
+
+- /pa/units/upgrades/aa_defense_long_2/aa_defense_long_2.papa
+- /pa/units/upgrades/aa_defense_long_2/aa_defense_long_2_material.papa
+- /pa/units/upgrades/aa_defense_long_2/aa_defense_long_2_diffuse.papa
+- /pa/units/upgrades/aa_defense_long_2/aa_defense_long_2_mask.papa
+
+- /pa/units/upgrades/air_defense_adv_2/flakturm.papa
+- /pa/units/upgrades/air_defense_adv_2/flakturm_material.papa
+- /pa/units/upgrades/air_defense_adv_2/flakturm_diffuse.papa
+- /pa/units/upgrades/air_defense_adv_2/flakturm_mask.papa
+
+- /pa/units/upgrades/artillery_short_2/artillery_short_2.papa
+- /pa/units/upgrades/artillery_short_2/artillery_short_2_material.papa
+- /pa/units/upgrades/artillery_short_2/artillery_short_2_diffuse.papa
+- /pa/units/upgrades/artillery_short_2/artillery_short_2_mask.papa
+
+## 4. OTHER ORIGINAL MATERIALS
+
+Any additional original materials released under the MIT License must be explicitly listed here.
+
+**Files:**
+- /ui/mods/com.pa.kasa.hcom-server/spawn_landing_capsule.js"
+- /ui/mods/com.pa.kasa.hcom-server/hcom_armed_factory_fire_orders.js"
+- /ui/mods/com.pa.kasa.hcom-server/hcom_force_sandbox.js"
+- /ui/mods/com.pa.kasa.hcom-server/hcom_hide_sandbox_ui.js"
+- /ui/mods/com.pa.kasa.hcom-server/mechanics.js"
+
+- /ui/main/atlas/icon_atlas/img/strategic_icons/icon_si_pineapple.png
+- /ui/main/atlas/icon_atlas/img/strategic_icons/icon_si_pylon.png
+- /ui/main/atlas/icon_atlas/img/strategic_icons/icon_si_pylon_am.png
+- /ui/main/atlas/icon_atlas/img/strategic_icons/icon_si_rex.png
+- /ui/main/atlas/icon_atlas/img/strategic_icons/icon_si_seizmic.png
+- /ui/main/atlas/icon_atlas/img/strategic_icons/icon_si_shah.png
+- /ui/main/atlas/icon_atlas/img/strategic_icons/icon_si_shiny.png
+- /ui/main/atlas/icon_atlas/img/strategic_icons/icon_si_shrapnel_mine.png
+- /ui/main/atlas/icon_atlas/img/strategic_icons/icon_si_skyranger.png
+- /ui/main/atlas/icon_atlas/img/strategic_icons/icon_si_solar_drone.png
+- /ui/main/atlas/icon_atlas/img/strategic_icons/icon_si_spawner.png
+- /ui/main/atlas/icon_atlas/img/strategic_icons/icon_si_spider.png
+- /ui/main/atlas/icon_atlas/img/strategic_icons/icon_si_stalker.png
+- /ui/main/atlas/icon_atlas/img/strategic_icons/icon_si_stealth_bomber.png
+- /ui/main/atlas/icon_atlas/img/strategic_icons/icon_si_strafer.png
+- /ui/main/atlas/icon_atlas/img/strategic_icons/icon_si_stug.png
+- /ui/main/atlas/icon_atlas/img/strategic_icons/icon_si_support_platform.png
+- /ui/main/atlas/icon_atlas/img/strategic_icons/icon_si_swordfish.png
+- /ui/main/atlas/icon_atlas/img/strategic_icons/icon_si_t_metal_extractor_1.png
+- /ui/main/atlas/icon_atlas/img/strategic_icons/icon_si_t_transport_adv.png
+- /ui/main/atlas/icon_atlas/img/strategic_icons/icon_si_tank_gatling.png
+- /ui/main/atlas/icon_atlas/img/strategic_icons/icon_si_tesla_tower.png
+- /ui/main/atlas/icon_atlas/img/strategic_icons/icon_si_torpedo_launcher.png
+- /ui/main/atlas/icon_atlas/img/strategic_icons/icon_si_torpedo_launcher_adv.png
+- /ui/main/atlas/icon_atlas/img/strategic_icons/icon_si_transport.png
+- /ui/main/atlas/icon_atlas/img/strategic_icons/icon_si_tuned_ultracapacitor.png
+- /ui/main/atlas/icon_atlas/img/strategic_icons/icon_si_ultracapacitor.png
+- /ui/main/atlas/icon_atlas/img/strategic_icons/icon_si_upgrade.png
+- /ui/main/atlas/icon_atlas/img/strategic_icons/icon_si_valkyrie.png
+- /ui/main/atlas/icon_atlas/img/strategic_icons/icon_si_warden.png
+- /ui/main/atlas/icon_atlas/img/strategic_icons/icon_si_wind_turbine.png
+- /ui/main/atlas/icon_atlas/img/strategic_icons/icon_si_aa_defense_long.png
+- /ui/main/atlas/icon_atlas/img/strategic_icons/icon_si_aa_defense_long_2.png
+- /ui/main/atlas/icon_atlas/img/strategic_icons/icon_si_aa_missile_vehicle.png
+- /ui/main/atlas/icon_atlas/img/strategic_icons/icon_si_adv_transport.png
+- /ui/main/atlas/icon_atlas/img/strategic_icons/icon_si_air_defense_adv_2.png
+- /ui/main/atlas/icon_atlas/img/strategic_icons/icon_si_air_scout.png
+- /ui/main/atlas/icon_atlas/img/strategic_icons/icon_si_ambush_twr.png
+- /ui/main/atlas/icon_atlas/img/strategic_icons/icon_si_artillery_unit_launcher.png
+- /ui/main/atlas/icon_atlas/img/strategic_icons/icon_si_basic_missile_defence.png
+- /ui/main/atlas/icon_atlas/img/strategic_icons/icon_si_bastion.png
+- /ui/main/atlas/icon_atlas/img/strategic_icons/icon_si_behemoth.png
+- /ui/main/atlas/icon_atlas/img/strategic_icons/icon_si_bomber_adv.png
+- /ui/main/atlas/icon_atlas/img/strategic_icons/icon_si_bomber_hype.png
+- /ui/main/atlas/icon_atlas/img/strategic_icons/icon_si_bot_freeze.png
+- /ui/main/atlas/icon_atlas/img/strategic_icons/icon_si_bot_radar_adv.png
+- /ui/main/atlas/icon_atlas/img/strategic_icons/icon_si_bot_rpg.png
+- /ui/main/atlas/icon_atlas/img/strategic_icons/icon_si_bruiser.png
+- /ui/main/atlas/icon_atlas/img/strategic_icons/icon_si_carrier.png
+- /ui/main/atlas/icon_atlas/img/strategic_icons/icon_si_cram.png
+- /ui/main/atlas/icon_atlas/img/strategic_icons/icon_si_cram_adv.png
+- /ui/main/atlas/icon_atlas/img/strategic_icons/icon_si_cruise_missile.png
+- /ui/main/atlas/icon_atlas/img/strategic_icons/icon_si_destroyer.png
+- /ui/main/atlas/icon_atlas/img/strategic_icons/icon_si_dolfin.png
+- /ui/main/atlas/icon_atlas/img/strategic_icons/icon_si_drill.png
+- /ui/main/atlas/icon_atlas/img/strategic_icons/icon_si_drone.png
+- /ui/main/atlas/icon_atlas/img/strategic_icons/icon_si_eclipse.png
+- /ui/main/atlas/icon_atlas/img/strategic_icons/icon_si_edison.png
+- /ui/main/atlas/icon_atlas/img/strategic_icons/icon_si_energy_coil.png
+- /ui/main/atlas/icon_atlas/img/strategic_icons/icon_si_energy_coil_am.png
+- /ui/main/atlas/icon_atlas/img/strategic_icons/icon_si_energy_plant_adv_2.png
+- /ui/main/atlas/icon_atlas/img/strategic_icons/icon_si_energy_plant_adv_3.png
+- /ui/main/atlas/icon_atlas/img/strategic_icons/icon_si_exp_bomber.png
+- /ui/main/atlas/icon_atlas/img/strategic_icons/icon_si_experimental_gantry.png
+- /ui/main/atlas/icon_atlas/img/strategic_icons/icon_si_fabrication_aircraft.png
+- /ui/main/atlas/icon_atlas/img/strategic_icons/icon_si_fabrication_aircraft_adv.png
+- /ui/main/atlas/icon_atlas/img/strategic_icons/icon_si_fabrication_vehicle.png
+- /ui/main/atlas/icon_atlas/img/strategic_icons/icon_si_fighter_adv.png
+- /ui/main/atlas/icon_atlas/img/strategic_icons/icon_si_floater.png
+- /ui/main/atlas/icon_atlas/img/strategic_icons/icon_si_fpv_drone.png
+- /ui/main/atlas/icon_atlas/img/strategic_icons/icon_si_frigate.png
+- /ui/main/atlas/icon_atlas/img/strategic_icons/icon_si_furrow.png
+- /ui/main/atlas/icon_atlas/img/strategic_icons/icon_si_grumble.png
+- /ui/main/atlas/icon_atlas/img/strategic_icons/icon_si_gunship.png
+- /ui/main/atlas/icon_atlas/img/strategic_icons/icon_si_halabib.png
+- /ui/main/atlas/icon_atlas/img/strategic_icons/icon_si_himars.png
+- /ui/main/atlas/icon_atlas/img/strategic_icons/icon_si_hover_fab.png
+- /ui/main/atlas/icon_atlas/img/strategic_icons/icon_si_hover_ship.png
+- /ui/main/atlas/icon_atlas/img/strategic_icons/icon_si_katrina.png
+- /ui/main/atlas/icon_atlas/img/strategic_icons/icon_si_land_mine_exp.png
+- /ui/main/atlas/icon_atlas/img/strategic_icons/icon_si_land_mine_small.png
+- /ui/main/atlas/icon_atlas/img/strategic_icons/icon_si_landing_capsule.png
+- /ui/main/atlas/icon_atlas/img/strategic_icons/icon_si_maciota.png
+- /ui/main/atlas/icon_atlas/img/strategic_icons/icon_si_metal_destructor.png
+- /ui/main/atlas/icon_atlas/img/strategic_icons/icon_si_missile_ship.png
+- /ui/main/atlas/icon_atlas/img/strategic_icons/icon_si_mjolnir.png
+- /ui/main/atlas/icon_atlas/img/strategic_icons/icon_si_naval_anti_orbital.png
+- /ui/main/atlas/icon_atlas/img/strategic_icons/icon_si_nuclear_sub.png
+- /ui/main/atlas/icon_atlas/img/strategic_icons/icon_si_nuke_launcher_up_ammo.png
+- /ui/main/atlas/icon_atlas/img/strategic_icons/icon_si_orbital_shield.png
+- /ui/main/atlas/icon_atlas/img/strategic_icons/icon_si_orbital_shield_ammo.png
+- /ui/main/atlas/icon_atlas/img/strategic_icons/icon_si_picoswarm.png
+
+## 6. LIMITATION
+
+The inclusion of a file in this document does not grant rights to third-party materials incorporated into that file, if any. Such materials remain subject to their respective copyright and licensing conditions.
+
+All materials not explicitly listed in this document are outside the scope of the H-COM MIT License.
+
+============================================================
+END OF DOCUMENT
+============================================================

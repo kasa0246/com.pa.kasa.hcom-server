@@ -65,7 +65,7 @@
     "nearby_target_tick_update_interval": 1,
     "tools": [
         {
-            "spec_id": "/pa/units/addon/basic_missile_defence/cruise_missile/cluster_bomb_tool_weapon.json",
+            "spec_id": "/pa/units/air/cruise_missile/cluster_bomb_tool_weapon.json",
             "aim_bone": "bone_root",
             "projectiles_per_fire": 100,
             "muzzle_bone": [
@@ -173,7 +173,7 @@
             ]
         },
         {
-            "spec_id": "/pa/units/addon/basic_missile_defence/cruise_missile/cluster_bomb_death_tool_weapon.json",
+            "spec_id": "/pa/units/air/cruise_missile/cluster_bomb_death_tool_weapon.json",
             "aim_bone": "bone_root",
             "muzzle_bone": [
                 "bone_root"

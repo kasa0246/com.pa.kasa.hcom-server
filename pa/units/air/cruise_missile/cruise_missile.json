@@ -50,21 +50,21 @@
         }
     },
     "model": {
-        "filename": "/pa/units/addon/basic_missile_defence/cruise_missile/cruise_missile.papa",
+        "filename": "/pa/units/air/cruise_missile/cruise_missile.papa",
         "arrows": 5,
         "animations": {
-			"deploy": "/pa/units/addon/basic_missile_defence/cruise_missile/cruise_missile_deploy.papa"
+			"deploy": "/pa/units/air/cruise_missile/cruise_missile_deploy.papa"
 		},
 		"animtree": "/pa/anim/anim_trees/bomber_heavy_anim_tree.json"
     },
     "tools": [
         {
-            "spec_id": "/pa/units/addon/basic_missile_defence/cruise_missile/cruise_missile_tool_weapon.json",
+            "spec_id": "/pa/units/air/cruise_missile/cruise_missile_tool_weapon.json",
             "aim_bone": "bone_root",
             "muzzle_bone": "bone_root"
         },
         {
-            "spec_id": "/pa/units/addon/basic_missile_defence/cruise_missile/cruise_missile_death_tool_weapon.json",
+            "spec_id": "/pa/units/air/cruise_missile/cruise_missile_death_tool_weapon.json",
             "aim_bone": "bone_root",
             "muzzle_bone": "bone_root"
         },

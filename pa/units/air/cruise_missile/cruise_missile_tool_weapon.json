@@ -1,6 +1,6 @@
 {
     "base_spec": "/pa/tools/base_bomb_bay/base_bomb_bay.json",
-    "ammo_id": "/pa/units/addon/basic_missile_defence/cruise_missile/cruise_missile_ammo.json",
+    "ammo_id": "/pa/units/air/cruise_missile/cruise_missile_ammo.json",
     "rate_of_fire": 1,
     "max_range": 20,
     "yaw_rate": 720,

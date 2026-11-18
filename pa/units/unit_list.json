@@ -97,7 +97,7 @@
         "/pa/units/land/eclipse/eclipse.json",
         "/pa/units/addon/rex/rex.json",
         "/pa/units/addon/basic_missile_defence/basic_missile_defence.json",
-        "/pa/units/addon/basic_missile_defence/cruise_missile/cruise_missile.json",
+        "/pa/units/air/cruise_missile/cruise_missile.json",
         "/pa/units/land/artillery_unit_launcher/fpv_drone/fpv_drone.json",
         "/pa/units/paeiou/katrina/katrina.json",
         "/pa/units/land/cram/cram.json",

@@ -109,9 +109,14 @@
                 });
                 if (army.hasOwnProperty('/pa/units/addon/fab_tower/fab_tower.json')) {
                     doCommand(worldView, army['/pa/units/addon/fab_tower/fab_tower.json'], currentPlanet, advancedIdArray).then(function (result) {
+                         advancedIdArray = result;
+                    });
+}
+                if (army.hasOwnProperty('/pa/units/addon/adv_fab_tower/adv_fab_tower.json')) {
+                    doCommand(worldView, army['/pa/units/addon/adv_fab_tower/adv_fab_tower.json'], currentPlanet, advancedIdArray).then(function (result) {
                         advancedIdArray = result;
                     });
-                }
+}
             });
         }
         _.delay(defenseAutomation, 5000);
